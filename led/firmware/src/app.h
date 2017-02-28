@@ -205,9 +205,10 @@ void APP_Initialize ( void );
 
 void APP_Tasks( void );
 
-/*---------------this area is maintain for test------------------------*/
+/*---------------this area is maintain for flash test------------------------*/
  uint32_t nandID;
-
+struct nanddrv_transfer nandTr;
+extern uint8_t flashBuffer[2048];
 
 
 

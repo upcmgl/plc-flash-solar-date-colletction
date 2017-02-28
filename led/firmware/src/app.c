@@ -78,6 +78,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 APP_DATA appData;
 
+uint8_t flashBuffer[2048]={1,1,1,1,1,1,1,};
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
@@ -116,8 +117,11 @@ void APP_Initialize ( void )
 {
     /* Place the App state machine in its initial state. */
     appData.state = APP_STATE_INIT;
-
-  
+    
+    nandTr.buffer = flashBuffer;
+    nandTr.nbytes = 2048;
+    nandTr.offset = 0;
+    
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
@@ -132,7 +136,7 @@ void APP_Initialize ( void )
     See prototype in app.h.
  */
 
-void APP_Tasks ( void )
+void __attribute__((optimize("O3"))) APP_Tasks ( void )
 {
      /* Check the application's current state. */
     switch ( appData.state )
@@ -143,7 +147,7 @@ void APP_Tasks ( void )
         case APP_STATE_INIT:
         {
             bool appInitialized = true;
-              
+            
             if (appInitialized)
             {
             
@@ -158,9 +162,31 @@ void APP_Tasks ( void )
 //            if(!plcCtl.picApplyCompleteLoop)
 //                plcService();
 
-            
+//            PLIB_PORTS_PinClear(PORTS_ID_0,PORT_CHANNEL_C, PORTS_BIT_POS_5);
+//            PLIB_PORTS_PinSet(PORTS_ID_0,PORT_CHANNEL_C, PORTS_BIT_POS_5);
+//            
+//            
+//            PLIB_PORTS_PinClear(PORTS_ID_0,PORT_CHANNEL_C, PORTS_BIT_POS_1);
+//            PLIB_PORTS_PinSet(PORTS_ID_0,PORT_CHANNEL_C, PORTS_BIT_POS_1);
+//            
+//            PLIB_PORTS_PinClear(PORTS_ID_0,PORT_CHANNEL_C, PORTS_BIT_POS_3);
+//            PLIB_PORTS_PinSet(PORTS_ID_0,PORT_CHANNEL_C, PORTS_BIT_POS_3);
+//            
+//            PLIB_PORTS_PinClear(PORTS_ID_0,PORT_CHANNEL_C, PORTS_BIT_POS_4);
+//            PLIB_PORTS_PinSet(PORTS_ID_0,PORT_CHANNEL_C, PORTS_BIT_POS_4);
+//            
+//            PLIB_PORTS_PinClear(PORTS_ID_0,PORT_CHANNEL_C, PORTS_BIT_POS_2);
+//            PLIB_PORTS_PinSet(PORTS_ID_0,PORT_CHANNEL_C, PORTS_BIT_POS_2);
+//            
+//            PLIB_PORTS_PinClear(PORTS_ID_0,PORT_CHANNEL_G, PORTS_BIT_POS_7);
+//            PLIB_PORTS_PinSet(PORTS_ID_0,PORT_CHANNEL_G, PORTS_BIT_POS_7);
+            //            
             while( (nandID=NandFlashRaw_ReadId())!=NAND_FLASH_ID);
-            nanddrv_erase( 0);
+//          nanddrv_erase(0);
+          nanddrv_read_tr( 1,&nandTr,1);
+//            EraseBlock(0);
+//            NandFlashReadDemo(flashBuffer,20);
+            
         }
 
         /* TODO: implement your application state machine.*/

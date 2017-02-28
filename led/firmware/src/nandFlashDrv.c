@@ -277,7 +277,7 @@ void __attribute__((optimize ("O0")))NandFlashReadDemo(uint8_t *buffer2,uint32_t
     WRITE_COMMAND(0x0);
     WRITE_ADDRESS(0x0);
     WRITE_ADDRESS(0x0);
-    WRITE_ADDRESS(0x9);
+    WRITE_ADDRESS(0x0);
     WRITE_ADDRESS(0x0);
     NAND_ALE_PIN_LOW;
     WRITE_COMMAND(0x30);
