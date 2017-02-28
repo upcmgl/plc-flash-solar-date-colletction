@@ -182,6 +182,22 @@ void SYS_Initialize ( void* data )
     /*** Interrupt Service Initialization Code ***/
     SYS_INT_Initialize();
     
+    
+    //plc initial code;
+    uartCtl.recvComplete=0;
+    uartCtl.sendCnt=0;
+    uartCtl.nextLoop=0;
+    uartCtl.shakehandSuccess=0;
+    initPLC();        
+    plcCtl.picApplyCompleteLoop=0;
+    plcCtl.plcApplyPlcSuccess=0;
+    uartReceiveState=uartReceiveStateBegin;  
+    
+    //nandflash initial code;
+     ControlPortInit();
+    
+    
+    
     /* Initialize Middleware */
      IEC0bits.T2IE=1;
      T2CONbits.ON=1;

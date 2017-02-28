@@ -116,6 +116,7 @@ void frameParse(struct plcFrameStruct *plcRecvFrame,uint8_t* moduleAddress,uint8
 void checkBufferValidOrInvalid(uint8_t *buffer,uint16_t lens,struct uartControlU uartCtl);
 void picApplyFrame(uint8_t picApplyState,uint8_t *destinationAddressTest);
 void initPLC();
+
 uint8_t plcService();
 #endif /* _EXAMPLE_FILE_NAME_H */
 

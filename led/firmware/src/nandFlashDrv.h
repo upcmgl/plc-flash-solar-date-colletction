@@ -131,6 +131,7 @@ void __attribute__((optimize ("O0")))NandFlashReadDemo(uint8_t *buffer1,uint32_t
 uint8_t __attribute__((optimize ("O0"))) NandFlashRaw_WritePage(uint16_t block, uint16_t page_in_block, uint16_t page_offset,void *data, uint16_t data_len);
     /* Provide C++ Compatibility */
 
+
 uint8_t __attribute__((optimize ("O0"))) nanddrv_read_tr( int page,struct nanddrv_transfer * ,uint8_t n_tr);
 uint8_t __attribute__((optimize ("O0"))) nanddrv_write_tr( int page,struct nanddrv_transfer * ,uint8_t n_tr);
 uint8_t __attribute__((optimize ("O0")))nanddrv_erase( int block); 

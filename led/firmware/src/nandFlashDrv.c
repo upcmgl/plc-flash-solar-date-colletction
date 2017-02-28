@@ -317,18 +317,21 @@ uint8_t __attribute__((optimize ("O0"))) NandFlashRaw_WritePage(uint16_t block, 
 
 }
 
+
 uint32_t __attribute__((optimize ("O0")))NandFlashRaw_ReadId(void)
 {
     uint32_t chipId;
-
+    Delay_ns(1200);
     WRITE_COMMAND(COMMAND_READID);
-
     WRITE_ADDRESS(0);
+    
+    
     chipId  = READ_DATA8();
     chipId |= READ_DATA8() << 8;
     chipId |= READ_DATA8() << 16;
     chipId |= READ_DATA8() << 24;
     DISABLE_CE();
+    
     return chipId;
 }
 
@@ -355,7 +358,19 @@ void ControlPortInit(){
     /*set re#*/
     TRISGbits.TRISG7=0;
     Nop();
+      
+    PORTCbits.RC1=0;
+    PORTGbits.RG6=0;
+    PORTCbits.RC4=0;
+    PORTCbits.RC3=0;
+    PORTCbits.RC2=0;
+    PORTGbits.RG7=0;
+  
 }
+
+
+
+
 static void nanddrv_send_addr(int page, int offset)
 {
 	if(offset >= 0){
@@ -369,6 +384,15 @@ static void nanddrv_send_addr(int page, int offset)
 	}
     NAND_ALE_PIN_LOW;
 }
+/**
+ * 
+ * @param page
+ * @param tr
+ * @param n_tr---->every page has two parts,one is for storing date,another is for storing spare date.
+ * @return 
+ */
+
+
 uint8_t  __attribute__((optimize ("O0"))) nanddrv_read_tr( int page,struct nanddrv_transfer *tr, uint8_t n_tr){
     int ncycles;
 	if(n_tr < 1)
@@ -398,8 +422,12 @@ uint8_t  __attribute__((optimize ("O0"))) nanddrv_read_tr( int page,struct nandd
 	}
 	return 0;
 }
-
-/*
+/**
+ * 
+ * @param page
+ * @param tr
+ * @param n_tr ---->every page has two parts,one is for storing date,another is for storing spare date.
+ * @return 
  * Program page
  * Cmd: 0x80, 5-byte address, data bytes,  Cmd: 0x10, wait not busy
  */

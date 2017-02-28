@@ -117,7 +117,7 @@ void APP_Initialize ( void )
     /* Place the App state machine in its initial state. */
     appData.state = APP_STATE_INIT;
 
-   ControlPortInit();
+  
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
@@ -143,15 +143,7 @@ void APP_Tasks ( void )
         case APP_STATE_INIT:
         {
             bool appInitialized = true;
-           // IEC1bits.U2RXIE=1;
-            uartCtl.recvComplete=0;
-            uartCtl.sendCnt=0;
-            uartCtl.nextLoop=0;
-            uartCtl.shakehandSuccess=0;
-            initPLC();
-            plcCtl.picApplyCompleteLoop=0;
-            plcCtl.plcApplyPlcSuccess=0;
-            uartReceiveState=uartReceiveStateBegin;    
+              
             if (appInitialized)
             {
             
@@ -165,21 +157,10 @@ void APP_Tasks ( void )
             //  U2TXREG='A';
 //            if(!plcCtl.picApplyCompleteLoop)
 //                plcService();
-            PORTCbits.RC1=1;
-            PORTGbits.RG6=1;
-            PORTCbits.RC4=1;
-            PORTCbits.RC3=1;
-            PORTCbits.RC2=1;
-            PORTGbits.RG7=1;
-            
-            PORTCbits.RC1=0;
-            PORTGbits.RG6=0;
-            PORTCbits.RC4=0;
-            PORTCbits.RC3=0;
-            PORTCbits.RC2=0;
-            PORTGbits.RG7=0;
 
-            nandID = NandFlashRaw_ReadId();
+            
+            while( (nandID=NandFlashRaw_ReadId())!=NAND_FLASH_ID);
+            nanddrv_erase( 0);
         }
 
         /* TODO: implement your application state machine.*/
