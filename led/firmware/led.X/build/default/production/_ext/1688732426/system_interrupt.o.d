@@ -251,4 +251,7 @@ build/default/production/_ext/1688732426/system_interrupt.o:  \
  ../src/tmr.h  \
 ../src/baseFun.h  \
 ../src/nandFlashDrv.h  \
+ ../src/system_config/default/system_config.h  \
+ ../src/system_config/default/system_definitions.h  \
+../src/file.h  \
  ../src/system_config/default/system_definitions.h 

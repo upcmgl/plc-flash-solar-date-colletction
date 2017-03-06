@@ -1,8 +1,13 @@
+
+
 #include "nandFlashDrv.h"
+
 /*
  * /*----------------------------------------------------------------------------
  *        Internal definitions
  *----------------------------------------------------------------------------*/
+
+ 
 
 /** Nand flash chip status codes*/
 #define STATUS_READY                    (1 << 6)
@@ -238,8 +243,6 @@ uint8_t __attribute__((optimize ("O0"))) EraseBlock(uint16_t block)
 {
     uint8_t error = 0;
     uint32_t address;
-    uint32_t EraseTmr=0;
-    //DEBUG_PRINT("EraseBlock(%d)\r\n", block);
 
     /* Start erase*/
     error = READ_DATA8();
@@ -462,7 +465,7 @@ uint8_t  __attribute__((optimize ("O0"))) nanddrv_write_tr( int page,struct nand
     NAND_CE_PIN_HIGH;
     NAND_WP_PIN_LOW;
 	status = NandFlashRaw_Status();
-	if(status)
+	if(NandFlashRaw_Status())
 		return 0;
 	return -1;
 }
@@ -474,11 +477,14 @@ uint8_t  __attribute__((optimize ("O0"))) nanddrv_write_tr( int page,struct nand
 uint8_t  __attribute__((optimize ("O0"))) nanddrv_erase( int block)
 {
 	unsigned char status;
-
+    NAND_CE_PIN_LOW;
+    NAND_WP_PIN_HIGH;
  	WRITE_COMMAND(COMMAND_ERASE_1);   //0x60
 	nanddrv_send_addr(block * 64, -1);  //64==pages_per_block;
 	WRITE_COMMAND( COMMAND_ERASE_2);     //0xD0  
 	WaitReady();
+    NAND_CE_PIN_HIGH;
+    NAND_WP_PIN_LOW;       //pay attention to this two control pins;if the wp pin is not low,the eraser is wrong.
 	status = NandFlashRaw_Status();
 	if(status)
 		return 0;

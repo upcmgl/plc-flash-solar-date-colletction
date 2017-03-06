@@ -244,14 +244,16 @@ build/default/production/_ext/1688732426/system_init.o:  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChannelChangeNoticeMethod_Unsupported.h  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeControl_Unsupported.h  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeStatus_Unsupported.h  \
- ../src/app.h  \
-../src/system_config/default/system_definitions.h  \
- ../src/protocolPLC.h  \
-../src/app.h  \
-../src/uart.h  \
-../src/inverterDate.h  \
- ../src/tmr.h  \
-../src/baseFun.h  \
-../src/nandFlashDrv.h  \
  ../src/system_config/default/../../tmr.h  \
- ../src/system_config/default/../../uart.h 
+ ../src/system_config/default/../../uart.h  \
+ ../src/system_config/default/../../app.h  \
+ ../src/system_config/default/system_definitions.h  \
+ ../src/system_config/default/../../protocolPLC.h  \
+ ../src/system_config/default/../../uart.h  \
+ ../src/system_config/default/../../inverterDate.h  \
+ ../src/system_config/default/../../tmr.h  \
+ ../src/system_config/default/../../baseFun.h  \
+ ../src/system_config/default/../../nandFlashDrv.h  \
+ ../src/system_config/default/../../system_config/default/system_config.h  \
+ ../src/system_config/default/../../system_config/default/system_definitions.h  \
+ ../src/system_config/default/../../file.h 

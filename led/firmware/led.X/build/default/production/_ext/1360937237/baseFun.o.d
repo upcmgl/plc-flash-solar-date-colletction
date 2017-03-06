@@ -245,9 +245,11 @@ build/default/production/_ext/1360937237/baseFun.o:  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChannelChangeNoticeMethod_Unsupported.h  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeControl_Unsupported.h  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeStatus_Unsupported.h  \
- ../src/app.h  \
-../src/protocolPLC.h  \
+ ../src/protocolPLC.h  \
 ../src/uart.h  \
 ../src/inverterDate.h  \
- ../src/tmr.h  \
-../src/nandFlashDrv.h 
+../src/tmr.h  \
+ ../src/nandFlashDrv.h  \
+../src/system_config/default/system_config.h  \
+ ../src/system_config/default/system_definitions.h  \
+../src/file.h 

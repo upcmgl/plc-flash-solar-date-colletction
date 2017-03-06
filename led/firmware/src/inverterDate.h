@@ -11,13 +11,16 @@ struct microInverterDateU
     //---7---------------6---------------5----------4--3--2--1--0--//
 //-----overvoltage---undervoltage----overcurrent----//
 };
-#define  microInverterNum  20  //the number of micro inverter is initial to 20.
+
+//every solar panel date need 10 bytes.10*12*17 =2040 bytes.
+
+#define microInverterNum  20   //the number of micro inverter is initial to 20.
 struct microInverterDateCtrl
 {
     struct microInverterDateU  inverterDate[microInverterNum];
     uint8_t index;
 };
-
+extern struct microInverterDateCtrl invertDateCtrl; //initial 20 inverter date structure;
 void show(struct microInverterDateU date,uint8_t index);
 
 

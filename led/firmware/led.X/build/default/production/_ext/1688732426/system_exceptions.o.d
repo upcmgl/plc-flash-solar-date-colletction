@@ -243,13 +243,4 @@ build/default/production/_ext/1688732426/system_exceptions.o:  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_SlewRateControl_Unsupported.h  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChannelChangeNoticeMethod_Unsupported.h  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeControl_Unsupported.h  \
- ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeStatus_Unsupported.h  \
- ../src/app.h  \
-../src/system_config/default/system_definitions.h  \
- ../src/protocolPLC.h  \
-../src/app.h  \
-../src/uart.h  \
-../src/inverterDate.h  \
- ../src/tmr.h  \
-../src/baseFun.h  \
-../src/nandFlashDrv.h 
+ ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeStatus_Unsupported.h 

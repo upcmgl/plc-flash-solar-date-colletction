@@ -1,12 +1,12 @@
 build/default/production/_ext/1360937237/nandFlashDrv.o:  \
  ../src/nandFlashDrv.c  \
 ../src/nandFlashDrv.h  \
-../src/app.h  \
  ../src/system_config/default/system_config.h  \
  ../src/system_config/default/system_definitions.h  \
  ../../../../../../framework/system/common/sys_common.h  \
  ../../../../../../framework/system/common/sys_module.h  \
  ../../../../../../framework/system/clk/sys_clk.h  \
+ ../src/system_config/default/system_config.h  \
  ../../../../../../framework/peripheral/osc/plib_osc.h  \
  ../../../../../../framework/peripheral/osc/processor/osc_processor.h  \
  ../../../../../../framework/peripheral/osc/processor/osc_p32xxxx.h  \
@@ -244,10 +244,4 @@ build/default/production/_ext/1360937237/nandFlashDrv.o:  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_SlewRateControl_Unsupported.h  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChannelChangeNoticeMethod_Unsupported.h  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeControl_Unsupported.h  \
- ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeStatus_Unsupported.h  \
- ../src/app.h  \
-../src/protocolPLC.h  \
-../src/uart.h  \
-../src/inverterDate.h  \
- ../src/tmr.h  \
-../src/baseFun.h 
+ ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeStatus_Unsupported.h 

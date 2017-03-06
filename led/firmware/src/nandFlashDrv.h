@@ -18,13 +18,20 @@
 #ifndef _NANDFLASHDRV_H    /* Guard against multiple inclusion */
 #define _NANDFLASHDRV_H
 
-#include "app.h"
+#include "../include/stdint.h"
+#include "../include/stdbool.h"
+#include "../include/stddef.h"
+#include "../include/stdlib.h"
+#include "system_config/default/system_config.h"
+#include "system_config/default/system_definitions.h"
 
-struct nanddrv_transfer {
-	unsigned char *buffer;
-	int offset;
-	int nbytes;
+
+ struct nanddrv_transfer {
+	uint8_t *buffer;
+	uint32_t offset;
+	uint32_t nbytes;
 };
+
 struct nand_chip {
 	int blocks;
 	int pages_per_block;
@@ -32,6 +39,8 @@ struct nand_chip {
 	int spare_bytes_per_page;
 	int bus_width_shift;
 };
+
+
 
 
 /* Provide C++ Compatibility */
@@ -126,6 +135,8 @@ void __attribute__((optimize("O3"))) ReadData(uint8_t *buffer,uint32_t size);
 void __attribute__((optimize ("O0")))NandFlashRest();
 void __attribute__((optimize ("O3")))NandFlashWriteReadStartAddress(uint16_t rowAddress);
 void __attribute__((optimize ("O0"))) NandFlashWriteReadOffsetAddress(uint16_t page_offset);
+
+//this erase block function is great.
 uint8_t __attribute__((optimize ("O0"))) EraseBlock(uint16_t block);
 void __attribute__((optimize ("O0")))NandFlashReadDemo(uint8_t *buffer1,uint32_t size );
 uint8_t __attribute__((optimize ("O0"))) NandFlashRaw_WritePage(uint16_t block, uint16_t page_in_block, uint16_t page_offset,void *data, uint16_t data_len);

@@ -63,6 +63,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "tmr.h"
 #include "baseFun.h"
 #include "nandFlashDrv.h"
+#include "file.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -204,11 +205,6 @@ void APP_Initialize ( void );
  */
 
 void APP_Tasks( void );
-
-/*---------------this area is maintain for flash test------------------------*/
- uint32_t nandID;
-struct nanddrv_transfer nandTr;
-extern uint8_t flashBuffer[2048];
 
 
 

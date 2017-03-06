@@ -567,6 +567,8 @@ uint8_t __attribute__((optimize ("O0")))  plcService()
                    plcCtl.picApplyPlcState=ApplyForVoltage;
                    plcCtl.plcApplyPlcSuccess=0;
                    delayN10ms(10);
+                   
+                   //index++ means this solar panel apply is done,the next solar panel is will begin.
                    invertDateCtrl.index++;
                    if(invertDateCtrl.index>microInverterNum+1)
                     {

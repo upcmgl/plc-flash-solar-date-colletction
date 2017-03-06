@@ -36,6 +36,7 @@
         <itemPath>../src/baseFun.h</itemPath>
         <itemPath>../src/inverterDate.h</itemPath>
         <itemPath>../src/nandFlashDrv.h</itemPath>
+        <itemPath>../src/file.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="framework" projectFiles="true">
         <logicalFolder name="f1" displayName="driver" projectFiles="true">
@@ -149,6 +150,8 @@
         <itemPath>../src/uart.c</itemPath>
         <itemPath>../src/protocolPLC.c</itemPath>
         <itemPath>../src/baseFun.c</itemPath>
+        <itemPath>../src/nandFlashDrv.c</itemPath>
+        <itemPath>../src/file.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="framework" projectFiles="true">
         <logicalFolder name="f1" displayName="system" projectFiles="true">
@@ -165,7 +168,6 @@
           </logicalFolder>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>../src/nandFlashDrv.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
