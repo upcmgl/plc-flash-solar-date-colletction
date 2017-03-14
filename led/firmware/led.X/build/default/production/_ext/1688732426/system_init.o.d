@@ -256,4 +256,7 @@ build/default/production/_ext/1688732426/system_init.o:  \
  ../src/system_config/default/../../nandFlashDrv.h  \
  ../src/system_config/default/../../system_config/default/system_config.h  \
  ../src/system_config/default/../../system_config/default/system_definitions.h  \
- ../src/system_config/default/../../file.h 
+ ../src/system_config/default/../../file.h  \
+ ../src/system_config/default/../../drvR8025I2C.h  \
+ ../src/system_config/default/../../drv_i2c.h  \
+ ../src/system_config/default/../../osTimer.h 

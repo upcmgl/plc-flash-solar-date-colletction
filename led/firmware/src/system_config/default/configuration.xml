@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<configuration version="1.0.9.2">
+<configuration version="1.0.10.0">
   <Designer>
     <Assets>
       <Settings bpp="16">
@@ -174,16 +174,18 @@
         <Name>drv_usart_static.c</Name>
         <Path>Source Files/app/system_config/default/framework/driver/usart/src</Path>
         <Checksum>AC7DDD323F8496DD55F47EC0D2896E04</Checksum>
+        <ProjectFileChecksum>E68C4ED83DB4208589F6556308733C24</ProjectFileChecksum>
       </Template>
       <Template>
         <Name>sys_ports_static.c</Name>
         <Path>Source Files/app/system_config/default/framework/system/ports/src</Path>
         <Checksum>5042370263FFD588A1CD7B9535B622D6</Checksum>
+        <ProjectFileChecksum>65A1DEB16635872F3BD3C0F8A47C0409</ProjectFileChecksum>
       </Template>
       <Template>
         <Name>system_init.c</Name>
         <Path>Source Files/app/system_config/default</Path>
-        <Checksum>8044263F56BED7FE9582B1FF9A964D55</Checksum>
+        <Checksum>D0520056EB41659C8E7FBD84A010723B</Checksum>
         <ProjectFileChecksum>23F5C323ACA48E2ECF663406DDC7D100</ProjectFileChecksum>
       </Template>
       <Template>
@@ -196,6 +198,11 @@
         <Checksum>5B1227C9C8A50A58EB2DAB66BF09B4E6</Checksum>
       </Template>
       <Template>
+        <Name>drv_i2c_static_buffer_model.c</Name>
+        <Path>Source Files/app/system_config/default/framework/driver/i2c/src</Path>
+        <Checksum>BD9B7F4C77CDDE5D2651743EBCAF8821</Checksum>
+      </Template>
+      <Template>
         <Name>drv_tmr_mapping.c</Name>
         <Path>Source Files/app/system_config/default/framework/driver/tmr/src</Path>
         <Checksum>0651845480D5D3E21D8BF17EE68DBEAC</Checksum>
@@ -203,12 +210,18 @@
       <Template>
         <Name>system_definitions.h</Name>
         <Path>Header Files/app/system_config/default</Path>
-        <Checksum>307E624FD6F9DA4977961668962E85A7</Checksum>
+        <Checksum>C609F0431FCD7D826C6333F780040644</Checksum>
+        <ProjectFileChecksum>B9F9CBA1E03E4D28DE7E33A7A3F96576</ProjectFileChecksum>
       </Template>
       <Template>
         <Name>system_exceptions.c</Name>
         <Path>Source Files/app/system_config/default</Path>
         <Checksum>C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+      </Template>
+      <Template>
+        <Name>drv_i2c_static_buffer_model.h</Name>
+        <Path>Header Files/app/system_config/default/framework/driver/i2c</Path>
+        <Checksum>960C81364707EBD7F58A98E66A4B2745</Checksum>
       </Template>
       <Template>
         <Name>app.c</Name>
@@ -232,7 +245,8 @@
       <Template>
         <Name>system_config.h</Name>
         <Path>Header Files/app/system_config/default</Path>
-        <Checksum>A207FBBD0B1F725DFBAECAA3B9BD7997</Checksum>
+        <Checksum>67EC21ADEE2ACD77B87F8419EFBBCBD3</Checksum>
+        <ProjectFileChecksum>B75C1CADE91C8E33F96536641268BAC1</ProjectFileChecksum>
       </Template>
       <Template>
         <Name>app.h</Name>
@@ -244,6 +258,11 @@
         <Checksum>DFB81D134C9F1663DB06F9A2CDA15354</Checksum>
       </Template>
       <Template>
+        <Name>drv_i2c_mapping.c</Name>
+        <Path>Source Files/app/system_config/default/framework/driver/i2c/src</Path>
+        <Checksum>7D0F37523DD9A21CCB6E8BEC84FDBFA8</Checksum>
+      </Template>
+      <Template>
         <Name>sys_clk_static.h</Name>
         <Path>Header Files/app/system_config/default/framework/system/clk</Path>
         <Checksum>B4BD59D8D7C4DA95DC5E3B57755FD352</Checksum>
@@ -251,7 +270,7 @@
       <Template>
         <Name>system_interrupt.c</Name>
         <Path>Source Files/app/system_config/default</Path>
-        <Checksum>7EDF1BBAE473DFB0AC21F32011170E1C</Checksum>
+        <Checksum>E255828329AFD8EFE0A1A33E96778678</Checksum>
         <ProjectFileChecksum>416D25037D717BAA99A83B5F3604E5C5</ProjectFileChecksum>
       </Template>
       <Template>
@@ -267,11 +286,11 @@
     </Templates>
     <CompilerItems>
       <C32>
-        <Include value="D:/software/Harmony/apps/Connector/LEDTEST/led/firmware/src"/>
-        <Include value="D:/software/Harmony/apps/Connector/LEDTEST/led/firmware/src/system_config/default"/>
-        <Include value="D:/software/Harmony/apps/Connector/LEDTEST/led/firmware/src/default"/>
-        <Include value="D:/software/Harmony/framework"/>
-        <Include value="D:/software/Harmony/apps/Connector/LEDTEST/led/firmware/src/system_config/default/framework"/>
+        <Include value="D:\software\Harmony\apps\Connector\LEDTEST\led\firmware\src"/>
+        <Include value="D:\software\Harmony\apps\Connector\LEDTEST\led\firmware\src\system_config\default"/>
+        <Include value="D:\software\Harmony\apps\Connector\LEDTEST\led\firmware\src\default"/>
+        <Include value="D:\software\Harmony\framework"/>
+        <Include value="D:\software\Harmony\apps\Connector\LEDTEST\led\firmware\src\system_config\default\framework"/>
       </C32>
     </CompilerItems>
     <Libraries>

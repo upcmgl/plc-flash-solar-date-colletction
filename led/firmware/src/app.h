@@ -64,7 +64,9 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "baseFun.h"
 #include "nandFlashDrv.h"
 #include "file.h"
-
+#include "drvR8025I2C.h"
+#include "drv_i2c.h"
+#include "osTimer.h"
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
 

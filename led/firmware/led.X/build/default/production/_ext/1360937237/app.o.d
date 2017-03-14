@@ -252,4 +252,7 @@ build/default/production/_ext/1360937237/app.o:  \
 ../src/nandFlashDrv.h  \
  ../src/system_config/default/system_config.h  \
  ../src/system_config/default/system_definitions.h  \
-../src/file.h 
+../src/file.h  \
+ ../src/drvR8025I2C.h  \
+../src/drv_i2c.h  \
+../src/osTimer.h 

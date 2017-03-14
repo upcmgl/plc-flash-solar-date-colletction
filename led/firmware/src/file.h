@@ -64,6 +64,13 @@ struct nandFlashInfoStr
 
 };
 
+struct Month2PageStr
+{
+    uint8_t  Month[12];
+};
+
+struct Month2PageStr  Year2Month2Page[3];   //temporary  defined 3 year. 
+
 extern struct nandFlashInfoStr nandFlashInfo;
 
 void initFlashBuffer();

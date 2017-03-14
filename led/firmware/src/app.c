@@ -120,6 +120,7 @@ void APP_Initialize ( void )
     appData.state = APP_STATE_INIT;
     initFlashBuffer();
     initFlashInfo(&nandFlashInfo);
+    drv_I2C_init();
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
@@ -136,6 +137,9 @@ void APP_Initialize ( void )
 
 void __attribute__((optimize("O0"))) APP_Tasks ( void )
 {
+    uint8_t addr=0;
+    uint8_t data[16];
+    uint8_t new_time[8]={};
      /* Check the application's current state. */
     switch ( appData.state )
     {
@@ -145,7 +149,7 @@ void __attribute__((optimize("O0"))) APP_Tasks ( void )
         case APP_STATE_INIT:
         {
             bool appInitialized = true;
-            
+          system_set_rtc_time(new_time);
             if (appInitialized)
             {
             
@@ -163,8 +167,12 @@ void __attribute__((optimize("O0"))) APP_Tasks ( void )
            while( (nandID=NandFlashRaw_ReadId())!=NAND_FLASH_ID);
 //
 //           nanddrv_erase(3);
-           nanddrv_erase(0);
+//          fileTest();
 
+//           _CP0_GET_COUNT();
+//           Nop();
+           system_get_rtc_time();
+ //    drv_R8025T_read(addr,data,16);
            Nop();
             
         }

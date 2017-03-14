@@ -81,11 +81,25 @@ void __ISR(_TIMER_2_VECTOR, ipl1AUTO) IntHandlerDrvTmrInstance0(void)
     }
     else
         msCount=0;
-//    
-//    if(PORTBbits.RB5==1)
-//        PORTBCLR=0x20;
-//    else
-//         PORTBSET=0x20;
+}
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+void __ISR(_I2C_3_VECTOR, ipl1AUTO) _IntHandlerDrvI2CInstance0(void)
+{
+	DRV_I2C0_Tasks();
+ 
 }
 
  
@@ -99,6 +113,7 @@ void __ISR(_TIMER_2_VECTOR, ipl1AUTO) IntHandlerDrvTmrInstance0(void)
  
 
  
+  
   
 /*******************************************************************************
  End of File

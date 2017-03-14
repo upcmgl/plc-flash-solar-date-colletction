@@ -9,10 +9,13 @@
           <logicalFolder name="f1" displayName="default" projectFiles="true">
             <logicalFolder name="f1" displayName="framework" projectFiles="true">
               <logicalFolder name="f1" displayName="driver" projectFiles="true">
-                <logicalFolder name="f1" displayName="tmr" projectFiles="true">
+                <logicalFolder name="f1" displayName="i2c" projectFiles="true">
+                  <itemPath>../src/system_config/default/framework/driver/i2c/drv_i2c_static_buffer_model.h</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f2" displayName="tmr" projectFiles="true">
                   <itemPath>../src/system_config/default/framework/driver/tmr/drv_tmr_static.h</itemPath>
                 </logicalFolder>
-                <logicalFolder name="f2" displayName="usart" projectFiles="true">
+                <logicalFolder name="f3" displayName="usart" projectFiles="true">
                   <logicalFolder name="f1" displayName="src" projectFiles="true">
                     <itemPath>../src/system_config/default/framework/driver/usart/src/drv_usart_static_local.h</itemPath>
                   </logicalFolder>
@@ -37,6 +40,9 @@
         <itemPath>../src/inverterDate.h</itemPath>
         <itemPath>../src/nandFlashDrv.h</itemPath>
         <itemPath>../src/file.h</itemPath>
+        <itemPath>../src/drv_i2c.h</itemPath>
+        <itemPath>../src/drvR8025I2C.h</itemPath>
+        <itemPath>../src/osTimer.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="framework" projectFiles="true">
         <logicalFolder name="f1" displayName="driver" projectFiles="true">
@@ -112,13 +118,19 @@
           <logicalFolder name="f1" displayName="default" projectFiles="true">
             <logicalFolder name="f1" displayName="framework" projectFiles="true">
               <logicalFolder name="f1" displayName="driver" projectFiles="true">
-                <logicalFolder name="f1" displayName="tmr" projectFiles="true">
+                <logicalFolder name="f1" displayName="i2c" projectFiles="true">
+                  <logicalFolder name="f1" displayName="src" projectFiles="true">
+                    <itemPath>../src/system_config/default/framework/driver/i2c/src/drv_i2c_static_buffer_model.c</itemPath>
+                    <itemPath>../src/system_config/default/framework/driver/i2c/src/drv_i2c_mapping.c</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+                <logicalFolder name="f2" displayName="tmr" projectFiles="true">
                   <logicalFolder name="f1" displayName="src" projectFiles="true">
                     <itemPath>../src/system_config/default/framework/driver/tmr/src/drv_tmr_static.c</itemPath>
                     <itemPath>../src/system_config/default/framework/driver/tmr/src/drv_tmr_mapping.c</itemPath>
                   </logicalFolder>
                 </logicalFolder>
-                <logicalFolder name="f2" displayName="usart" projectFiles="true">
+                <logicalFolder name="f3" displayName="usart" projectFiles="true">
                   <logicalFolder name="f1" displayName="src" projectFiles="true">
                     <itemPath>../src/system_config/default/framework/driver/usart/src/drv_usart_mapping.c</itemPath>
                     <itemPath>../src/system_config/default/framework/driver/usart/src/drv_usart_static.c</itemPath>
@@ -152,6 +164,9 @@
         <itemPath>../src/baseFun.c</itemPath>
         <itemPath>../src/nandFlashDrv.c</itemPath>
         <itemPath>../src/file.c</itemPath>
+        <itemPath>../src/drv_i2c.c</itemPath>
+        <itemPath>../src/drvR8025I2C.c</itemPath>
+        <itemPath>../src/osTimer.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="framework" projectFiles="true">
         <logicalFolder name="f1" displayName="system" projectFiles="true">
@@ -288,7 +303,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="1024"/>
+        <property key="heap-size" value="0"/>
         <property key="input-libraries" value=""/>
         <property key="kseg-length" value=""/>
         <property key="kseg-origin" value=""/>

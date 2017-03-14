@@ -94,7 +94,7 @@ extern "C" {
 #define SYS_PORT_CNPUE          0x0
 #define SYS_PORT_CNEN           0x0
 
-#define SYS_PORT_A_TRIS         0xc0ff
+#define SYS_PORT_A_TRIS         0xc4ff
 #define SYS_PORT_A_LAT          0x0
 #define SYS_PORT_A_ODC          0x0
 
@@ -135,6 +135,8 @@ extern "C" {
 #define DRV_USART_BUFFER_QUEUE_SUPPORT              false
 #define DRV_USART_SUPPORT_TRANSMIT_DMA              false
 #define DRV_USART_SUPPORT_RECEIVE_DMA               false
+#define DRV_I2C_INTERRUPT_MODE                    		true
+
 
 // *****************************************************************************
 // *****************************************************************************

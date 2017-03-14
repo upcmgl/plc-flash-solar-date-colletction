@@ -59,6 +59,8 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "driver/tmr/drv_tmr_static.h"
 #include "peripheral/int/plib_int.h"
 #include "driver/usart/drv_usart_static.h"
+//#include "driver/i2c/drv_i2c.h"
+//#include "framework/driver/i2c/drv_i2c_static_buffer_model.h"
 #include "system/ports/sys_ports.h"
 
 

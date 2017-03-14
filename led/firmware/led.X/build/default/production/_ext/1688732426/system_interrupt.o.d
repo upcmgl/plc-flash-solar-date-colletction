@@ -254,4 +254,7 @@ build/default/production/_ext/1688732426/system_interrupt.o:  \
  ../src/system_config/default/system_config.h  \
  ../src/system_config/default/system_definitions.h  \
 ../src/file.h  \
+ ../src/drvR8025I2C.h  \
+../src/drv_i2c.h  \
+../src/osTimer.h  \
  ../src/system_config/default/system_definitions.h 

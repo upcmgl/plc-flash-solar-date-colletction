@@ -11,8 +11,12 @@ uint8_t flashWriteBufferOOB[64];
 uint8_t flashReadBuffer[2048];
 uint8_t flashReadBufferOOB[64];
 
+//define the RWTempbuffer just for copy block.the read write function index to the same buffer.
+uint8_t flashRWTempbuffer[2048];
+uint8_t flashRWTempbufferOOB[64];
 
-struct flashDateStr flashRWdate;
+
+struct flashDateStr flashRWdate, flashRWTempdate;
 struct nandFlashInfoStr nandFlashInfo;
 
 /**
@@ -34,7 +38,26 @@ void initFlashBuffer()
     
     flashRWdate.flashWriteDate[1].buffer = flashWriteBufferOOB;
     flashRWdate.flashWriteDate[1].nbytes = 64;
-    flashRWdate.flashWriteDate[1].offset =2048;    
+    flashRWdate.flashWriteDate[1].offset =2048;  
+    
+    //initial the flashRWTempdate date. they are indexed to the same array.
+    flashRWTempdate.flashReadDate[0].buffer = flashRWTempbuffer;
+    flashRWTempdate.flashReadDate[0].nbytes = 2048;
+    flashRWTempdate.flashReadDate[0].offset = 0;
+    
+    flashRWTempdate.flashReadDate[1].buffer = flashRWTempbufferOOB;
+    flashRWTempdate.flashReadDate[1].nbytes = 64;
+    flashRWTempdate.flashReadDate[1].offset = 2048;
+    
+    flashRWTempdate.flashWriteDate[0].buffer = flashRWTempbuffer;
+    flashRWTempdate.flashWriteDate[0].nbytes = 2048;
+    flashRWTempdate.flashWriteDate[0].offset = 0;
+    
+    flashRWTempdate.flashWriteDate[1].buffer = flashRWTempbufferOOB;
+    flashRWTempdate.flashWriteDate[1].nbytes = 64;
+    flashRWTempdate.flashWriteDate[1].offset = 2048;
+    
+    
 }
 
 /**
@@ -45,7 +68,7 @@ void initFlashInfo(struct nandFlashInfoStr *nandFlashInfo)
 {
     uint16_t pageNum;
     nandFlashInfo ->badBlockNum=0;
-    for(pageNum = 0;pageNum <1024; pageNum ++)
+    for(pageNum = 0;pageNum <128; pageNum ++)
     {
         nandFlashInfo ->badBlockPos[pageNum] = 0;
     }
@@ -90,9 +113,6 @@ uint8_t perBadBlockCheck(uint32_t blockNum ,struct nandFlashInfoStr  *nandFlashI
     nanddrv_erase(blockNum);
     for(pageNum = 0;pageNum < NAND_FLASH_BLOCK_SIZE_PAGE;pageNum ++)
     {
-//        memset(flashWriteBuffer,0x11,2048);
-//        memset(flashWriteBufferOOB,0x11,64);
-//        nanddrv_write_tr(blockNum*64+pageNum, flashRWdate ->flashWriteDate,2);
         nanddrv_read_tr(blockNum*64+pageNum,flashRWdate->flashReadDate,2);
         badBlockResult=allBytes0xFFCheck(flashRWdate->flashReadDate,2);
         if (!badBlockResult)
@@ -394,6 +414,26 @@ uint8_t fileReadAllPageEcc(uint32_t page,struct flashDateStr *flashRWdate,struct
     return 0;
 }
 
+
+/**
+ * 
+ * @param pageBegin
+ * @param pageEnd  two page interval will be copy,not included pageEnd
+ * @return 
+ */
+uint8_t copyBlock(uint16_t srcBlock,uint16_t desBlock, uint8_t pageBegin, uint8_t pageEnd)
+{
+    uint8_t pos;
+    nanddrv_erase(desBlock);
+    for(pos = pageBegin ;pos<pageEnd;pos++)
+    {
+        fileReadAllPageEcc(pos+64*srcBlock,&flashRWTempdate,&nandFlashInfo);
+        fileWriteAllPageEcc(pos+64*desBlock,&flashRWTempdate);
+    }
+    nanddrv_erase(srcBlock);
+    
+    return 0;
+}
 /**
  * //the operation is read 2K page,and record a microInverter date add this part in flashRWdate structure ,then write date to flash.
  * @param page
@@ -425,31 +465,43 @@ uint8_t fileWritePartPageEcc(uint32_t page ,struct flashDateStr *flashRWdate ,st
 /**
  * fileTest function is test every function.
  */
+
 void fileTest()
 {
-    invertDateCtrl.inverterDate[0].voltage[0] = 0x11;
-    invertDateCtrl.inverterDate[0].voltage[1] = 0x00;
-    invertDateCtrl.inverterDate[0].current[0] = 0x02;
-    invertDateCtrl.inverterDate[0].current[1] = 0x01;
-    invertDateCtrl.inverterDate[0].current[2] = 0x00;
-    invertDateCtrl.inverterDate[0].energy[0]  = 0x11;
-    invertDateCtrl.inverterDate[0].energy[1]  = 0x01;
-    invertDateCtrl.inverterDate[0].energy[2]  = 0x03;
-    invertDateCtrl.inverterDate[0].energy[3]  = 0x34;
-    invertDateCtrl.inverterDate[0].fault      =0x11;
+//    invertDateCtrl.inverterDate[0].voltage[0] = 0x11;
+//    invertDateCtrl.inverterDate[0].voltage[1] = 0x00;
+//    invertDateCtrl.inverterDate[0].current[0] = 0x02;
+//    invertDateCtrl.inverterDate[0].current[1] = 0x01;
+//    invertDateCtrl.inverterDate[0].current[2] = 0x00;
+//    invertDateCtrl.inverterDate[0].energy[0]  = 0x11;
+//    invertDateCtrl.inverterDate[0].energy[1]  = 0x01;
+//    invertDateCtrl.inverterDate[0].energy[2]  = 0x03;
+//    invertDateCtrl.inverterDate[0].energy[3]  = 0x34;
+//    invertDateCtrl.inverterDate[0].fault      =0x11;
+//    
+//    invertDateCtrl.inverterDate[1].voltage[0] = 0x11;
+//    invertDateCtrl.inverterDate[1].voltage[1] = 0x00;
+//    invertDateCtrl.inverterDate[1].current[0] = 0x02;
+//    invertDateCtrl.inverterDate[1].current[1] = 0x01;
+//    invertDateCtrl.inverterDate[1].current[2] = 0x00;
+//    invertDateCtrl.inverterDate[1].energy[0]  = 0x11;
+//    invertDateCtrl.inverterDate[1].energy[1]  = 0x01;
+//    invertDateCtrl.inverterDate[1].energy[2]  = 0x03;
+//    invertDateCtrl.inverterDate[1].energy[3]  = 0x34;
+//    invertDateCtrl.inverterDate[1].fault      =0x11;
+
+      nanddrv_erase(0);
+      memset(flashWriteBuffer,0x36,2048);
+      fileWriteAllPageEcc(0,&flashRWdate);
+      copyBlock(0,1,0, 1);
+      fileReadAllPageEcc(64,&flashRWdate,&nandFlashInfo);
+      fileReadAllPageEcc(0,&flashRWdate,&nandFlashInfo);
+      copyBlock(1,0, 0, 1);
+      fileReadAllPageEcc(64,&flashRWdate,&nandFlashInfo);
+      fileReadAllPageEcc(0,&flashRWdate,&nandFlashInfo);
+      
     
-    invertDateCtrl.inverterDate[1].voltage[0] = 0x11;
-    invertDateCtrl.inverterDate[1].voltage[1] = 0x00;
-    invertDateCtrl.inverterDate[1].current[0] = 0x02;
-    invertDateCtrl.inverterDate[1].current[1] = 0x01;
-    invertDateCtrl.inverterDate[1].current[2] = 0x00;
-    invertDateCtrl.inverterDate[1].energy[0]  = 0x11;
-    invertDateCtrl.inverterDate[1].energy[1]  = 0x01;
-    invertDateCtrl.inverterDate[1].energy[2]  = 0x03;
-    invertDateCtrl.inverterDate[1].energy[3]  = 0x34;
-    invertDateCtrl.inverterDate[1].fault      =0x11;
-    nanddrv_erase(0);
-    fileWritePartPageEcc(0,&flashRWdate,&nandFlashInfo,invertDateCtrl);
+//    fileWritePartPageEcc(0,&flashRWdate,&nandFlashInfo,invertDateCtrl);
 }
 
 

@@ -1,0 +1,2723 @@
+
+Optional file libmchp_peripheral.a not found
+
+Optional file libmchp_peripheral_32MX664F128L.a not found
+Archive member included because of file (symbol)
+
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memcpy.o)
+                              build/default/production/_ext/1360937237/file.o (memcpy)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memset.o)
+                              build/default/production/_ext/1360937237/baseFun.o (memset)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o (_bootstrap_exception_handler)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o (_on_reset)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o (_on_bootstrap)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o (_nmi_handler)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o (_general_exception_context)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector0.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_0)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector1.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_1)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector2.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_2)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector3.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_3)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector4.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_4)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector5.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_5)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector6.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_6)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector7.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_7)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector9.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_9)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector10.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_10)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector11.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_11)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector12.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_12)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector13.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_13)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector14.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_14)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector15.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_15)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector16.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_16)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector17.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_17)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector18.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_18)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector19.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_19)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector20.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_20)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector21.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_21)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector22.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_22)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector23.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_23)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector25.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_25)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector26.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_26)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector27.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_27)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector28.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_28)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector29.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_29)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector30.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_30)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector31.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_31)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector33.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_33)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector34.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_34)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector35.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_35)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector36.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_36)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector37.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_37)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector38.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_38)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector39.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_39)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector40.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_40)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector41.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_41)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector42.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_42)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector43.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_43)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector44.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_44)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector45.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_45)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector46.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_46)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector47.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_47)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector48.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_48)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector49.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_49)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector50.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_50)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector51.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_51)
+d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector0.o) (_DefaultInterrupt)
+
+Allocating common symbols
+Common symbol       size              file
+
+flashRWTempbufferOOB
+                    0x40              build/default/production/_ext/1360937237/file.o
+flashReadBufferOOB  0x40              build/default/production/_ext/1360937237/file.o
+DataIn              0x1               build/default/production/_ext/1360937237/nandFlashDrv.o
+i2c0ClientObj       0x8               build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+flashRWTempdate     0x30              build/default/production/_ext/1360937237/file.o
+nandFlashInfo       0x88              build/default/production/_ext/1360937237/file.o
+gDrvUSART0Obj       0x0               build/default/production/_ext/327000265/drv_usart_static.o
+appData             0x4               build/default/production/_ext/1360937237/app.o
+plcRecvFrame        0xda              build/default/production/_ext/1688732426/system_init.o
+Year2Month2Page     0x24              build/default/production/_ext/1688732426/system_init.o
+i                   0x4               build/default/production/_ext/1688732426/system_init.o
+nandID              0x4               build/default/production/_ext/1688732426/system_init.o
+datetime            0xa               build/default/production/_ext/1360937237/osTimer.o
+flashWriteBuffer    0x800             build/default/production/_ext/1360937237/file.o
+uartBufferPLCTran   0xc               build/default/production/_ext/1360937237/protocolPLC.o
+flashRWTempbuffer   0x800             build/default/production/_ext/1360937237/file.o
+sysObj              0xc               build/default/production/_ext/1688732426/system_init.o
+flashWriteBufferOOB
+                    0x40              build/default/production/_ext/1360937237/file.o
+i2c0Obj             0x2c              build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+plcCtl              0x10              build/default/production/_ext/1688732426/system_init.o
+invertDateCtrl      0xc9              build/default/production/_ext/1688732426/system_init.o
+i2c0State           0x4               build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+flashRWdate         0x30              build/default/production/_ext/1360937237/file.o
+flashReadBuffer     0x800             build/default/production/_ext/1360937237/file.o
+lBufferObj0         0x4               build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+RecvBuffer          0x32              build/default/production/_ext/1360937237/protocolPLC.o
+TranBuffer          0x32              build/default/production/_ext/1360937237/protocolPLC.o
+uartBufferPLCRecv   0xc               build/default/production/_ext/1360937237/protocolPLC.o
+shakeHandBuffer     0xe               build/default/production/_ext/1360937237/uart.o
+uartCtl             0x5               build/default/production/_ext/1688732426/system_init.o
+sysDevconObj        0x8               build/default/production/_ext/912498863/sys_devcon.o
+
+Microchip PIC32 Memory-Usage Report
+
+kseg0 Program-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+.text.DRV_I2C0_Tasks    0x9d000000          0x7d4        2004   
+.text.WRITE_COMMAND     0x9d0007d4          0x39c         924   
+.text.READ_DATA8        0x9d000b70          0x334         820   
+.text.WRITE_ADDRESS     0x9d000ea4          0x2c8         712   
+.text.drv_R8025T_read   0x9d00116c          0x280         640   
+.text._IntHandlerDrvUsa 0x9d0013ec          0x254         596   
+.text.system_get_rtc_ti 0x9d001640          0x1b0         432   
+.text.drv_R8025T_write  0x9d0017f0          0x1a0         416   
+.text._IntHandlerDrvI2C 0x9d001990          0x130         304   
+.rodata                 0x9d001ac0          0x128         296  Read-only const 
+.text.SYS_Initialize    0x9d001be8           0xfc         252   
+.text.drv_R8025T_check_ 0x9d001ce4           0xe8         232   
+.text.SYS_DEVCON_Perfor 0x9d001dcc           0xdc         220   
+.text.general_exception 0x9d001ea8           0xdc         220   
+.text.IntHandlerDrvTmrI 0x9d001f84           0xd4         212   
+.text.uart2Init         0x9d002058           0xd4         212   
+.dinit                  0x9d00212c           0xc0         192   
+.text.APP_Tasks         0x9d0021ec           0xb8         184   
+.text.NandFlashRaw_Read 0x9d0022a4           0xb8         184   
+.text.system_set_rtc_ti 0x9d00235c           0xb0         176   
+.text.initFlashBuffer   0x9d00240c           0xac         172   
+.text.ControlPortInit   0x9d0024b8           0xa8         168   
+.text.DRV_I2C_Initializ 0x9d002560           0xa0         160   
+.text.is_valid_bcd      0x9d002600           0x9c         156   
+.text.Delay_ns          0x9d00269c           0x98         152   
+.text.SYS_PORTS_Initial 0x9d002734           0x90         144   
+.text.WDTtimer2Init     0x9d0027c4           0x90         144   
+.text.compare_string    0x9d002854           0x8c         140   
+.text.DRV_I2C_WaitForSt 0x9d0028e0           0x88         136   
+.text.DRV_I2C_WaitForSt 0x9d002968           0x88         136   
+.text.RTCBCD2DateTime   0x9d0029f0           0x80         128   
+.text.DateTime2RTCBCD   0x9d002a70           0x80         128   
+.text.DRV_I2C_WaitForBy 0x9d002af0           0x7c         124   
+.text.DRV_I2C_MasterSta 0x9d002b6c           0x78         120   
+.text.initPLC           0x9d002be4           0x6c         108   
+.text.DRV_I2C_ByteWrite 0x9d002c50           0x6c         108   
+.text.DRV_I2C_WaitForAC 0x9d002cbc           0x60          96   
+.text._DRV_I2C_QueuePop 0x9d002d1c           0x58          88   
+.text.SYS_CLK_Initializ 0x9d002d74           0x58          88   
+.text.SYS_DEVCON_System 0x9d002dcc           0x58          88   
+.text.main_entry        0x9d002e24           0x54          84   
+.text.DRV_I2C_WaitForRe 0x9d002e78           0x50          80   
+.text.SYS_DEVCON_System 0x9d002ec8           0x48          72   
+.text._bootstrap_except 0x9d002f10           0x48          72   
+.vector_default         0x9d002f58           0x48          72   
+.text.DRV_I2C_MasterSto 0x9d002fa0           0x44          68   
+.text                   0x9d002fe4           0x44          68  App's exec code 
+.text._general_exceptio 0x9d003028           0x40          64   
+.text.DRV_I2C_SetUpByte 0x9d003068           0x40          64   
+.text.DRV_I2C_Errata32M 0x9d0030a8           0x3c          60   
+.text._DRV_I2C_Advance_ 0x9d0030e4           0x38          56   
+.text.mem_cpy           0x9d00311c           0x38          56   
+.text.byte2BCD          0x9d003154           0x38          56   
+.text.APP_Initialize    0x9d00318c           0x30          48   
+.text.initFlashInfo     0x9d0031bc           0x30          48   
+.text.DRV_I2C_MasterACK 0x9d0031ec           0x30          48   
+.text.DRV_I2C_MasterNAC 0x9d00321c           0x30          48   
+.text.DRV_I2C_MasterBus 0x9d00324c           0x2c          44   
+.text.SYS_Tasks         0x9d003278           0x28          40   
+.text.SetPortEDirection 0x9d0032a0           0x28          40   
+.text.SetPortEDirection 0x9d0032c8           0x28          40   
+.text.BCD2byte          0x9d0032f0           0x24          36   
+.text.main              0x9d003314           0x20          32   
+.text.drv_I2C_init      0x9d003334           0x1c          28   
+.text.SYS_DEVCON_JTAGDi 0x9d003350           0x1c          28   
+.text.IsQueueEmpty_0    0x9d00336c           0x18          24   
+.text.SYS_INT_Initializ 0x9d003384           0x18          24   
+.text                   0x9d00339c           0x18          24  App's exec code 
+.text.DRV_I2C_WriteByte 0x9d0033b4           0x14          20   
+.text.SYS_DEVCON_Initia 0x9d0033c8           0x14          20   
+.text.DRV_I2C_ByteRead  0x9d0033dc           0x10          16   
+.text.SYS_CLK_SystemFre 0x9d0033ec            0xc          12   
+.text.SYS_CLK_Periphera 0x9d0033f8            0xc          12   
+.text.SYS_DEVCON_Tasks  0x9d003404            0x8           8   
+.text._on_reset         0x9d00340c            0x8           8   
+.text._on_bootstrap     0x9d003414            0x8           8   
+.rodata                 0x9d00341c            0x4           4  Read-only const 
+      Total kseg0_program_mem used  :      0x3420       13344  10.2% of 0x20000
+
+kseg0 Boot-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+         Total kseg0_boot_mem used  :           0           0  <1% of 0x970
+
+Exception-Memory Usage 
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+.app_excpt              0x9fc01180           0x10          16  General-Exception 
+.vector_0               0x9fc01200            0x8           8  Interrupt Vector 0 
+.vector_1               0x9fc01220            0x8           8  Interrupt Vector 1 
+.vector_2               0x9fc01240            0x8           8  Interrupt Vector 2 
+.vector_3               0x9fc01260            0x8           8  Interrupt Vector 3 
+.vector_4               0x9fc01280            0x8           8  Interrupt Vector 4 
+.vector_5               0x9fc012a0            0x8           8  Interrupt Vector 5 
+.vector_6               0x9fc012c0            0x8           8  Interrupt Vector 6 
+.vector_7               0x9fc012e0            0x8           8  Interrupt Vector 7 
+.vector_8               0x9fc01300            0x8           8  Interrupt Vector 8 
+.vector_9               0x9fc01320            0x8           8  Interrupt Vector 9 
+.vector_10              0x9fc01340            0x8           8  Interrupt Vector 10 
+.vector_11              0x9fc01360            0x8           8  Interrupt Vector 11 
+.vector_12              0x9fc01380            0x8           8  Interrupt Vector 12 
+.vector_13              0x9fc013a0            0x8           8  Interrupt Vector 13 
+.vector_14              0x9fc013c0            0x8           8  Interrupt Vector 14 
+.vector_15              0x9fc013e0            0x8           8  Interrupt Vector 15 
+.vector_16              0x9fc01400            0x8           8  Interrupt Vector 16 
+.vector_17              0x9fc01420            0x8           8  Interrupt Vector 17 
+.vector_18              0x9fc01440            0x8           8  Interrupt Vector 18 
+.vector_19              0x9fc01460            0x8           8  Interrupt Vector 19 
+.vector_20              0x9fc01480            0x8           8  Interrupt Vector 20 
+.vector_21              0x9fc014a0            0x8           8  Interrupt Vector 21 
+.vector_22              0x9fc014c0            0x8           8  Interrupt Vector 22 
+.vector_23              0x9fc014e0            0x8           8  Interrupt Vector 23 
+.vector_24              0x9fc01500            0x8           8  Interrupt Vector 24 
+.vector_25              0x9fc01520            0x8           8  Interrupt Vector 25 
+.vector_26              0x9fc01540            0x8           8  Interrupt Vector 26 
+.vector_27              0x9fc01560            0x8           8  Interrupt Vector 27 
+.vector_28              0x9fc01580            0x8           8  Interrupt Vector 28 
+.vector_29              0x9fc015a0            0x8           8  Interrupt Vector 29 
+.vector_30              0x9fc015c0            0x8           8  Interrupt Vector 30 
+.vector_31              0x9fc015e0            0x8           8  Interrupt Vector 31 
+.vector_32              0x9fc01600            0x8           8  Interrupt Vector 32 
+.vector_33              0x9fc01620            0x8           8  Interrupt Vector 33 
+.vector_34              0x9fc01640            0x8           8  Interrupt Vector 34 
+.vector_35              0x9fc01660            0x8           8  Interrupt Vector 35 
+.vector_36              0x9fc01680            0x8           8  Interrupt Vector 36 
+.vector_37              0x9fc016a0            0x8           8  Interrupt Vector 37 
+.vector_38              0x9fc016c0            0x8           8  Interrupt Vector 38 
+.vector_39              0x9fc016e0            0x8           8  Interrupt Vector 39 
+.vector_40              0x9fc01700            0x8           8  Interrupt Vector 40 
+.vector_41              0x9fc01720            0x8           8  Interrupt Vector 41 
+.vector_42              0x9fc01740            0x8           8  Interrupt Vector 42 
+.vector_43              0x9fc01760            0x8           8  Interrupt Vector 43 
+.vector_44              0x9fc01780            0x8           8  Interrupt Vector 44 
+.vector_45              0x9fc017a0            0x8           8  Interrupt Vector 45 
+.vector_46              0x9fc017c0            0x8           8  Interrupt Vector 46 
+.vector_47              0x9fc017e0            0x8           8  Interrupt Vector 47 
+.vector_48              0x9fc01800            0x8           8  Interrupt Vector 48 
+.vector_49              0x9fc01820            0x8           8  Interrupt Vector 49 
+.vector_50              0x9fc01840            0x8           8  Interrupt Vector 50 
+.vector_51              0x9fc01860            0x8           8  Interrupt Vector 51 
+          Total exception_mem used  :       0x1b0         432  10.5% of 0x1000
+
+kseg1 Boot-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+.reset                  0xbfc00000          0x208         520  Reset handler 
+.bev_excpt              0xbfc00380           0x10          16  BEV-Exception 
+         Total kseg1_boot_mem used  :       0x218         536  45.9% of 0x490
+        --------------------------------------------------------------------------
+         Total Program Memory used  :      0x37e8       14312  10.3% of 0x21e00
+        --------------------------------------------------------------------------
+
+
+kseg1 Data-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+.sdata                  0xa0000000            0x8           8  Small init data 
+.sbss                   0xa0000008           0x60          96  Small uninit data 
+.bss                    0xa0000068         0x1c48        7240  Uninitialized data 
+.bss                    0xa0001cb0          0x134         308  Uninitialized data 
+         Total kseg1_data_mem used  :      0x1de4        7652  23.4% of 0x8000
+        --------------------------------------------------------------------------
+            Total Data Memory used  :      0x1de4        7652  23.4% of 0x8000
+        --------------------------------------------------------------------------
+
+
+Dynamic Data-Memory Reservation
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+heap                    0xa0001de8              0           0  Reserved for heap 
+stack                   0xa0001e00         0x61f0       25072  Reserved for stack 
+
+        --------------------------------------------------------------------------
+
+Discarded input sections
+
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\debug-exception-return.o
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\debug-exception-return.o
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\debug-exception-return.o
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\debug-exception-return.o
+ .text          0x00000000        0x0 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .data          0x00000000        0x0 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .text.QueueInitialize_0
+                0x00000000       0x10 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .text._DRV_I2C_QueueSlotGet_0
+                0x00000000       0xb0 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .text.DRV_I2C0_Initialize
+                0x00000000       0xec build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .text.DRV_I2C0_DeInitialize
+                0x00000000       0x18 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .text.DRV_I2C0_Receive
+                0x00000000      0x110 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .text.DRV_I2C0_Transmit
+                0x00000000      0x10c build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .text.DRV_I2C0_TransmitForced
+                0x00000000      0x114 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .text.DRV_I2C0_TransmitThenReceive
+                0x00000000      0x130 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .text.DRV_I2C0_BytesTransferred
+                0x00000000        0x8 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .text.DRV_I2C0_BufferEventHandlerSet
+                0x00000000        0xc build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .text.DRV_I2C0_TransferStatusGet
+                0x00000000        0x8 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .text          0x00000000        0x0 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .data          0x00000000        0x0 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .bss           0x00000000        0x0 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .text.DRV_I2C_Open
+                0x00000000       0x10 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .text.DRV_I2C_Close
+                0x00000000       0x28 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .text.DRV_I2C_Transmit
+                0x00000000       0x3c build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .text.DRV_I2C_TransmitForced
+                0x00000000       0x44 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .text.DRV_I2C_Receive
+                0x00000000       0x3c build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .text.DRV_I2C_TransmitThenReceive
+                0x00000000       0x4c build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .text.DRV_I2C_TransferStatusGet
+                0x00000000       0x30 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .text.DRV_I2C_BytesTransferred
+                0x00000000       0x30 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .text.DRV_I2C_BufferEventHandlerSet
+                0x00000000       0x28 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .text          0x00000000        0x0 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .data          0x00000000        0x0 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_Initialize
+                0x00000000       0x74 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_Start
+                0x00000000       0x3c build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_Stop
+                0x00000000       0x40 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_ClientStatus
+                0x00000000       0x14 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_CounterValueSet
+                0x00000000       0x14 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_CounterValueGet
+                0x00000000       0x10 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_CounterClear
+                0x00000000       0x10 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_CounterFrequencyGet
+                0x00000000       0x4c build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_PrescalerGet
+                0x00000000       0xa8 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_PeriodValueSet
+                0x00000000       0x14 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_PeriodValueGet
+                0x00000000       0x10 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_StopInIdleDisable
+                0x00000000       0x18 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_StopInIdleEnable
+                0x00000000       0x18 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text.DRV_TMR0_ClockSet
+                0x00000000       0xd4 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .text          0x00000000        0x0 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .data          0x00000000        0x0 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_Open
+                0x00000000        0x8 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_Close
+                0x00000000       0x28 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_ClientStatus
+                0x00000000       0x30 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_CounterValueSet
+                0x00000000       0x28 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_CounterValueGet
+                0x00000000       0x30 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_CounterClear
+                0x00000000       0x28 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_AlarmRegister
+                0x00000000        0x8 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_AlarmDisable
+                0x00000000        0x8 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_AlarmEnable
+                0x00000000        0x8 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_AlarmPeriodSet
+                0x00000000        0x8 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_AlarmPeriodGet
+                0x00000000        0x8 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_AlarmDeregister
+                0x00000000        0x8 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_Start
+                0x00000000       0x30 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_Stop
+                0x00000000       0x28 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_AlarmHasElapsed
+                0x00000000        0x8 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_OperationModeGet
+                0x00000000        0x8 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_ClockSet
+                0x00000000       0x30 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_PrescalerGet
+                0x00000000       0x30 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_GateModeSet
+                0x00000000        0x8 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_GateModeClear
+                0x00000000        0x8 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_CounterFrequencyGet
+                0x00000000       0x30 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text.DRV_TMR_DividerRangeGet
+                0x00000000       0x30 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .text          0x00000000        0x0 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .data          0x00000000        0x0 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .bss           0x00000000        0x0 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .text.DRV_USART_Initialize
+                0x00000000       0x34 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .text.DRV_USART_Deinitialize
+                0x00000000       0x28 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .text.DRV_USART_Status
+                0x00000000       0x30 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .text.DRV_USART_TasksTransmit
+                0x00000000       0x28 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .text.DRV_USART_TasksReceive
+                0x00000000       0x28 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .text.DRV_USART_TasksError
+                0x00000000       0x28 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .text.DRV_USART_Open
+                0x00000000       0x34 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .text.DRV_USART_Close
+                0x00000000       0x2c build/default/production/_ext/327000265/drv_usart_mapping.o
+ .text.DRV_USART_ClientStatus
+                0x00000000       0x34 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .text.DRV_USART_TransferStatus
+                0x00000000       0x34 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .text.DRV_USART_BaudSet
+                0x00000000       0x34 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .text.DRV_USART_LineControlSet
+                0x00000000       0x34 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .text          0x00000000        0x0 build/default/production/_ext/327000265/drv_usart_static.o
+ .data          0x00000000        0x0 build/default/production/_ext/327000265/drv_usart_static.o
+ .bss           0x00000000        0x0 build/default/production/_ext/327000265/drv_usart_static.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/327000265/drv_usart_static.o
+ .text.DRV_USART0_Initialize
+                0x00000000      0x15c build/default/production/_ext/327000265/drv_usart_static.o
+ .text.DRV_USART0_Deinitialize
+                0x00000000       0x3c build/default/production/_ext/327000265/drv_usart_static.o
+ .text.DRV_USART0_Status
+                0x00000000        0x8 build/default/production/_ext/327000265/drv_usart_static.o
+ .text.DRV_USART0_TasksTransmit
+                0x00000000       0x2c build/default/production/_ext/327000265/drv_usart_static.o
+ .text.DRV_USART0_TasksReceive
+                0x00000000       0x2c build/default/production/_ext/327000265/drv_usart_static.o
+ .text.DRV_USART0_TasksError
+                0x00000000       0x50 build/default/production/_ext/327000265/drv_usart_static.o
+ .text.DRV_USART0_Open
+                0x00000000        0x8 build/default/production/_ext/327000265/drv_usart_static.o
+ .text.DRV_USART0_Close
+                0x00000000        0x8 build/default/production/_ext/327000265/drv_usart_static.o
+ .text.DRV_USART0_ClientStatus
+                0x00000000        0x8 build/default/production/_ext/327000265/drv_usart_static.o
+ .text.DRV_USART0_TransferStatus
+                0x00000000       0x48 build/default/production/_ext/327000265/drv_usart_static.o
+ .text.DRV_USART0_BaudSet
+                0x00000000       0xbc build/default/production/_ext/327000265/drv_usart_static.o
+ .text.DRV_USART0_LineControlSet
+                0x00000000       0x54 build/default/production/_ext/327000265/drv_usart_static.o
+ .text          0x00000000        0x0 build/default/production/_ext/639803181/sys_clk_static.o
+ .data          0x00000000        0x0 build/default/production/_ext/639803181/sys_clk_static.o
+ .bss           0x00000000        0x0 build/default/production/_ext/639803181/sys_clk_static.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/639803181/sys_clk_static.o
+ .text.SYS_CLK_ReferenceClockFrequencyGet
+                0x00000000        0x8 build/default/production/_ext/639803181/sys_clk_static.o
+ .text.SYS_CLK_SecondaryOscillatorEnable
+                0x00000000       0x4c build/default/production/_ext/639803181/sys_clk_static.o
+ .text.SYS_CLK_SecondaryOscillatorDisable
+                0x00000000       0x4c build/default/production/_ext/639803181/sys_clk_static.o
+ .text.SYS_CLK_SecondaryOscillatorIsEnabled
+                0x00000000       0x10 build/default/production/_ext/639803181/sys_clk_static.o
+ .text          0x00000000        0x0 build/default/production/_ext/822048611/sys_ports_static.o
+ .data          0x00000000        0x0 build/default/production/_ext/822048611/sys_ports_static.o
+ .bss           0x00000000        0x0 build/default/production/_ext/822048611/sys_ports_static.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_Read
+                0x00000000       0x38 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_Write
+                0x00000000       0x2c build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_Set
+                0x00000000       0x38 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_Clear
+                0x00000000       0x34 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_DirectionSelect
+                0x00000000       0x6c build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_DirectionGet
+                0x00000000       0x38 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_Toggle
+                0x00000000       0x34 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_OpenDrainEnable
+                0x00000000       0x34 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_OpenDrainDisable
+                0x00000000       0x34 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_ChangeNotificationGlobalEnable
+                0x00000000       0x1c build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_ChangeNotificationGlobalDisable
+                0x00000000       0x1c build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_GlobalChangeNotificationDisable
+                0x00000000       0x1c build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_ChangeNotificationEnable
+                0x00000000       0x78 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_ChangeNotificationDisable
+                0x00000000       0x20 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_ChangeNotificationInIdleModeEnable
+                0x00000000       0x1c build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_ChangeNotificationInIdleModeDisable
+                0x00000000       0x1c build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_ChangeNotificationPullUpEnable
+                0x00000000       0x20 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_ChangeNotificationPullUpDisable
+                0x00000000       0x20 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_PinModeSelect
+                0x00000000       0x38 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_PinWrite
+                0x00000000       0x70 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_PinRead
+                0x00000000       0x44 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_PinToggle
+                0x00000000       0x38 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_PinSet
+                0x00000000       0x38 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_PinClear
+                0x00000000       0x38 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_PinDirectionSelect
+                0x00000000       0x78 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_PinOpenDrainEnable
+                0x00000000       0x38 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_PinOpenDrainDisable
+                0x00000000       0x38 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_RemapInput
+                0x00000000        0x8 build/default/production/_ext/822048611/sys_ports_static.o
+ .text.SYS_PORTS_RemapOutput
+                0x00000000        0x8 build/default/production/_ext/822048611/sys_ports_static.o
+ .text          0x00000000        0x0 build/default/production/_ext/1688732426/system_init.o
+ .data          0x00000000        0x0 build/default/production/_ext/1688732426/system_init.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1688732426/system_init.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1688732426/system_init.o
+ .text          0x00000000        0x0 build/default/production/_ext/1688732426/system_interrupt.o
+ .data          0x00000000        0x0 build/default/production/_ext/1688732426/system_interrupt.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1688732426/system_interrupt.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1688732426/system_interrupt.o
+ .text          0x00000000        0x0 build/default/production/_ext/1688732426/system_exceptions.o
+ .data          0x00000000        0x0 build/default/production/_ext/1688732426/system_exceptions.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1688732426/system_exceptions.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1688732426/system_exceptions.o
+ .text          0x00000000        0x0 build/default/production/_ext/1688732426/system_tasks.o
+ .data          0x00000000        0x0 build/default/production/_ext/1688732426/system_tasks.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1688732426/system_tasks.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1688732426/system_tasks.o
+ .text          0x00000000        0x0 build/default/production/_ext/1360937237/app.o
+ .data          0x00000000        0x0 build/default/production/_ext/1360937237/app.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1360937237/app.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/app.o
+ .text          0x00000000        0x0 build/default/production/_ext/1360937237/main.o
+ .data          0x00000000        0x0 build/default/production/_ext/1360937237/main.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1360937237/main.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/main.o
+ .text          0x00000000        0x0 build/default/production/_ext/1360937237/tmr.o
+ .data          0x00000000        0x0 build/default/production/_ext/1360937237/tmr.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1360937237/tmr.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/tmr.o
+ .text.delayN10ms
+                0x00000000       0x24 build/default/production/_ext/1360937237/tmr.o
+ .text          0x00000000        0x0 build/default/production/_ext/1360937237/uart.o
+ .data          0x00000000        0x0 build/default/production/_ext/1360937237/uart.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1360937237/uart.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/uart.o
+ .text.startUart2Recv
+                0x00000000       0x68 build/default/production/_ext/1360937237/uart.o
+ COMMON         0x00000000        0xe build/default/production/_ext/1360937237/uart.o
+ .text          0x00000000        0x0 build/default/production/_ext/1360937237/protocolPLC.o
+ .data          0x00000000       0x78 build/default/production/_ext/1360937237/protocolPLC.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1360937237/protocolPLC.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/protocolPLC.o
+ .text.checkCs  0x00000000       0x7c build/default/production/_ext/1360937237/protocolPLC.o
+ .text.checkAddress
+                0x00000000       0x84 build/default/production/_ext/1360937237/protocolPLC.o
+ .text.checkBufferValidOrInvalid
+                0x00000000       0x84 build/default/production/_ext/1360937237/protocolPLC.o
+ .text.bufferToFrame
+                0x00000000      0x19c build/default/production/_ext/1360937237/protocolPLC.o
+ .text.packedFrame
+                0x00000000      0x1a4 build/default/production/_ext/1360937237/protocolPLC.o
+ .text.frameToBuffer
+                0x00000000      0x144 build/default/production/_ext/1360937237/protocolPLC.o
+ .text.picApplyPLCType
+                0x00000000       0xb8 build/default/production/_ext/1360937237/protocolPLC.o
+ .text.frameParse
+                0x00000000      0x208 build/default/production/_ext/1360937237/protocolPLC.o
+ .rodata        0x00000000        0xc build/default/production/_ext/1360937237/protocolPLC.o
+ .text.picApplyFrame
+                0x00000000      0x238 build/default/production/_ext/1360937237/protocolPLC.o
+ .text.plcService
+                0x00000000      0xa5c build/default/production/_ext/1360937237/protocolPLC.o
+ .text          0x00000000        0x0 build/default/production/_ext/1360937237/baseFun.o
+ .data          0x00000000        0x0 build/default/production/_ext/1360937237/baseFun.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1360937237/baseFun.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/baseFun.o
+ .text.bufferClear
+                0x00000000       0x20 build/default/production/_ext/1360937237/baseFun.o
+ .text.num2BCD  0x00000000       0x30 build/default/production/_ext/1360937237/baseFun.o
+ .text.DateTime2645BCD
+                0x00000000       0x74 build/default/production/_ext/1360937237/baseFun.o
+ .text          0x00000000        0x0 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .data          0x00000000        0x0 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.nanddrv_send_addr
+                0x00000000       0x68 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.WRITE_DATA8
+                0x00000000      0x2c0 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.WriteColumnAddress
+                0x00000000       0x64 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.WriteRowAddress
+                0x00000000       0x58 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.ReadData
+                0x00000000       0x80 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.WriteData
+                0x00000000       0x4c build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.NandFlashRaw_Status
+                0x00000000       0x50 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.WaitReady
+                0x00000000       0x58 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.NandFlashWriteReadStartAddress
+                0x00000000       0x8c build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.NandFlashWriteReadOffsetAddress
+                0x00000000       0x70 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.EraseBlock
+                0x00000000      0x29c build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.NandFlashReadDemo
+                0x00000000      0x15c build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.NandFlashRaw_WritePage
+                0x00000000      0x2b4 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.NandFlashRest
+                0x00000000       0x38 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.nanddrv_read_tr
+                0x00000000      0x164 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.nanddrv_write_tr
+                0x00000000      0x318 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text.nanddrv_erase
+                0x00000000      0x23c build/default/production/_ext/1360937237/nandFlashDrv.o
+ .text          0x00000000        0x0 build/default/production/_ext/1360937237/file.o
+ .data          0x00000000        0x0 build/default/production/_ext/1360937237/file.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1360937237/file.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/file.o
+ .text.allBytes0xFFCheck
+                0x00000000      0x128 build/default/production/_ext/1360937237/file.o
+ .text.perBadBlockCheck
+                0x00000000       0xfc build/default/production/_ext/1360937237/file.o
+ .text.badBlockCheck
+                0x00000000       0x68 build/default/production/_ext/1360937237/file.o
+ .text.nand_calculate_ecc
+                0x00000000      0x110 build/default/production/_ext/1360937237/file.o
+ .text.nand_correct_data
+                0x00000000      0x1b8 build/default/production/_ext/1360937237/file.o
+ .text.nand2KEccCalculate
+                0x00000000       0x94 build/default/production/_ext/1360937237/file.o
+ .text.nand2KEccCorrect
+                0x00000000       0xb4 build/default/production/_ext/1360937237/file.o
+ .text.fileWriteAllPageEcc
+                0x00000000       0x58 build/default/production/_ext/1360937237/file.o
+ .text.fileReadAllPageEcc
+                0x00000000       0x4c build/default/production/_ext/1360937237/file.o
+ .text.copyBlock
+                0x00000000       0xc0 build/default/production/_ext/1360937237/file.o
+ .text.fileWritePartPageEcc
+                0x00000000      0x16c build/default/production/_ext/1360937237/file.o
+ .text.fileTest
+                0x00000000       0xbc build/default/production/_ext/1360937237/file.o
+ .rodata        0x00000000      0x100 build/default/production/_ext/1360937237/file.o
+ .text          0x00000000        0x0 build/default/production/_ext/1360937237/drv_i2c.o
+ .data          0x00000000        0x0 build/default/production/_ext/1360937237/drv_i2c.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1360937237/drv_i2c.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/drv_i2c.o
+ .text.DRV_I2C_DeInitialize
+                0x00000000       0x18 build/default/production/_ext/1360937237/drv_i2c.o
+ .text.DRV_I2C_BaudRateSet
+                0x00000000       0x88 build/default/production/_ext/1360937237/drv_i2c.o
+ .text.DRV_I2C_MasterRestart
+                0x00000000       0x64 build/default/production/_ext/1360937237/drv_i2c.o
+ .text          0x00000000        0x0 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .data          0x00000000        0x0 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .text.drv_R8025T_init
+                0x00000000      0x1f8 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .text          0x00000000        0x0 build/default/production/_ext/912498863/sys_devcon.o
+ .data          0x00000000        0x0 build/default/production/_ext/912498863/sys_devcon.o
+ .bss           0x00000000        0x0 build/default/production/_ext/912498863/sys_devcon.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/912498863/sys_devcon.o
+ .text.SYS_DEVCON_Reinitialize
+                0x00000000       0x10 build/default/production/_ext/912498863/sys_devcon.o
+ .text.SYS_DEVCON_Deinitialize
+                0x00000000        0x8 build/default/production/_ext/912498863/sys_devcon.o
+ .text.SYS_DEVCON_Status
+                0x00000000        0x8 build/default/production/_ext/912498863/sys_devcon.o
+ .text.SYS_DEVCON_JTAGEnable
+                0x00000000       0x18 build/default/production/_ext/912498863/sys_devcon.o
+ .text.SYS_DEVCON_TraceEnable
+                0x00000000       0x18 build/default/production/_ext/912498863/sys_devcon.o
+ .text.SYS_DEVCON_TraceDisable
+                0x00000000       0x1c build/default/production/_ext/912498863/sys_devcon.o
+ .text.SYS_DEVCON_PowerModeEnter
+                0x00000000       0x54 build/default/production/_ext/912498863/sys_devcon.o
+ .text          0x00000000        0x0 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .data          0x00000000        0x0 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .bss           0x00000000        0x0 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .text          0x00000000        0x0 build/default/production/_ext/711155467/sys_int_pic32.o
+ .data          0x00000000        0x0 build/default/production/_ext/711155467/sys_int_pic32.o
+ .bss           0x00000000        0x0 build/default/production/_ext/711155467/sys_int_pic32.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/711155467/sys_int_pic32.o
+ .text.SYS_INT_StatusGetAndDisable
+                0x00000000       0x1c build/default/production/_ext/711155467/sys_int_pic32.o
+ .text.SYS_INT_StatusRestore
+                0x00000000       0x1c build/default/production/_ext/711155467/sys_int_pic32.o
+ .text.SYS_INT_Disable
+                0x00000000       0x20 build/default/production/_ext/711155467/sys_int_pic32.o
+ .text.SYS_INT_SourceDisable
+                0x00000000       0x58 build/default/production/_ext/711155467/sys_int_pic32.o
+ .text.SYS_INT_ExternalInterruptTriggerSet
+                0x00000000       0x34 build/default/production/_ext/711155467/sys_int_pic32.o
+ .text          0x00000000        0x0 build/default/production/_ext/1360937237/osTimer.o
+ .data          0x00000000        0x0 build/default/production/_ext/1360937237/osTimer.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1360937237/osTimer.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/osTimer.o
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o
+ .discard       0x00000000       0xd0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\processor.o
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\processor.o
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\processor.o
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\processor.o
+ .text          0x00000000      0x168 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memcpy.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memcpy.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memcpy.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memcpy.o)
+ .text          0x00000000       0xa8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memset.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memset.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memset.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memset.o)
+ .comment       0x00000000       0x19 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memset.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector0.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector0.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector0.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector0.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector1.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector1.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector1.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector1.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector2.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector2.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector2.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector2.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector3.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector3.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector3.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector3.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector4.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector4.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector4.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector4.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector5.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector5.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector5.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector5.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector6.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector6.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector6.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector6.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector7.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector7.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector7.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector7.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector9.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector9.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector9.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector9.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector10.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector10.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector10.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector10.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector11.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector11.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector11.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector11.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector12.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector12.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector12.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector12.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector13.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector13.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector13.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector13.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector14.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector14.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector14.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector14.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector15.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector15.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector15.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector15.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector16.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector16.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector16.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector16.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector17.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector17.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector17.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector17.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector18.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector18.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector18.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector18.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector19.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector19.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector19.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector19.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector20.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector20.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector20.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector20.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector21.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector21.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector21.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector21.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector22.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector22.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector22.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector22.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector23.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector23.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector23.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector23.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector25.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector25.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector25.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector25.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector26.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector26.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector26.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector26.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector27.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector27.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector27.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector27.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector28.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector28.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector28.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector28.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector29.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector29.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector29.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector29.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector30.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector30.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector30.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector30.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector31.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector31.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector31.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector31.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector33.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector33.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector33.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector33.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector34.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector34.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector34.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector34.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector35.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector35.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector35.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector35.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector36.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector36.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector36.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector36.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector37.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector37.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector37.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector37.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector38.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector38.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector38.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector38.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector39.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector39.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector39.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector39.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector40.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector40.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector40.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector40.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector41.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector41.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector41.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector41.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector42.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector42.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector42.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector42.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector43.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector43.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector43.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector43.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector44.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector44.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector44.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector44.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector45.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector45.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector45.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector45.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector46.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector46.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector46.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector46.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector47.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector47.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector47.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector47.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector48.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector48.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector48.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector48.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector49.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector49.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector49.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector49.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector50.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector50.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector50.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector50.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector51.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector51.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector51.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector51.o)
+ .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+kseg0_program_mem 0x9d000000         0x00020000         xr
+kseg0_boot_mem   0x9fc00490         0x00000970
+exception_mem    0x9fc01000         0x00001000
+kseg1_boot_mem   0xbfc00000         0x00000490
+debug_exec_mem   0xbfc02000         0x00000ff0
+config3          0xbfc02ff0         0x00000004
+config2          0xbfc02ff4         0x00000004
+config1          0xbfc02ff8         0x00000004
+config0          0xbfc02ffc         0x00000004
+kseg1_data_mem   0xa0000000         0x00008000         w !x
+sfrs             0xbf800000         0x00100000
+configsfrs       0xbfc02ff0         0x00000010
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\debug-exception-return.o
+LOAD build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+LOAD build/default/production/_ext/12144542/drv_i2c_mapping.o
+LOAD build/default/production/_ext/1407244131/drv_tmr_static.o
+LOAD build/default/production/_ext/1407244131/drv_tmr_mapping.o
+LOAD build/default/production/_ext/327000265/drv_usart_mapping.o
+LOAD build/default/production/_ext/327000265/drv_usart_static.o
+LOAD build/default/production/_ext/639803181/sys_clk_static.o
+LOAD build/default/production/_ext/822048611/sys_ports_static.o
+LOAD build/default/production/_ext/1688732426/system_init.o
+LOAD build/default/production/_ext/1688732426/system_interrupt.o
+LOAD build/default/production/_ext/1688732426/system_exceptions.o
+LOAD build/default/production/_ext/1688732426/system_tasks.o
+LOAD build/default/production/_ext/1360937237/app.o
+LOAD build/default/production/_ext/1360937237/main.o
+LOAD build/default/production/_ext/1360937237/tmr.o
+LOAD build/default/production/_ext/1360937237/uart.o
+LOAD build/default/production/_ext/1360937237/protocolPLC.o
+LOAD build/default/production/_ext/1360937237/baseFun.o
+LOAD build/default/production/_ext/1360937237/nandFlashDrv.o
+LOAD build/default/production/_ext/1360937237/file.o
+LOAD build/default/production/_ext/1360937237/drv_i2c.o
+LOAD build/default/production/_ext/1360937237/drvR8025I2C.o
+LOAD build/default/production/_ext/912498863/sys_devcon.o
+LOAD build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+LOAD build/default/production/_ext/711155467/sys_int_pic32.o
+LOAD build/default/production/_ext/1360937237/osTimer.o
+LOAD ..\..\..\..\..\..\bin\framework\peripheral\PIC32MX664F128L_peripherals.a
+                0x00000001                __MPLAB_BUILD = 0x1
+                0x00000000                _min_heap_size = 0x0
+                0x00000400                _min_stack_size = 0x400
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
+                0x00000400                PROVIDE (_min_stack_size, 0x400)
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\processor.o
+START GROUP
+LOAD libmchp_peripheral.a
+END GROUP
+START GROUP
+LOAD libmchp_peripheral_32MX664F128L.a
+END GROUP
+                0x00000001                PROVIDE (_vector_spacing, 0x1)
+                0x9fc01000                PROVIDE (_ebase_address, 0x9fc01000)
+                0xbfc00000                _RESET_ADDR = 0xbfc00000
+                0xbfc00380                _BEV_EXCPT_ADDR = 0xbfc00380
+                0xbfc00480                _DBG_EXCPT_ADDR = 0xbfc00480
+                0xbfc02000                _DBG_CODE_ADDR = 0xbfc02000
+                0x00000ff0                _DBG_CODE_SIZE = 0xff0
+                0x9fc01180                _GEN_EXCPT_ADDR = (_ebase_address + 0x180)
+
+.config_BFC02FF0
+                0xbfc02ff0        0x4
+ *(.config_BFC02FF0)
+ .config_BFC02FF0
+                0xbfc02ff0        0x4 build/default/production/_ext/1688732426/system_init.o
+
+.config_BFC02FF4
+                0xbfc02ff4        0x4
+ *(.config_BFC02FF4)
+ .config_BFC02FF4
+                0xbfc02ff4        0x4 build/default/production/_ext/1688732426/system_init.o
+
+.config_BFC02FF8
+                0xbfc02ff8        0x4
+ *(.config_BFC02FF8)
+ .config_BFC02FF8
+                0xbfc02ff8        0x4 build/default/production/_ext/1688732426/system_init.o
+
+.config_BFC02FFC
+                0xbfc02ffc        0x4
+ *(.config_BFC02FFC)
+ .config_BFC02FFC
+                0xbfc02ffc        0x4 build/default/production/_ext/1688732426/system_init.o
+                0xbfc02000                PROVIDE (_DBG_CODE_ADDR, 0xbfc02000)
+                0x00000ff0                PROVIDE (_DBG_CODE_SIZE, 0xff0)
+
+.reset          0xbfc00000      0x208
+ *(.reset)
+ .reset         0xbfc00000        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o
+                0xbfc00000                _reset
+ *(.reset.startup)
+ .reset.startup
+                0xbfc00008      0x200 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o
+
+.bev_excpt      0xbfc00380       0x10
+ *(.bev_handler)
+ .bev_handler   0xbfc00380       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o
+
+.dbg_excpt      0xbfc00480        0x0
+                0xbfc00480                . = (. + DEFINED (_DEBUGGER)?0x8:0x0)
+
+.dbg_code       0xbfc02000        0x0
+                0xbfc02000                . = (. + DEFINED (_DEBUGGER)?_DBG_CODE_SIZE:0x0)
+
+.app_excpt      0x9fc01180       0x10
+ *(.gen_handler)
+ .gen_handler   0x9fc01180       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o
+
+.vector_0       0x9fc01200        0x8
+ *(.vector_0)
+ .vector_0      0x9fc01200        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector0.o)
+                0x9fc01200                __vector_dispatch_0
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_0) <= (_vector_spacing << 0x5))), function at exception vector 0 too large)
+
+.vector_1       0x9fc01220        0x8
+ *(.vector_1)
+ .vector_1      0x9fc01220        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector1.o)
+                0x9fc01220                __vector_dispatch_1
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_1) <= (_vector_spacing << 0x5))), function at exception vector 1 too large)
+
+.vector_2       0x9fc01240        0x8
+ *(.vector_2)
+ .vector_2      0x9fc01240        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector2.o)
+                0x9fc01240                __vector_dispatch_2
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_2) <= (_vector_spacing << 0x5))), function at exception vector 2 too large)
+
+.vector_3       0x9fc01260        0x8
+ *(.vector_3)
+ .vector_3      0x9fc01260        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector3.o)
+                0x9fc01260                __vector_dispatch_3
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_3) <= (_vector_spacing << 0x5))), function at exception vector 3 too large)
+
+.vector_4       0x9fc01280        0x8
+ *(.vector_4)
+ .vector_4      0x9fc01280        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector4.o)
+                0x9fc01280                __vector_dispatch_4
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_4) <= (_vector_spacing << 0x5))), function at exception vector 4 too large)
+
+.vector_5       0x9fc012a0        0x8
+ *(.vector_5)
+ .vector_5      0x9fc012a0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector5.o)
+                0x9fc012a0                __vector_dispatch_5
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_5) <= (_vector_spacing << 0x5))), function at exception vector 5 too large)
+
+.vector_6       0x9fc012c0        0x8
+ *(.vector_6)
+ .vector_6      0x9fc012c0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector6.o)
+                0x9fc012c0                __vector_dispatch_6
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_6) <= (_vector_spacing << 0x5))), function at exception vector 6 too large)
+
+.vector_7       0x9fc012e0        0x8
+ *(.vector_7)
+ .vector_7      0x9fc012e0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector7.o)
+                0x9fc012e0                __vector_dispatch_7
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_7) <= (_vector_spacing << 0x5))), function at exception vector 7 too large)
+
+.vector_8       0x9fc01300        0x8
+ *(.vector_8)
+ .vector_8      0x9fc01300        0x8 build/default/production/_ext/1688732426/system_interrupt.o
+                0x9fc01300                __vector_dispatch_8
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_8) <= (_vector_spacing << 0x5))), function at exception vector 8 too large)
+
+.vector_9       0x9fc01320        0x8
+ *(.vector_9)
+ .vector_9      0x9fc01320        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector9.o)
+                0x9fc01320                __vector_dispatch_9
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_9) <= (_vector_spacing << 0x5))), function at exception vector 9 too large)
+
+.vector_10      0x9fc01340        0x8
+ *(.vector_10)
+ .vector_10     0x9fc01340        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector10.o)
+                0x9fc01340                __vector_dispatch_10
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_10) <= (_vector_spacing << 0x5))), function at exception vector 10 too large)
+
+.vector_11      0x9fc01360        0x8
+ *(.vector_11)
+ .vector_11     0x9fc01360        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector11.o)
+                0x9fc01360                __vector_dispatch_11
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_11) <= (_vector_spacing << 0x5))), function at exception vector 11 too large)
+
+.vector_12      0x9fc01380        0x8
+ *(.vector_12)
+ .vector_12     0x9fc01380        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector12.o)
+                0x9fc01380                __vector_dispatch_12
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_12) <= (_vector_spacing << 0x5))), function at exception vector 12 too large)
+
+.vector_13      0x9fc013a0        0x8
+ *(.vector_13)
+ .vector_13     0x9fc013a0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector13.o)
+                0x9fc013a0                __vector_dispatch_13
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_13) <= (_vector_spacing << 0x5))), function at exception vector 13 too large)
+
+.vector_14      0x9fc013c0        0x8
+ *(.vector_14)
+ .vector_14     0x9fc013c0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector14.o)
+                0x9fc013c0                __vector_dispatch_14
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_14) <= (_vector_spacing << 0x5))), function at exception vector 14 too large)
+
+.vector_15      0x9fc013e0        0x8
+ *(.vector_15)
+ .vector_15     0x9fc013e0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector15.o)
+                0x9fc013e0                __vector_dispatch_15
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_15) <= (_vector_spacing << 0x5))), function at exception vector 15 too large)
+
+.vector_16      0x9fc01400        0x8
+ *(.vector_16)
+ .vector_16     0x9fc01400        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector16.o)
+                0x9fc01400                __vector_dispatch_16
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_16) <= (_vector_spacing << 0x5))), function at exception vector 16 too large)
+
+.vector_17      0x9fc01420        0x8
+ *(.vector_17)
+ .vector_17     0x9fc01420        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector17.o)
+                0x9fc01420                __vector_dispatch_17
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_17) <= (_vector_spacing << 0x5))), function at exception vector 17 too large)
+
+.vector_18      0x9fc01440        0x8
+ *(.vector_18)
+ .vector_18     0x9fc01440        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector18.o)
+                0x9fc01440                __vector_dispatch_18
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_18) <= (_vector_spacing << 0x5))), function at exception vector 18 too large)
+
+.vector_19      0x9fc01460        0x8
+ *(.vector_19)
+ .vector_19     0x9fc01460        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector19.o)
+                0x9fc01460                __vector_dispatch_19
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_19) <= (_vector_spacing << 0x5))), function at exception vector 19 too large)
+
+.vector_20      0x9fc01480        0x8
+ *(.vector_20)
+ .vector_20     0x9fc01480        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector20.o)
+                0x9fc01480                __vector_dispatch_20
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_20) <= (_vector_spacing << 0x5))), function at exception vector 20 too large)
+
+.vector_21      0x9fc014a0        0x8
+ *(.vector_21)
+ .vector_21     0x9fc014a0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector21.o)
+                0x9fc014a0                __vector_dispatch_21
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_21) <= (_vector_spacing << 0x5))), function at exception vector 21 too large)
+
+.vector_22      0x9fc014c0        0x8
+ *(.vector_22)
+ .vector_22     0x9fc014c0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector22.o)
+                0x9fc014c0                __vector_dispatch_22
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_22) <= (_vector_spacing << 0x5))), function at exception vector 22 too large)
+
+.vector_23      0x9fc014e0        0x8
+ *(.vector_23)
+ .vector_23     0x9fc014e0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector23.o)
+                0x9fc014e0                __vector_dispatch_23
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_23) <= (_vector_spacing << 0x5))), function at exception vector 23 too large)
+
+.vector_24      0x9fc01500        0x8
+ *(.vector_24)
+ .vector_24     0x9fc01500        0x8 build/default/production/_ext/1688732426/system_interrupt.o
+                0x9fc01500                __vector_dispatch_24
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_24) <= (_vector_spacing << 0x5))), function at exception vector 24 too large)
+
+.vector_25      0x9fc01520        0x8
+ *(.vector_25)
+ .vector_25     0x9fc01520        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector25.o)
+                0x9fc01520                __vector_dispatch_25
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_25) <= (_vector_spacing << 0x5))), function at exception vector 25 too large)
+
+.vector_26      0x9fc01540        0x8
+ *(.vector_26)
+ .vector_26     0x9fc01540        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector26.o)
+                0x9fc01540                __vector_dispatch_26
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_26) <= (_vector_spacing << 0x5))), function at exception vector 26 too large)
+
+.vector_27      0x9fc01560        0x8
+ *(.vector_27)
+ .vector_27     0x9fc01560        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector27.o)
+                0x9fc01560                __vector_dispatch_27
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_27) <= (_vector_spacing << 0x5))), function at exception vector 27 too large)
+
+.vector_28      0x9fc01580        0x8
+ *(.vector_28)
+ .vector_28     0x9fc01580        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector28.o)
+                0x9fc01580                __vector_dispatch_28
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_28) <= (_vector_spacing << 0x5))), function at exception vector 28 too large)
+
+.vector_29      0x9fc015a0        0x8
+ *(.vector_29)
+ .vector_29     0x9fc015a0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector29.o)
+                0x9fc015a0                __vector_dispatch_29
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_29) <= (_vector_spacing << 0x5))), function at exception vector 29 too large)
+
+.vector_30      0x9fc015c0        0x8
+ *(.vector_30)
+ .vector_30     0x9fc015c0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector30.o)
+                0x9fc015c0                __vector_dispatch_30
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_30) <= (_vector_spacing << 0x5))), function at exception vector 30 too large)
+
+.vector_31      0x9fc015e0        0x8
+ *(.vector_31)
+ .vector_31     0x9fc015e0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector31.o)
+                0x9fc015e0                __vector_dispatch_31
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_31) <= (_vector_spacing << 0x5))), function at exception vector 31 too large)
+
+.vector_32      0x9fc01600        0x8
+ *(.vector_32)
+ .vector_32     0x9fc01600        0x8 build/default/production/_ext/1360937237/uart.o
+                0x9fc01600                __vector_dispatch_32
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_32) <= (_vector_spacing << 0x5))), function at exception vector 32 too large)
+
+.vector_33      0x9fc01620        0x8
+ *(.vector_33)
+ .vector_33     0x9fc01620        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector33.o)
+                0x9fc01620                __vector_dispatch_33
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_33) <= (_vector_spacing << 0x5))), function at exception vector 33 too large)
+
+.vector_34      0x9fc01640        0x8
+ *(.vector_34)
+ .vector_34     0x9fc01640        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector34.o)
+                0x9fc01640                __vector_dispatch_34
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_34) <= (_vector_spacing << 0x5))), function at exception vector 34 too large)
+
+.vector_35      0x9fc01660        0x8
+ *(.vector_35)
+ .vector_35     0x9fc01660        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector35.o)
+                0x9fc01660                __vector_dispatch_35
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_35) <= (_vector_spacing << 0x5))), function at exception vector 35 too large)
+
+.vector_36      0x9fc01680        0x8
+ *(.vector_36)
+ .vector_36     0x9fc01680        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector36.o)
+                0x9fc01680                __vector_dispatch_36
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_36) <= (_vector_spacing << 0x5))), function at exception vector 36 too large)
+
+.vector_37      0x9fc016a0        0x8
+ *(.vector_37)
+ .vector_37     0x9fc016a0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector37.o)
+                0x9fc016a0                __vector_dispatch_37
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_37) <= (_vector_spacing << 0x5))), function at exception vector 37 too large)
+
+.vector_38      0x9fc016c0        0x8
+ *(.vector_38)
+ .vector_38     0x9fc016c0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector38.o)
+                0x9fc016c0                __vector_dispatch_38
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_38) <= (_vector_spacing << 0x5))), function at exception vector 38 too large)
+
+.vector_39      0x9fc016e0        0x8
+ *(.vector_39)
+ .vector_39     0x9fc016e0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector39.o)
+                0x9fc016e0                __vector_dispatch_39
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_39) <= (_vector_spacing << 0x5))), function at exception vector 39 too large)
+
+.vector_40      0x9fc01700        0x8
+ *(.vector_40)
+ .vector_40     0x9fc01700        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector40.o)
+                0x9fc01700                __vector_dispatch_40
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_40) <= (_vector_spacing << 0x5))), function at exception vector 40 too large)
+
+.vector_41      0x9fc01720        0x8
+ *(.vector_41)
+ .vector_41     0x9fc01720        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector41.o)
+                0x9fc01720                __vector_dispatch_41
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_41) <= (_vector_spacing << 0x5))), function at exception vector 41 too large)
+
+.vector_42      0x9fc01740        0x8
+ *(.vector_42)
+ .vector_42     0x9fc01740        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector42.o)
+                0x9fc01740                __vector_dispatch_42
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_42) <= (_vector_spacing << 0x5))), function at exception vector 42 too large)
+
+.vector_43      0x9fc01760        0x8
+ *(.vector_43)
+ .vector_43     0x9fc01760        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector43.o)
+                0x9fc01760                __vector_dispatch_43
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_43) <= (_vector_spacing << 0x5))), function at exception vector 43 too large)
+
+.vector_44      0x9fc01780        0x8
+ *(.vector_44)
+ .vector_44     0x9fc01780        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector44.o)
+                0x9fc01780                __vector_dispatch_44
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_44) <= (_vector_spacing << 0x5))), function at exception vector 44 too large)
+
+.vector_45      0x9fc017a0        0x8
+ *(.vector_45)
+ .vector_45     0x9fc017a0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector45.o)
+                0x9fc017a0                __vector_dispatch_45
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_45) <= (_vector_spacing << 0x5))), function at exception vector 45 too large)
+
+.vector_46      0x9fc017c0        0x8
+ *(.vector_46)
+ .vector_46     0x9fc017c0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector46.o)
+                0x9fc017c0                __vector_dispatch_46
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_46) <= (_vector_spacing << 0x5))), function at exception vector 46 too large)
+
+.vector_47      0x9fc017e0        0x8
+ *(.vector_47)
+ .vector_47     0x9fc017e0        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector47.o)
+                0x9fc017e0                __vector_dispatch_47
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_47) <= (_vector_spacing << 0x5))), function at exception vector 47 too large)
+
+.vector_48      0x9fc01800        0x8
+ *(.vector_48)
+ .vector_48     0x9fc01800        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector48.o)
+                0x9fc01800                __vector_dispatch_48
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_48) <= (_vector_spacing << 0x5))), function at exception vector 48 too large)
+
+.vector_49      0x9fc01820        0x8
+ *(.vector_49)
+ .vector_49     0x9fc01820        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector49.o)
+                0x9fc01820                __vector_dispatch_49
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_49) <= (_vector_spacing << 0x5))), function at exception vector 49 too large)
+
+.vector_50      0x9fc01840        0x8
+ *(.vector_50)
+ .vector_50     0x9fc01840        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector50.o)
+                0x9fc01840                __vector_dispatch_50
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_50) <= (_vector_spacing << 0x5))), function at exception vector 50 too large)
+
+.vector_51      0x9fc01860        0x8
+ *(.vector_51)
+ .vector_51     0x9fc01860        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector51.o)
+                0x9fc01860                __vector_dispatch_51
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_51) <= (_vector_spacing << 0x5))), function at exception vector 51 too large)
+
+.vector_52      0x9fc01880        0x0
+ *(.vector_52)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_52) <= (_vector_spacing << 0x5))), function at exception vector 52 too large)
+
+.vector_53      0x9fc018a0        0x0
+ *(.vector_53)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_53) <= (_vector_spacing << 0x5))), function at exception vector 53 too large)
+
+.vector_54      0x9fc018c0        0x0
+ *(.vector_54)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_54) <= (_vector_spacing << 0x5))), function at exception vector 54 too large)
+
+.vector_55      0x9fc018e0        0x0
+ *(.vector_55)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_55) <= (_vector_spacing << 0x5))), function at exception vector 55 too large)
+
+.vector_56      0x9fc01900        0x0
+ *(.vector_56)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_56) <= (_vector_spacing << 0x5))), function at exception vector 56 too large)
+
+.vector_57      0x9fc01920        0x0
+ *(.vector_57)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_57) <= (_vector_spacing << 0x5))), function at exception vector 57 too large)
+
+.vector_58      0x9fc01940        0x0
+ *(.vector_58)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_58) <= (_vector_spacing << 0x5))), function at exception vector 58 too large)
+
+.vector_59      0x9fc01960        0x0
+ *(.vector_59)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_59) <= (_vector_spacing << 0x5))), function at exception vector 59 too large)
+
+.vector_60      0x9fc01980        0x0
+ *(.vector_60)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_60) <= (_vector_spacing << 0x5))), function at exception vector 60 too large)
+
+.vector_61      0x9fc019a0        0x0
+ *(.vector_61)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_61) <= (_vector_spacing << 0x5))), function at exception vector 61 too large)
+
+.vector_62      0x9fc019c0        0x0
+ *(.vector_62)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_62) <= (_vector_spacing << 0x5))), function at exception vector 62 too large)
+
+.vector_63      0x9fc019e0        0x0
+ *(.vector_63)
+                0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_63) <= (_vector_spacing << 0x5))), function at exception vector 63 too large)
+
+.startup
+ *(.startup)
+
+.text           0x9d000000        0x0
+ *(.stub .gnu.linkonce.t.*)
+ *(.text.*personality*)
+ *(.mips16.fn.*)
+ *(.mips16.call.*)
+ *(.gnu.warning)
+                0x9d000000                . = ALIGN (0x4)
+
+.init           0x9d000000        0x0
+ *crti.o(.init)
+ *crtbegin.o(.init)
+ *(EXCLUDE_FILE(*crtn.o *crtend?.o *crtend.o) .init)
+ *crtend.o(.init)
+ *crtn.o(.init)
+                0x9d000000                . = ALIGN (0x4)
+
+.fini           0x9d000000        0x0
+ *(.fini)
+                0x9d000000                . = ALIGN (0x4)
+
+.preinit_array  0x9d000000        0x0
+                0x9d000000                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x9d000000                PROVIDE (__preinit_array_end, .)
+                0x9d000000                . = ALIGN (0x4)
+
+.init_array     0x9d000000        0x0
+                0x9d000000                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x9d000000                PROVIDE (__init_array_end, .)
+                0x9d000000                . = ALIGN (0x4)
+
+.fini_array     0x9d000000        0x0
+                0x9d000000                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                0x9d000000                PROVIDE (__fini_array_end, .)
+                0x9d000000                . = ALIGN (0x4)
+
+.ctors          0x9d000000        0x0
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x9d000000                . = ALIGN (0x4)
+
+.dtors          0x9d000000        0x0
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x9d000000                . = ALIGN (0x4)
+
+.rodata         0x9d000000        0x0
+ *(.gnu.linkonce.r.*)
+ *(.rodata1)
+                0x9d000000                . = ALIGN (0x4)
+
+.sdata2         0x9fc00490        0x0
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x9fc00490                . = ALIGN (0x4)
+
+.sbss2          0x9fc00490        0x0
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+                0x9fc00490                . = ALIGN (0x4)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+                0x9fc00490                . = ALIGN (0x4)
+
+.eh_frame
+ *(.eh_frame)
+                0x9fc00490                . = ALIGN (0x4)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x9fc00490                . = ALIGN (0x4)
+
+.dbg_data       0xa0000000        0x0
+                0xa0000000                . = (. + DEFINED (_DEBUGGER)?0x200:0x0)
+
+.jcr            0xa0000000        0x0
+ *(.jcr)
+                0xa0000000                . = ALIGN (0x4)
+
+.eh_frame
+ *(.eh_frame)
+                0xa0000000                . = ALIGN (0x4)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0xa0000000                . = ALIGN (0x4)
+
+.persist        0xa0000000        0x0
+                0xa0000000                _persist_begin = .
+ *(.persist .persist.*)
+ *(.pbss .pbss.*)
+                0xa0000000                . = ALIGN (0x4)
+                0xa0000000                _persist_end = .
+
+.data           0xa0000000        0x0
+ *(.gnu.linkonce.d.*)
+ *(.data1)
+                0xa0000000                . = ALIGN (0x4)
+                0xa0000000                . = .
+                0xa0007ff0                _gp = (ALIGN (0x10) + 0x7ff0)
+
+.got            0xa0000000        0x0
+ *(.got.plt)
+ *(.got)
+                0xa0000000                . = ALIGN (0x4)
+
+.sdata          0xa0000000        0x8
+                0xa0000000                _sdata_begin = .
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0xa0000000        0x8 build/default/production/_ext/1360937237/protocolPLC.o
+                0xa0000000                moduleAddress
+                0xa0000008                . = ALIGN (0x4)
+                0xa0000008                _sdata_end = .
+
+.lit8
+ *(.lit8)
+
+.lit4
+ *(.lit4)
+                0xa0000008                . = ALIGN (0x4)
+                0xa0000008                _data_end = .
+                0xa0000008                _bss_begin = .
+
+.sbss           0xa0000008       0x60
+                0xa0000008                _sbss_begin = .
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0xa0000008        0x6 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                0xa0000008                QueueDelta_0
+                0xa000000a                QueueOut_0
+                0xa000000c                QueueIn_0
+ .sbss          0xa000000e        0x1 build/default/production/_ext/1407244131/drv_tmr_static.o
+ *fill*         0xa000000f        0x1 
+ .sbss          0xa0000010        0xc build/default/production/_ext/1688732426/system_exceptions.o
+ .sbss          0xa000001c        0x4 build/default/production/_ext/1360937237/tmr.o
+                0xa000001c                msCount
+ .sbss          0xa0000020        0xa build/default/production/_ext/1360937237/uart.o
+                0xa0000020                uartReceiveState
+                0xa0000021                tranComplete
+                0xa0000022                recvComplete
+                0xa0000024                TranCnt
+                0xa0000026                RecvCnt
+                0xa0000028                shakeHandBufferCnt
+                0xa0000029                shakeHandSuccess
+ *fill*         0xa000002a        0x2 
+ .sbss          0xa000002c        0x8 build/default/production/_ext/1360937237/protocolPLC.o
+                0xa000002c                picApplyLastTime
+                0xa0000030                picApplyState
+                0xa0000031                plcState
+                0xa0000032                recvBufferLens2
+                0xa0000033                sendBufferLens
+ .sbss          0xa0000034        0x1 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0xa0000034                PageReadComplete
+ *(.scommon)
+ *fill*         0xa0000035        0x3 
+ .scommon       0xa0000038       0x10 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                0xa0000038                i2c0ClientObj
+                0xa0000040                i2c0State
+                0xa0000044                lBufferObj0
+ .scommon       0xa0000048        0x0 build/default/production/_ext/327000265/drv_usart_static.o
+                0xa0000048                gDrvUSART0Obj
+ .scommon       0xa0000048        0xd build/default/production/_ext/1688732426/system_init.o
+                0xa0000048                i
+                0xa000004c                nandID
+                0xa0000050                uartCtl
+ .scommon       0xa0000055        0x0 build/default/production/_ext/1688732426/system_interrupt.o
+ *fill*         0xa0000055        0x3 
+ .scommon       0xa0000058        0x4 build/default/production/_ext/1360937237/app.o
+                0xa0000058                appData
+ .scommon       0xa000005c        0x0 build/default/production/_ext/1360937237/tmr.o
+ .scommon       0xa000005c        0x0 build/default/production/_ext/1360937237/uart.o
+ .scommon       0xa000005c        0x0 build/default/production/_ext/1360937237/protocolPLC.o
+ .scommon       0xa000005c        0x0 build/default/production/_ext/1360937237/baseFun.o
+ .scommon       0xa000005c        0x1 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0xa000005c                DataIn
+ .scommon       0xa000005d        0x0 build/default/production/_ext/1360937237/file.o
+ .scommon       0xa000005d        0x0 build/default/production/_ext/1360937237/drvR8025I2C.o
+ *fill*         0xa000005d        0x3 
+ .scommon       0xa0000060        0x8 build/default/production/_ext/912498863/sys_devcon.o
+                0xa0000060                sysDevconObj
+ .scommon       0xa0000068        0x0 build/default/production/_ext/1360937237/osTimer.o
+                0xa0000068                _sbss_end = .
+                0xa0000068                . = ALIGN (0x4)
+
+.bss            0xa0000068     0x1c48
+ *(.dynbss)
+ *(COMMON)
+ COMMON         0xa0000068       0x2c build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                0xa0000068                i2c0Obj
+ COMMON         0xa0000094      0x1e5 build/default/production/_ext/1688732426/system_init.o
+                0xa0000094                plcRecvFrame
+                0xa0000170                Year2Month2Page
+                0xa0000194                sysObj
+                0xa00001a0                plcCtl
+                0xa00001b0                invertDateCtrl
+ *fill*         0xa0000279        0x3 
+ COMMON         0xa000027c       0x80 build/default/production/_ext/1360937237/protocolPLC.o
+                0xa000027c                uartBufferPLCTran
+                0xa0000288                RecvBuffer
+                0xa00002bc                TranBuffer
+                0xa00002f0                uartBufferPLCRecv
+ COMMON         0xa00002fc     0x19a8 build/default/production/_ext/1360937237/file.o
+                0xa00002fc                flashRWTempbufferOOB
+                0xa000033c                flashReadBufferOOB
+                0xa000037c                flashRWTempdate
+                0xa00003ac                nandFlashInfo
+                0xa0000434                flashWriteBuffer
+                0xa0000c34                flashRWTempbuffer
+                0xa0001434                flashWriteBufferOOB
+                0xa0001474                flashRWdate
+                0xa00014a4                flashReadBuffer
+ COMMON         0xa0001ca4        0xa build/default/production/_ext/1360937237/osTimer.o
+                0xa0001ca4                datetime
+                0xa0001cb0                . = ALIGN ((. != 0x0)?0x4:0x1)
+ *fill*         0xa0001cae        0x2 
+                0xa0001cb0                . = ALIGN (0x4)
+                0xa0001cb0                _end = .
+                0xa0001cb0                _bss_end = .
+                0x00008000                _bmxdudba_address = 0x8000
+                0x00008000                _bmxdupba_address = 0x8000
+
+/DISCARD/
+ *(.pdr)
+ *(.rel.dyn)
+ *(.note.GNU-stack)
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+ *(.discard)
+
+.gptab.sdata
+ *(.gptab.data)
+ *(.gptab.sdata)
+
+.gptab.sbss
+ *(.gptab.bss)
+ *(.gptab.sbss)
+
+.mdebug.abi32   0xa0001cb0        0x0
+ *(.mdebug.abi32)
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/327000265/drv_usart_static.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/639803181/sys_clk_static.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/822048611/sys_ports_static.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1688732426/system_init.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1688732426/system_interrupt.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1688732426/system_exceptions.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1688732426/system_tasks.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/app.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/main.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/tmr.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/uart.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/protocolPLC.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/baseFun.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/file.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/drv_i2c.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/912498863/sys_devcon.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/711155467/sys_int_pic32.o
+ .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/osTimer.o
+ .mdebug.abi32  0xa0001cb0        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .mdebug.abi32  0xa0001cb0        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .mdebug.abi32  0xa0001cb0        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .mdebug.abi32  0xa0001cb0        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+
+.mdebug.abiN32
+ *(.mdebug.abiN32)
+
+.mdebug.abi64
+ *(.mdebug.abi64)
+
+.mdebug.abiO64
+ *(.mdebug.abiO64)
+
+.mdebug.eabi32
+ *(.mdebug.eabi32)
+
+.mdebug.eabi64
+ *(.mdebug.eabi64)
+
+.gcc_compiled_long32
+ *(.gcc_compiled_long32)
+
+.gcc_compiled_long64
+ *(.gcc_compiled_long64)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x3c
+ *(.comment)
+ .comment       0x00000000       0x3c build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                                 0x3d (size before relaxing)
+ .comment       0x00000000       0x3d build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1407244131/drv_tmr_static.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .comment       0x00000000       0x3d build/default/production/_ext/327000265/drv_usart_mapping.o
+ .comment       0x00000000       0x3d build/default/production/_ext/327000265/drv_usart_static.o
+ .comment       0x00000000       0x3d build/default/production/_ext/639803181/sys_clk_static.o
+ .comment       0x00000000       0x3d build/default/production/_ext/822048611/sys_ports_static.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1688732426/system_init.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1688732426/system_interrupt.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1688732426/system_exceptions.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1688732426/system_tasks.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1360937237/app.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1360937237/main.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1360937237/tmr.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1360937237/uart.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1360937237/protocolPLC.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1360937237/baseFun.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1360937237/nandFlashDrv.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1360937237/file.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1360937237/drv_i2c.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1360937237/drvR8025I2C.o
+ .comment       0x00000000       0x3d build/default/production/_ext/912498863/sys_devcon.o
+ .comment       0x00000000       0x3d build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .comment       0x00000000       0x3d build/default/production/_ext/711155467/sys_int_pic32.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1360937237/osTimer.o
+ .comment       0x00000000       0x3d d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .comment       0x00000000       0x3d d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .comment       0x00000000       0x3d d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .comment       0x00000000       0x3d d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0xa68
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x90 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .debug_aranges
+                0x00000090       0x60 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .debug_aranges
+                0x000000f0       0x88 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .debug_aranges
+                0x00000178       0xc8 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .debug_aranges
+                0x00000240       0x78 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .debug_aranges
+                0x000002b8       0x78 build/default/production/_ext/327000265/drv_usart_static.o
+ .debug_aranges
+                0x00000330       0x50 build/default/production/_ext/639803181/sys_clk_static.o
+ .debug_aranges
+                0x00000380      0x108 build/default/production/_ext/822048611/sys_ports_static.o
+ .debug_aranges
+                0x00000488       0x20 build/default/production/_ext/1688732426/system_init.o
+ .debug_aranges
+                0x000004a8       0x28 build/default/production/_ext/1688732426/system_interrupt.o
+ .debug_aranges
+                0x000004d0       0x20 build/default/production/_ext/1688732426/system_exceptions.o
+ .debug_aranges
+                0x000004f0       0x20 build/default/production/_ext/1688732426/system_tasks.o
+ .debug_aranges
+                0x00000510       0x28 build/default/production/_ext/1360937237/app.o
+ .debug_aranges
+                0x00000538       0x20 build/default/production/_ext/1360937237/main.o
+ .debug_aranges
+                0x00000558       0x28 build/default/production/_ext/1360937237/tmr.o
+ .debug_aranges
+                0x00000580       0x30 build/default/production/_ext/1360937237/uart.o
+ .debug_aranges
+                0x000005b0       0x70 build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_aranges
+                0x00000620       0x68 build/default/production/_ext/1360937237/baseFun.o
+ .debug_aranges
+                0x00000688       0xe0 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_aranges
+                0x00000768       0x88 build/default/production/_ext/1360937237/file.o
+ .debug_aranges
+                0x000007f0       0xb0 build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_aranges
+                0x000008a0       0x40 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_aranges
+                0x000008e0       0x78 build/default/production/_ext/912498863/sys_devcon.o
+ .debug_aranges
+                0x00000958       0x20 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_aranges
+                0x00000978       0x48 build/default/production/_ext/711155467/sys_int_pic32.o
+ .debug_aranges
+                0x000009c0       0x28 build/default/production/_ext/1360937237/osTimer.o
+ .debug_aranges
+                0x000009e8       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_aranges
+                0x00000a08       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_aranges
+                0x00000a28       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_aranges
+                0x00000a48       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000    0x30208
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x5040 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .debug_info    0x00005040     0x10c5 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .debug_info    0x00006105     0x32e1 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .debug_info    0x000093e6     0x1068 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .debug_info    0x0000a44e     0x1519 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .debug_info    0x0000b967     0x386f build/default/production/_ext/327000265/drv_usart_static.o
+ .debug_info    0x0000f1d6     0x1587 build/default/production/_ext/639803181/sys_clk_static.o
+ .debug_info    0x0001075d     0x3dcf build/default/production/_ext/822048611/sys_ports_static.o
+ .debug_info    0x0001452c     0x2546 build/default/production/_ext/1688732426/system_init.o
+ .debug_info    0x00016a72     0x17c5 build/default/production/_ext/1688732426/system_interrupt.o
+ .debug_info    0x00018237      0xad8 build/default/production/_ext/1688732426/system_exceptions.o
+ .debug_info    0x00018d0f      0x951 build/default/production/_ext/1688732426/system_tasks.o
+ .debug_info    0x00019660     0x140a build/default/production/_ext/1360937237/app.o
+ .debug_info    0x0001aa6a      0x1a3 build/default/production/_ext/1360937237/main.o
+ .debug_info    0x0001ac0d     0x185f build/default/production/_ext/1360937237/tmr.o
+ .debug_info    0x0001c46c     0x2209 build/default/production/_ext/1360937237/uart.o
+ .debug_info    0x0001e675     0x2787 build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_info    0x00020dfc     0x14a5 build/default/production/_ext/1360937237/baseFun.o
+ .debug_info    0x000222a1     0x3899 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_info    0x00025b3a     0x18c8 build/default/production/_ext/1360937237/file.o
+ .debug_info    0x00027402     0x2840 build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_info    0x00029c42     0x1a2d build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_info    0x0002b66f     0x114d build/default/production/_ext/912498863/sys_devcon.o
+ .debug_info    0x0002c7bc      0xd3e build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_info    0x0002d4fa     0x1531 build/default/production/_ext/711155467/sys_int_pic32.o
+ .debug_info    0x0002ea2b     0x1459 build/default/production/_ext/1360937237/osTimer.o
+ .debug_info    0x0002fe84       0xf5 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_info    0x0002ff79       0xcf d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_info    0x00030048       0xd7 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_info    0x0003011f       0xe9 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+
+.debug_abbrev   0x00000000     0x372e
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x357 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .debug_abbrev  0x00000357      0x159 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .debug_abbrev  0x000004b0      0x314 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .debug_abbrev  0x000007c4      0x24a build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .debug_abbrev  0x00000a0e      0x1f4 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .debug_abbrev  0x00000c02      0x377 build/default/production/_ext/327000265/drv_usart_static.o
+ .debug_abbrev  0x00000f79      0x27b build/default/production/_ext/639803181/sys_clk_static.o
+ .debug_abbrev  0x000011f4      0x282 build/default/production/_ext/822048611/sys_ports_static.o
+ .debug_abbrev  0x00001476      0x2f5 build/default/production/_ext/1688732426/system_init.o
+ .debug_abbrev  0x0000176b      0x16b build/default/production/_ext/1688732426/system_interrupt.o
+ .debug_abbrev  0x000018d6       0xa9 build/default/production/_ext/1688732426/system_exceptions.o
+ .debug_abbrev  0x0000197f       0xdb build/default/production/_ext/1688732426/system_tasks.o
+ .debug_abbrev  0x00001a5a      0x17d build/default/production/_ext/1360937237/app.o
+ .debug_abbrev  0x00001bd7       0x93 build/default/production/_ext/1360937237/main.o
+ .debug_abbrev  0x00001c6a      0x160 build/default/production/_ext/1360937237/tmr.o
+ .debug_abbrev  0x00001dca      0x15c build/default/production/_ext/1360937237/uart.o
+ .debug_abbrev  0x00001f26      0x2d4 build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_abbrev  0x000021fa      0x179 build/default/production/_ext/1360937237/baseFun.o
+ .debug_abbrev  0x00002373      0x3d6 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_abbrev  0x00002749      0x2e9 build/default/production/_ext/1360937237/file.o
+ .debug_abbrev  0x00002a32      0x282 build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_abbrev  0x00002cb4      0x26e build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_abbrev  0x00002f22      0x26d build/default/production/_ext/912498863/sys_devcon.o
+ .debug_abbrev  0x0000318f      0x16d build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_abbrev  0x000032fc      0x1d0 build/default/production/_ext/711155467/sys_int_pic32.o
+ .debug_abbrev  0x000034cc      0x1c2 build/default/production/_ext/1360937237/osTimer.o
+ .debug_abbrev  0x0000368e       0x28 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_abbrev  0x000036b6       0x28 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_abbrev  0x000036de       0x28 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_abbrev  0x00003706       0x28 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+
+.debug_line     0x00000000     0x6f75
+ *(.debug_line)
+ .debug_line    0x00000000      0xc5b build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .debug_line    0x00000c5b      0x328 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .debug_line    0x00000f83      0x67b build/default/production/_ext/1407244131/drv_tmr_static.o
+ .debug_line    0x000015fe      0x440 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .debug_line    0x00001a3e      0x351 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .debug_line    0x00001d8f      0x6f4 build/default/production/_ext/327000265/drv_usart_static.o
+ .debug_line    0x00002483      0x3a9 build/default/production/_ext/639803181/sys_clk_static.o
+ .debug_line    0x0000282c      0x750 build/default/production/_ext/822048611/sys_ports_static.o
+ .debug_line    0x00002f7c      0x4d9 build/default/production/_ext/1688732426/system_init.o
+ .debug_line    0x00003455      0x22b build/default/production/_ext/1688732426/system_interrupt.o
+ .debug_line    0x00003680      0x15b build/default/production/_ext/1688732426/system_exceptions.o
+ .debug_line    0x000037db      0x193 build/default/production/_ext/1688732426/system_tasks.o
+ .debug_line    0x0000396e      0x207 build/default/production/_ext/1360937237/app.o
+ .debug_line    0x00003b75       0xb1 build/default/production/_ext/1360937237/main.o
+ .debug_line    0x00003c26      0x1c5 build/default/production/_ext/1360937237/tmr.o
+ .debug_line    0x00003deb      0x215 build/default/production/_ext/1360937237/uart.o
+ .debug_line    0x00004000      0x458 build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_line    0x00004458      0x27c build/default/production/_ext/1360937237/baseFun.o
+ .debug_line    0x000046d4      0x90a build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_line    0x00004fde      0x3a2 build/default/production/_ext/1360937237/file.o
+ .debug_line    0x00005380      0x83a build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_line    0x00005bba      0x2d2 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_line    0x00005e8c      0x541 build/default/production/_ext/912498863/sys_devcon.o
+ .debug_line    0x000063cd      0x3f3 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_line    0x000067c0      0x32a build/default/production/_ext/711155467/sys_int_pic32.o
+ .debug_line    0x00006aea      0x20a build/default/production/_ext/1360937237/osTimer.o
+ .debug_line    0x00006cf4       0xa9 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_line    0x00006d9d       0x96 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_line    0x00006e33       0x9a d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_line    0x00006ecd       0xa8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+
+.debug_frame    0x00000000     0x1778
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x150 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .debug_frame   0x00000150      0x118 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .debug_frame   0x00000268       0xf8 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .debug_frame   0x00000360      0x210 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .debug_frame   0x00000570      0x17c build/default/production/_ext/327000265/drv_usart_mapping.o
+ .debug_frame   0x000006ec       0xe8 build/default/production/_ext/327000265/drv_usart_static.o
+ .debug_frame   0x000007d4       0xa0 build/default/production/_ext/639803181/sys_clk_static.o
+ .debug_frame   0x00000874      0x1f0 build/default/production/_ext/822048611/sys_ports_static.o
+ .debug_frame   0x00000a64       0x28 build/default/production/_ext/1688732426/system_init.o
+ .debug_frame   0x00000a8c       0x80 build/default/production/_ext/1688732426/system_interrupt.o
+ .debug_frame   0x00000b0c       0x28 build/default/production/_ext/1688732426/system_exceptions.o
+ .debug_frame   0x00000b34       0x28 build/default/production/_ext/1688732426/system_tasks.o
+ .debug_frame   0x00000b5c       0x48 build/default/production/_ext/1360937237/app.o
+ .debug_frame   0x00000ba4       0x28 build/default/production/_ext/1360937237/main.o
+ .debug_frame   0x00000bcc       0x30 build/default/production/_ext/1360937237/tmr.o
+ .debug_frame   0x00000bfc       0x54 build/default/production/_ext/1360937237/uart.o
+ .debug_frame   0x00000c50      0x12c build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_frame   0x00000d7c       0xdc build/default/production/_ext/1360937237/baseFun.o
+ .debug_frame   0x00000e58      0x304 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_frame   0x0000115c      0x16c build/default/production/_ext/1360937237/file.o
+ .debug_frame   0x000012c8      0x188 build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_frame   0x00001450       0xac build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_frame   0x000014fc       0xe8 build/default/production/_ext/912498863/sys_devcon.o
+ .debug_frame   0x000015e4       0x28 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_frame   0x0000160c       0x90 build/default/production/_ext/711155467/sys_int_pic32.o
+ .debug_frame   0x0000169c       0x50 build/default/production/_ext/1360937237/osTimer.o
+ .debug_frame   0x000016ec       0x2c d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_frame   0x00001718       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_frame   0x00001738       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_frame   0x00001758       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+
+.debug_str      0x00000000      0x4bf
+ *(.debug_str)
+ .debug_str     0x00000000       0x7e build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .debug_str     0x0000007e       0x3f build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .debug_str     0x000000bd       0x4d build/default/production/_ext/1407244131/drv_tmr_static.o
+ .debug_str     0x0000010a        0x7 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .debug_str     0x00000111       0x23 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .debug_str     0x00000134       0xd6 build/default/production/_ext/327000265/drv_usart_static.o
+ .debug_str     0x0000020a       0x39 build/default/production/_ext/639803181/sys_clk_static.o
+ .debug_str     0x00000243       0x55 build/default/production/_ext/822048611/sys_ports_static.o
+ .debug_str     0x00000298       0x36 build/default/production/_ext/1688732426/system_init.o
+ .debug_str     0x000002ce        0xf build/default/production/_ext/1688732426/system_interrupt.o
+ .debug_str     0x000002dd        0x0 build/default/production/_ext/1688732426/system_exceptions.o
+ .debug_str     0x000002dd        0xa build/default/production/_ext/1688732426/system_tasks.o
+ .debug_str     0x000002e7        0x0 build/default/production/_ext/1360937237/app.o
+ .debug_str     0x000002e7        0x0 build/default/production/_ext/1360937237/main.o
+ .debug_str     0x000002e7        0x0 build/default/production/_ext/1360937237/tmr.o
+ .debug_str     0x000002e7        0xd build/default/production/_ext/1360937237/uart.o
+ .debug_str     0x000002f4       0x80 build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_str     0x00000374        0x7 build/default/production/_ext/1360937237/baseFun.o
+ .debug_str     0x0000037b       0x33 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_str     0x000003ae       0x3a build/default/production/_ext/1360937237/file.o
+ .debug_str     0x000003e8       0x26 build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_str     0x0000040e       0x1f build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_str     0x0000042d       0x16 build/default/production/_ext/912498863/sys_devcon.o
+ .debug_str     0x00000443        0x6 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_str     0x00000449       0x2d build/default/production/_ext/711155467/sys_int_pic32.o
+ .debug_str     0x00000476       0x49 build/default/production/_ext/1360937237/osTimer.o
+ .debug_str     0x000004bf        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_str     0x000004bf        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_str     0x000004bf        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_str     0x000004bf        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+
+.debug_loc      0x00000000     0x8327
+ *(.debug_loc)
+ .debug_loc     0x00000000      0xb5d build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .debug_loc     0x00000b5d      0x617 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .debug_loc     0x00001174      0x305 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .debug_loc     0x00001479      0x2f4 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .debug_loc     0x0000176d      0x42c build/default/production/_ext/327000265/drv_usart_mapping.o
+ .debug_loc     0x00001b99      0x3ae build/default/production/_ext/327000265/drv_usart_static.o
+ .debug_loc     0x00001f47       0x49 build/default/production/_ext/639803181/sys_clk_static.o
+ .debug_loc     0x00001f90      0xecf build/default/production/_ext/822048611/sys_ports_static.o
+ .debug_loc     0x00002e5f       0x21 build/default/production/_ext/1688732426/system_init.o
+ .debug_loc     0x00002e80       0x4b build/default/production/_ext/1360937237/app.o
+ .debug_loc     0x00002ecb       0x13 build/default/production/_ext/1360937237/tmr.o
+ .debug_loc     0x00002ede      0x3cb build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_loc     0x000032a9      0x386 build/default/production/_ext/1360937237/baseFun.o
+ .debug_loc     0x0000362f     0x398a build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_loc     0x00006fb9      0xa9b build/default/production/_ext/1360937237/file.o
+ .debug_loc     0x00007a54      0x258 build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_loc     0x00007cac      0x390 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_loc     0x0000803c       0xf0 build/default/production/_ext/912498863/sys_devcon.o
+ .debug_loc     0x0000812c       0xec build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_loc     0x00008218       0x8d build/default/production/_ext/711155467/sys_int_pic32.o
+ .debug_loc     0x000082a5       0x82 build/default/production/_ext/1360937237/osTimer.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x948
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x80 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .debug_ranges  0x00000080       0x50 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .debug_ranges  0x000000d0       0x90 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .debug_ranges  0x00000160       0xb8 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .debug_ranges  0x00000218       0x68 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .debug_ranges  0x00000280       0x98 build/default/production/_ext/327000265/drv_usart_static.o
+ .debug_ranges  0x00000318       0x40 build/default/production/_ext/639803181/sys_clk_static.o
+ .debug_ranges  0x00000358       0xf8 build/default/production/_ext/822048611/sys_ports_static.o
+ .debug_ranges  0x00000450       0x10 build/default/production/_ext/1688732426/system_init.o
+ .debug_ranges  0x00000460       0x18 build/default/production/_ext/1688732426/system_interrupt.o
+ .debug_ranges  0x00000478       0x10 build/default/production/_ext/1688732426/system_exceptions.o
+ .debug_ranges  0x00000488       0x10 build/default/production/_ext/1688732426/system_tasks.o
+ .debug_ranges  0x00000498       0x18 build/default/production/_ext/1360937237/app.o
+ .debug_ranges  0x000004b0       0x10 build/default/production/_ext/1360937237/main.o
+ .debug_ranges  0x000004c0       0x18 build/default/production/_ext/1360937237/tmr.o
+ .debug_ranges  0x000004d8       0x20 build/default/production/_ext/1360937237/uart.o
+ .debug_ranges  0x000004f8       0x60 build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_ranges  0x00000558       0x58 build/default/production/_ext/1360937237/baseFun.o
+ .debug_ranges  0x000005b0      0x100 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_ranges  0x000006b0       0x78 build/default/production/_ext/1360937237/file.o
+ .debug_ranges  0x00000728       0xa0 build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_ranges  0x000007c8       0x60 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_ranges  0x00000828       0x68 build/default/production/_ext/912498863/sys_devcon.o
+ .debug_ranges  0x00000890       0x10 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_ranges  0x000008a0       0x50 build/default/production/_ext/711155467/sys_int_pic32.o
+ .debug_ranges  0x000008f0       0x18 build/default/production/_ext/1360937237/osTimer.o
+ .debug_ranges  0x00000908       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_ranges  0x00000918       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_ranges  0x00000928       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_ranges  0x00000938       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+
+.gnu.attributes
+                0x00000000       0x10
+ *(.gnu.attributes)
+ .gnu.attributes
+                0x00000000       0x10 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .gnu.attributes
+                0x00000010       0x10 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .gnu.attributes
+                0x00000020       0x10 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .gnu.attributes
+                0x00000030       0x10 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .gnu.attributes
+                0x00000040       0x10 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .gnu.attributes
+                0x00000050       0x10 build/default/production/_ext/327000265/drv_usart_static.o
+ .gnu.attributes
+                0x00000060       0x10 build/default/production/_ext/639803181/sys_clk_static.o
+ .gnu.attributes
+                0x00000070       0x10 build/default/production/_ext/822048611/sys_ports_static.o
+ .gnu.attributes
+                0x00000080       0x10 build/default/production/_ext/1688732426/system_init.o
+ .gnu.attributes
+                0x00000090       0x10 build/default/production/_ext/1688732426/system_interrupt.o
+ .gnu.attributes
+                0x000000a0       0x10 build/default/production/_ext/1688732426/system_exceptions.o
+ .gnu.attributes
+                0x000000b0       0x10 build/default/production/_ext/1688732426/system_tasks.o
+ .gnu.attributes
+                0x000000c0       0x10 build/default/production/_ext/1360937237/app.o
+ .gnu.attributes
+                0x000000d0       0x10 build/default/production/_ext/1360937237/main.o
+ .gnu.attributes
+                0x000000e0       0x10 build/default/production/_ext/1360937237/tmr.o
+ .gnu.attributes
+                0x000000f0       0x10 build/default/production/_ext/1360937237/uart.o
+ .gnu.attributes
+                0x00000100       0x10 build/default/production/_ext/1360937237/protocolPLC.o
+ .gnu.attributes
+                0x00000110       0x10 build/default/production/_ext/1360937237/baseFun.o
+ .gnu.attributes
+                0x00000120       0x10 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .gnu.attributes
+                0x00000130       0x10 build/default/production/_ext/1360937237/file.o
+ .gnu.attributes
+                0x00000140       0x10 build/default/production/_ext/1360937237/drv_i2c.o
+ .gnu.attributes
+                0x00000150       0x10 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .gnu.attributes
+                0x00000160       0x10 build/default/production/_ext/912498863/sys_devcon.o
+ .gnu.attributes
+                0x00000170       0x10 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .gnu.attributes
+                0x00000180       0x10 build/default/production/_ext/711155467/sys_int_pic32.o
+ .gnu.attributes
+                0x00000190       0x10 build/default/production/_ext/1360937237/osTimer.o
+ .gnu.attributes
+                0x000001a0       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .gnu.attributes
+                0x000001b0       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .gnu.attributes
+                0x000001c0       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .gnu.attributes
+                0x000001d0       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a
+START GROUP
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libdebug.a
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libe.a
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libdsp.a
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a
+END GROUP
+LOAD d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a
+OUTPUT(dist/default/production/led.X.production.elf elf32-tradlittlemips)
+LOAD stack
+LOAD data_init
+
+.reginfo        0x00000000       0x18
+ .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o
+
+.stack          0xa0001e00      0x400
+ .stack         0xa0001e00      0x400 stack
+
+.bss            0xa0001cb0      0x134
+ .bss           0xa0001cb0      0x134 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+
+._debug_exception
+                0xbfc00480       0x2c
+ ._debug_exception
+                0xbfc00480       0x2c d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\debug-exception-return.o
+                0xbfc00480                __DbgExecReturn
+
+.text.DRV_I2C0_Tasks
+                0x9d000000      0x7d4
+ .text.DRV_I2C0_Tasks
+                0x9d000000      0x7d4 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                0x9d000000                DRV_I2C0_Tasks
+
+.text.WRITE_COMMAND
+                0x9d0007d4      0x39c
+ .text.WRITE_COMMAND
+                0x9d0007d4      0x39c build/default/production/_ext/1360937237/nandFlashDrv.o
+                0x9d0007d4                WRITE_COMMAND
+
+.text.READ_DATA8
+                0x9d000b70      0x334
+ .text.READ_DATA8
+                0x9d000b70      0x334 build/default/production/_ext/1360937237/nandFlashDrv.o
+
+.text.WRITE_ADDRESS
+                0x9d000ea4      0x2c8
+ .text.WRITE_ADDRESS
+                0x9d000ea4      0x2c8 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0x9d000ea4                WRITE_ADDRESS
+
+.text.drv_R8025T_read
+                0x9d00116c      0x280
+ .text.drv_R8025T_read
+                0x9d00116c      0x280 build/default/production/_ext/1360937237/drvR8025I2C.o
+                0x9d00116c                drv_R8025T_read
+
+.text._IntHandlerDrvUsartInstance0
+                0x9d0013ec      0x254
+ .text._IntHandlerDrvUsartInstance0
+                0x9d0013ec      0x254 build/default/production/_ext/1360937237/uart.o
+                0x9d0013ec                _IntHandlerDrvUsartInstance0
+
+.text.system_get_rtc_time
+                0x9d001640      0x1b0
+ .text.system_get_rtc_time
+                0x9d001640      0x1b0 build/default/production/_ext/1360937237/osTimer.o
+                0x9d001640                system_get_rtc_time
+
+.text.drv_R8025T_write
+                0x9d0017f0      0x1a0
+ .text.drv_R8025T_write
+                0x9d0017f0      0x1a0 build/default/production/_ext/1360937237/drvR8025I2C.o
+                0x9d0017f0                drv_R8025T_write
+
+.text._IntHandlerDrvI2CInstance0
+                0x9d001990      0x130
+ .text._IntHandlerDrvI2CInstance0
+                0x9d001990      0x130 build/default/production/_ext/1688732426/system_interrupt.o
+                0x9d001990                _IntHandlerDrvI2CInstance0
+
+.rodata         0x9d001ac0      0x128
+ .rodata        0x9d001ac0      0x128 build/default/production/_ext/1688732426/system_exceptions.o
+
+.text.SYS_Initialize
+                0x9d001be8       0xfc
+ .text.SYS_Initialize
+                0x9d001be8       0xfc build/default/production/_ext/1688732426/system_init.o
+                0x9d001be8                SYS_Initialize
+
+.text.drv_R8025T_check_read
+                0x9d001ce4       0xe8
+ .text.drv_R8025T_check_read
+                0x9d001ce4       0xe8 build/default/production/_ext/1360937237/drvR8025I2C.o
+                0x9d001ce4                drv_R8025T_check_read
+
+.text.SYS_DEVCON_PerformanceConfig
+                0x9d001dcc       0xdc
+ .text.SYS_DEVCON_PerformanceConfig
+                0x9d001dcc       0xdc build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+                0x9d001dcc                SYS_DEVCON_PerformanceConfig
+
+.text.general_exception
+                0x9d001ea8       0xdc
+ .text.general_exception
+                0x9d001ea8       0xdc d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+                0x9d001ea8                _general_exception_context
+
+.text.IntHandlerDrvTmrInstance0
+                0x9d001f84       0xd4
+ .text.IntHandlerDrvTmrInstance0
+                0x9d001f84       0xd4 build/default/production/_ext/1688732426/system_interrupt.o
+                0x9d001f84                IntHandlerDrvTmrInstance0
+
+.text.uart2Init
+                0x9d002058       0xd4
+ .text.uart2Init
+                0x9d002058       0xd4 build/default/production/_ext/1360937237/uart.o
+                0x9d002058                uart2Init
+
+.dinit          0x9d00212c       0xc0
+ .dinit         0x9d00212c       0xc0 data_init
+
+.text.APP_Tasks
+                0x9d0021ec       0xb8
+ .text.APP_Tasks
+                0x9d0021ec       0xb8 build/default/production/_ext/1360937237/app.o
+                0x9d0021ec                APP_Tasks
+
+.text.NandFlashRaw_ReadId
+                0x9d0022a4       0xb8
+ .text.NandFlashRaw_ReadId
+                0x9d0022a4       0xb8 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0x9d0022a4                NandFlashRaw_ReadId
+
+.text.system_set_rtc_time
+                0x9d00235c       0xb0
+ .text.system_set_rtc_time
+                0x9d00235c       0xb0 build/default/production/_ext/1360937237/osTimer.o
+                0x9d00235c                system_set_rtc_time
+
+.text.initFlashBuffer
+                0x9d00240c       0xac
+ .text.initFlashBuffer
+                0x9d00240c       0xac build/default/production/_ext/1360937237/file.o
+                0x9d00240c                initFlashBuffer
+
+.text.ControlPortInit
+                0x9d0024b8       0xa8
+ .text.ControlPortInit
+                0x9d0024b8       0xa8 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0x9d0024b8                ControlPortInit
+
+.text.DRV_I2C_Initialize
+                0x9d002560       0xa0
+ .text.DRV_I2C_Initialize
+                0x9d002560       0xa0 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d002560                DRV_I2C_Initialize
+
+.text.is_valid_bcd
+                0x9d002600       0x9c
+ .text.is_valid_bcd
+                0x9d002600       0x9c build/default/production/_ext/1360937237/baseFun.o
+                0x9d002600                is_valid_bcd
+
+.text.Delay_ns  0x9d00269c       0x98
+ .text.Delay_ns
+                0x9d00269c       0x98 build/default/production/_ext/1360937237/nandFlashDrv.o
+
+.text.SYS_PORTS_Initialize
+                0x9d002734       0x90
+ .text.SYS_PORTS_Initialize
+                0x9d002734       0x90 build/default/production/_ext/822048611/sys_ports_static.o
+                0x9d002734                SYS_PORTS_Initialize
+
+.text.WDTtimer2Init
+                0x9d0027c4       0x90
+ .text.WDTtimer2Init
+                0x9d0027c4       0x90 build/default/production/_ext/1360937237/tmr.o
+                0x9d0027c4                WDTtimer2Init
+
+.text.compare_string
+                0x9d002854       0x8c
+ .text.compare_string
+                0x9d002854       0x8c build/default/production/_ext/1360937237/baseFun.o
+                0x9d002854                compare_string
+
+.text.DRV_I2C_WaitForStartComplete
+                0x9d0028e0       0x88
+ .text.DRV_I2C_WaitForStartComplete
+                0x9d0028e0       0x88 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d0028e0                DRV_I2C_WaitForStartComplete
+
+.text.DRV_I2C_WaitForStopComplete
+                0x9d002968       0x88
+ .text.DRV_I2C_WaitForStopComplete
+                0x9d002968       0x88 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d002968                DRV_I2C_WaitForStopComplete
+
+.text.RTCBCD2DateTime
+                0x9d0029f0       0x80
+ .text.RTCBCD2DateTime
+                0x9d0029f0       0x80 build/default/production/_ext/1360937237/baseFun.o
+                0x9d0029f0                RTCBCD2DateTime
+
+.text.DateTime2RTCBCD
+                0x9d002a70       0x80
+ .text.DateTime2RTCBCD
+                0x9d002a70       0x80 build/default/production/_ext/1360937237/baseFun.o
+                0x9d002a70                DateTime2RTCBCD
+
+.text.DRV_I2C_WaitForByteWriteToComplete
+                0x9d002af0       0x7c
+ .text.DRV_I2C_WaitForByteWriteToComplete
+                0x9d002af0       0x7c build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d002af0                DRV_I2C_WaitForByteWriteToComplete
+
+.text.DRV_I2C_MasterStart
+                0x9d002b6c       0x78
+ .text.DRV_I2C_MasterStart
+                0x9d002b6c       0x78 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d002b6c                DRV_I2C_MasterStart
+
+.text.initPLC   0x9d002be4       0x6c
+ .text.initPLC  0x9d002be4       0x6c build/default/production/_ext/1360937237/protocolPLC.o
+                0x9d002be4                initPLC
+
+.text.DRV_I2C_ByteWrite
+                0x9d002c50       0x6c
+ .text.DRV_I2C_ByteWrite
+                0x9d002c50       0x6c build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d002c50                DRV_I2C_ByteWrite
+
+.text.DRV_I2C_WaitForACKOrNACKComplete
+                0x9d002cbc       0x60
+ .text.DRV_I2C_WaitForACKOrNACKComplete
+                0x9d002cbc       0x60 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d002cbc                DRV_I2C_WaitForACKOrNACKComplete
+
+.text._DRV_I2C_QueuePop_0
+                0x9d002d1c       0x58
+ .text._DRV_I2C_QueuePop_0
+                0x9d002d1c       0x58 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                0x9d002d1c                _DRV_I2C_QueuePop_0
+
+.text.SYS_CLK_Initialize
+                0x9d002d74       0x58
+ .text.SYS_CLK_Initialize
+                0x9d002d74       0x58 build/default/production/_ext/639803181/sys_clk_static.o
+                0x9d002d74                SYS_CLK_Initialize
+
+.text.SYS_DEVCON_SystemUnlock
+                0x9d002dcc       0x58
+ .text.SYS_DEVCON_SystemUnlock
+                0x9d002dcc       0x58 build/default/production/_ext/912498863/sys_devcon.o
+                0x9d002dcc                SYS_DEVCON_SystemUnlock
+
+.text.main_entry
+                0x9d002e24       0x54
+ .text.main_entry
+                0x9d002e24       0x54 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o
+                0x9d002e58                __crt0_exit
+
+.text.DRV_I2C_WaitForReadByteAvailable
+                0x9d002e78       0x50
+ .text.DRV_I2C_WaitForReadByteAvailable
+                0x9d002e78       0x50 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d002e78                DRV_I2C_WaitForReadByteAvailable
+
+.text.SYS_DEVCON_SystemLock
+                0x9d002ec8       0x48
+ .text.SYS_DEVCON_SystemLock
+                0x9d002ec8       0x48 build/default/production/_ext/912498863/sys_devcon.o
+                0x9d002ec8                SYS_DEVCON_SystemLock
+
+.text._bootstrap_exception_handler
+                0x9d002f10       0x48
+ .text._bootstrap_exception_handler
+                0x9d002f10       0x48 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+                0x9d002f10                _bootstrap_exception_handler
+
+.vector_default
+                0x9d002f58       0x48
+ .vector_default
+                0x9d002f58       0x48 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+                0x9d002f58                _DefaultInterrupt
+
+.text.DRV_I2C_MasterStop
+                0x9d002fa0       0x44
+ .text.DRV_I2C_MasterStop
+                0x9d002fa0       0x44 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d002fa0                DRV_I2C_MasterStop
+
+.text           0x9d002fe4       0x44
+ .text          0x9d002fe4       0x44 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
+                0x9d002fe4                __pic32_software_reset
+
+.text._general_exception_handler
+                0x9d003028       0x40
+ .text._general_exception_handler
+                0x9d003028       0x40 build/default/production/_ext/1688732426/system_exceptions.o
+                0x9d003028                _general_exception_handler
+
+.text.DRV_I2C_SetUpByteRead
+                0x9d003068       0x40
+ .text.DRV_I2C_SetUpByteRead
+                0x9d003068       0x40 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d003068                DRV_I2C_SetUpByteRead
+
+.text.DRV_I2C_Errata32MZ_I2CModuleToggle
+                0x9d0030a8       0x3c
+ .text.DRV_I2C_Errata32MZ_I2CModuleToggle
+                0x9d0030a8       0x3c build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d0030a8                DRV_I2C_Errata32MZ_I2CModuleToggle
+
+.text._DRV_I2C_Advance_Queue_0
+                0x9d0030e4       0x38
+ .text._DRV_I2C_Advance_Queue_0
+                0x9d0030e4       0x38 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                0x9d0030e4                _DRV_I2C_Advance_Queue_0
+
+.text.mem_cpy   0x9d00311c       0x38
+ .text.mem_cpy  0x9d00311c       0x38 build/default/production/_ext/1360937237/baseFun.o
+                0x9d00311c                mem_cpy
+
+.text.byte2BCD  0x9d003154       0x38
+ .text.byte2BCD
+                0x9d003154       0x38 build/default/production/_ext/1360937237/baseFun.o
+                0x9d003154                byte2BCD
+
+.text.APP_Initialize
+                0x9d00318c       0x30
+ .text.APP_Initialize
+                0x9d00318c       0x30 build/default/production/_ext/1360937237/app.o
+                0x9d00318c                APP_Initialize
+
+.text.initFlashInfo
+                0x9d0031bc       0x30
+ .text.initFlashInfo
+                0x9d0031bc       0x30 build/default/production/_ext/1360937237/file.o
+                0x9d0031bc                initFlashInfo
+
+.text.DRV_I2C_MasterACKSend
+                0x9d0031ec       0x30
+ .text.DRV_I2C_MasterACKSend
+                0x9d0031ec       0x30 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d0031ec                DRV_I2C_MasterACKSend
+
+.text.DRV_I2C_MasterNACKSend
+                0x9d00321c       0x30
+ .text.DRV_I2C_MasterNACKSend
+                0x9d00321c       0x30 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d00321c                DRV_I2C_MasterNACKSend
+
+.text.DRV_I2C_MasterBusIdle
+                0x9d00324c       0x2c
+ .text.DRV_I2C_MasterBusIdle
+                0x9d00324c       0x2c build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d00324c                DRV_I2C_MasterBusIdle
+
+.text.SYS_Tasks
+                0x9d003278       0x28
+ .text.SYS_Tasks
+                0x9d003278       0x28 build/default/production/_ext/1688732426/system_tasks.o
+                0x9d003278                SYS_Tasks
+
+.text.SetPortEDirectionOut
+                0x9d0032a0       0x28
+ .text.SetPortEDirectionOut
+                0x9d0032a0       0x28 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0x9d0032a0                SetPortEDirectionOut
+
+.text.SetPortEDirectionIn
+                0x9d0032c8       0x28
+ .text.SetPortEDirectionIn
+                0x9d0032c8       0x28 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0x9d0032c8                SetPortEDirectionIn
+
+.text.BCD2byte  0x9d0032f0       0x24
+ .text.BCD2byte
+                0x9d0032f0       0x24 build/default/production/_ext/1360937237/baseFun.o
+                0x9d0032f0                BCD2byte
+
+.text.main      0x9d003314       0x20
+ .text.main     0x9d003314       0x20 build/default/production/_ext/1360937237/main.o
+                0x9d003314                main
+
+.text.drv_I2C_init
+                0x9d003334       0x1c
+ .text.drv_I2C_init
+                0x9d003334       0x1c build/default/production/_ext/1360937237/drvR8025I2C.o
+                0x9d003334                drv_I2C_init
+
+.text.SYS_DEVCON_JTAGDisable
+                0x9d003350       0x1c
+ .text.SYS_DEVCON_JTAGDisable
+                0x9d003350       0x1c build/default/production/_ext/912498863/sys_devcon.o
+                0x9d003350                SYS_DEVCON_JTAGDisable
+
+.text.IsQueueEmpty_0
+                0x9d00336c       0x18
+ .text.IsQueueEmpty_0
+                0x9d00336c       0x18 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                0x9d00336c                IsQueueEmpty_0
+
+.text.SYS_INT_Initialize
+                0x9d003384       0x18
+ .text.SYS_INT_Initialize
+                0x9d003384       0x18 build/default/production/_ext/711155467/sys_int_pic32.o
+                0x9d003384                SYS_INT_Initialize
+
+.text           0x9d00339c       0x18
+ .text          0x9d00339c       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+                0x9d00339c                _nmi_handler
+
+.text.DRV_I2C_WriteByteAcknowledged
+                0x9d0033b4       0x14
+ .text.DRV_I2C_WriteByteAcknowledged
+                0x9d0033b4       0x14 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d0033b4                DRV_I2C_WriteByteAcknowledged
+
+.text.SYS_DEVCON_Initialize
+                0x9d0033c8       0x14
+ .text.SYS_DEVCON_Initialize
+                0x9d0033c8       0x14 build/default/production/_ext/912498863/sys_devcon.o
+                0x9d0033c8                SYS_DEVCON_Initialize
+
+.text.DRV_I2C_ByteRead
+                0x9d0033dc       0x10
+ .text.DRV_I2C_ByteRead
+                0x9d0033dc       0x10 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d0033dc                DRV_I2C_ByteRead
+
+.text.SYS_CLK_SystemFrequencyGet
+                0x9d0033ec        0xc
+ .text.SYS_CLK_SystemFrequencyGet
+                0x9d0033ec        0xc build/default/production/_ext/639803181/sys_clk_static.o
+                0x9d0033ec                SYS_CLK_SystemFrequencyGet
+
+.text.SYS_CLK_PeripheralFrequencyGet
+                0x9d0033f8        0xc
+ .text.SYS_CLK_PeripheralFrequencyGet
+                0x9d0033f8        0xc build/default/production/_ext/639803181/sys_clk_static.o
+                0x9d0033f8                SYS_CLK_PeripheralFrequencyGet
+
+.text.SYS_DEVCON_Tasks
+                0x9d003404        0x8
+ .text.SYS_DEVCON_Tasks
+                0x9d003404        0x8 build/default/production/_ext/912498863/sys_devcon.o
+                0x9d003404                SYS_DEVCON_Tasks
+
+.text._on_reset
+                0x9d00340c        0x8
+ .text._on_reset
+                0x9d00340c        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+                0x9d00340c                _on_reset
+
+.text._on_bootstrap
+                0x9d003414        0x8
+ .text._on_bootstrap
+                0x9d003414        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+                0x9d003414                _on_bootstrap
+
+.rodata         0x9d00341c        0x4
+ .rodata        0x9d00341c        0x4 build/default/production/_ext/1688732426/system_init.o
+                0x9d00341c                sysDevconInit

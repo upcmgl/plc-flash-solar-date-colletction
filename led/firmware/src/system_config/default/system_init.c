@@ -167,7 +167,7 @@ void SYS_Initialize ( void* data )
     SYS_DEVCON_PerformanceConfig(SYS_CLK_SystemFrequencyGet());
     SYS_DEVCON_JTAGDisable();
     SYS_PORTS_Initialize();
-
+    
     /* Initialize Drivers */
     /*Initialize TMR0 */
    // DRV_TMR0_Initialize();
@@ -176,7 +176,7 @@ void SYS_Initialize ( void* data )
     uart2Init();
     SYS_INT_VectorPrioritySet(INT_VECTOR_UART2, INT_PRIORITY_LEVEL1);
     SYS_INT_VectorSubprioritySet(INT_VECTOR_UART2, INT_SUBPRIORITY_LEVEL0);
-
+    
     /* Initialize System Services */
 
     /*** Interrupt Service Initialization Code ***/
