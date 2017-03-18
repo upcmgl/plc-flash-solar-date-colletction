@@ -137,9 +137,10 @@ void APP_Initialize ( void )
 
 void __attribute__((optimize("O0"))) APP_Tasks ( void )
 {
-    uint8_t addr=0;
-    uint8_t data[16];
-    uint8_t new_time[8]={};
+   uint8_t date[3]={0x01,0x80,0x80};
+   uint8_t alarmCtr=0x48;
+   uint8_t extension =0x40;
+   uint8_t flag = 0x00;
      /* Check the application's current state. */
     switch ( appData.state )
     {
@@ -149,10 +150,14 @@ void __attribute__((optimize("O0"))) APP_Tasks ( void )
         case APP_STATE_INIT:
         {
             bool appInitialized = true;
-          system_set_rtc_time(new_time);
+          system_set_rtc_time(initialTime);
+      
+          setAlarmClockStart(4);
+//          drv_R8025T_write(8,date,3);
+//          drv_R8025T_write(13,&extension,1);
+//          drv_R8025T_write(15,&alarmCtr,1);
             if (appInitialized)
             {
-            
                 appData.state = APP_STATE_SERVICE_TASKS;
             }
             break;
@@ -163,16 +168,13 @@ void __attribute__((optimize("O0"))) APP_Tasks ( void )
             //  U2TXREG='A';
 //            if(!plcCtl.picApplyCompleteLoop)
 //                plcService();
-
+            
            while( (nandID=NandFlashRaw_ReadId())!=NAND_FLASH_ID);
 //
 //           nanddrv_erase(3);
 //          fileTest();
-
-//           _CP0_GET_COUNT();
-//           Nop();
-           system_get_rtc_time();
- //    drv_R8025T_read(addr,data,16);
+  //         drv_R8025T_write(14,&flag,1);
+          system_get_rtc_time();
            Nop();
             
         }

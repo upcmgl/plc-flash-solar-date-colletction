@@ -24,8 +24,6 @@ d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libp
                               d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_1)
 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector2.o)
                               d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_2)
-d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector3.o)
-                              d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_3)
 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector4.o)
                               d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o (__vector_dispatch_4)
 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector5.o)
@@ -133,6 +131,7 @@ gDrvUSART0Obj       0x0               build/default/production/_ext/327000265/dr
 appData             0x4               build/default/production/_ext/1360937237/app.o
 plcRecvFrame        0xda              build/default/production/_ext/1688732426/system_init.o
 Year2Month2Page     0x24              build/default/production/_ext/1688732426/system_init.o
+sysTime             0x6               build/default/production/_ext/1360937237/osTimer.o
 i                   0x4               build/default/production/_ext/1688732426/system_init.o
 nandID              0x4               build/default/production/_ext/1688732426/system_init.o
 datetime            0xa               build/default/production/_ext/1360937237/osTimer.o
@@ -167,78 +166,82 @@ section                    address  length [bytes]      (dec)  Description
 .text.WRITE_ADDRESS     0x9d000ea4          0x2c8         712   
 .text.drv_R8025T_read   0x9d00116c          0x280         640   
 .text._IntHandlerDrvUsa 0x9d0013ec          0x254         596   
-.text.system_get_rtc_ti 0x9d001640          0x1b0         432   
-.text.drv_R8025T_write  0x9d0017f0          0x1a0         416   
-.text._IntHandlerDrvI2C 0x9d001990          0x130         304   
-.rodata                 0x9d001ac0          0x128         296  Read-only const 
-.text.SYS_Initialize    0x9d001be8           0xfc         252   
-.text.drv_R8025T_check_ 0x9d001ce4           0xe8         232   
-.text.SYS_DEVCON_Perfor 0x9d001dcc           0xdc         220   
-.text.general_exception 0x9d001ea8           0xdc         220   
-.text.IntHandlerDrvTmrI 0x9d001f84           0xd4         212   
-.text.uart2Init         0x9d002058           0xd4         212   
-.dinit                  0x9d00212c           0xc0         192   
-.text.APP_Tasks         0x9d0021ec           0xb8         184   
-.text.NandFlashRaw_Read 0x9d0022a4           0xb8         184   
-.text.system_set_rtc_ti 0x9d00235c           0xb0         176   
-.text.initFlashBuffer   0x9d00240c           0xac         172   
-.text.ControlPortInit   0x9d0024b8           0xa8         168   
-.text.DRV_I2C_Initializ 0x9d002560           0xa0         160   
-.text.is_valid_bcd      0x9d002600           0x9c         156   
-.text.Delay_ns          0x9d00269c           0x98         152   
-.text.SYS_PORTS_Initial 0x9d002734           0x90         144   
-.text.WDTtimer2Init     0x9d0027c4           0x90         144   
-.text.compare_string    0x9d002854           0x8c         140   
-.text.DRV_I2C_WaitForSt 0x9d0028e0           0x88         136   
-.text.DRV_I2C_WaitForSt 0x9d002968           0x88         136   
-.text.RTCBCD2DateTime   0x9d0029f0           0x80         128   
-.text.DateTime2RTCBCD   0x9d002a70           0x80         128   
-.text.DRV_I2C_WaitForBy 0x9d002af0           0x7c         124   
-.text.DRV_I2C_MasterSta 0x9d002b6c           0x78         120   
-.text.initPLC           0x9d002be4           0x6c         108   
-.text.DRV_I2C_ByteWrite 0x9d002c50           0x6c         108   
-.text.DRV_I2C_WaitForAC 0x9d002cbc           0x60          96   
-.text._DRV_I2C_QueuePop 0x9d002d1c           0x58          88   
-.text.SYS_CLK_Initializ 0x9d002d74           0x58          88   
-.text.SYS_DEVCON_System 0x9d002dcc           0x58          88   
-.text.main_entry        0x9d002e24           0x54          84   
-.text.DRV_I2C_WaitForRe 0x9d002e78           0x50          80   
-.text.SYS_DEVCON_System 0x9d002ec8           0x48          72   
-.text._bootstrap_except 0x9d002f10           0x48          72   
-.vector_default         0x9d002f58           0x48          72   
-.text.DRV_I2C_MasterSto 0x9d002fa0           0x44          68   
-.text                   0x9d002fe4           0x44          68  App's exec code 
-.text._general_exceptio 0x9d003028           0x40          64   
-.text.DRV_I2C_SetUpByte 0x9d003068           0x40          64   
-.text.DRV_I2C_Errata32M 0x9d0030a8           0x3c          60   
-.text._DRV_I2C_Advance_ 0x9d0030e4           0x38          56   
-.text.mem_cpy           0x9d00311c           0x38          56   
-.text.byte2BCD          0x9d003154           0x38          56   
-.text.APP_Initialize    0x9d00318c           0x30          48   
-.text.initFlashInfo     0x9d0031bc           0x30          48   
-.text.DRV_I2C_MasterACK 0x9d0031ec           0x30          48   
-.text.DRV_I2C_MasterNAC 0x9d00321c           0x30          48   
-.text.DRV_I2C_MasterBus 0x9d00324c           0x2c          44   
-.text.SYS_Tasks         0x9d003278           0x28          40   
-.text.SetPortEDirection 0x9d0032a0           0x28          40   
-.text.SetPortEDirection 0x9d0032c8           0x28          40   
-.text.BCD2byte          0x9d0032f0           0x24          36   
-.text.main              0x9d003314           0x20          32   
-.text.drv_I2C_init      0x9d003334           0x1c          28   
-.text.SYS_DEVCON_JTAGDi 0x9d003350           0x1c          28   
-.text.IsQueueEmpty_0    0x9d00336c           0x18          24   
-.text.SYS_INT_Initializ 0x9d003384           0x18          24   
-.text                   0x9d00339c           0x18          24  App's exec code 
-.text.DRV_I2C_WriteByte 0x9d0033b4           0x14          20   
-.text.SYS_DEVCON_Initia 0x9d0033c8           0x14          20   
-.text.DRV_I2C_ByteRead  0x9d0033dc           0x10          16   
-.text.SYS_CLK_SystemFre 0x9d0033ec            0xc          12   
-.text.SYS_CLK_Periphera 0x9d0033f8            0xc          12   
-.text.SYS_DEVCON_Tasks  0x9d003404            0x8           8   
-.text._on_reset         0x9d00340c            0x8           8   
-.text._on_bootstrap     0x9d003414            0x8           8   
-.rodata                 0x9d00341c            0x4           4  Read-only const 
-      Total kseg0_program_mem used  :      0x3420       13344  10.2% of 0x20000
+.text._IntHandlerExtern 0x9d001640          0x22c         556   
+.text.system_get_rtc_ti 0x9d00186c          0x1b0         432   
+.text.drv_R8025T_write  0x9d001a1c          0x1a0         416   
+.text.SYS_Initialize    0x9d001bbc          0x14c         332   
+.text._IntHandlerDrvI2C 0x9d001d08          0x130         304   
+.rodata                 0x9d001e38          0x128         296  Read-only const 
+.text.drv_R8025T_check_ 0x9d001f60           0xe8         232   
+.text.APP_Tasks         0x9d002048           0xe0         224   
+.dinit                  0x9d002128           0xe0         224   
+.text.SYS_DEVCON_Perfor 0x9d002208           0xdc         220   
+.text.general_exception 0x9d0022e4           0xdc         220   
+.text.IntHandlerDrvTmrI 0x9d0023c0           0xd4         212   
+.text.uart2Init         0x9d002494           0xd4         212   
+.text.NandFlashRaw_Read 0x9d002568           0xb8         184   
+.text.system_set_rtc_ti 0x9d002620           0xb0         176   
+.text.initFlashBuffer   0x9d0026d0           0xac         172   
+.text.ControlPortInit   0x9d00277c           0xa8         168   
+.text.RTCBCD2DateTime   0x9d002824           0xa4         164   
+.text.DRV_I2C_Initializ 0x9d0028c8           0xa0         160   
+.text.is_valid_bcd      0x9d002968           0x9c         156   
+.text.Delay_ns          0x9d002a04           0x98         152   
+.text.SYS_PORTS_Initial 0x9d002a9c           0x90         144   
+.text.WDTtimer2Init     0x9d002b2c           0x90         144   
+.text.compare_string    0x9d002bbc           0x8c         140   
+.text.DRV_I2C_WaitForSt 0x9d002c48           0x88         136   
+.text.DRV_I2C_WaitForSt 0x9d002cd0           0x88         136   
+.text.DateTime2RTCBCD   0x9d002d58           0x80         128   
+.text.minInterrupt      0x9d002dd8           0x80         128   
+.text.DRV_I2C_WaitForBy 0x9d002e58           0x7c         124   
+.text.DRV_I2C_MasterSta 0x9d002ed4           0x78         120   
+.text.setAlarmClockStar 0x9d002f4c           0x74         116   
+.text.initPLC           0x9d002fc0           0x6c         108   
+.text.DRV_I2C_ByteWrite 0x9d00302c           0x6c         108   
+.text.DRV_I2C_WaitForAC 0x9d003098           0x60          96   
+.text._DRV_I2C_QueuePop 0x9d0030f8           0x58          88   
+.text.SYS_CLK_Initializ 0x9d003150           0x58          88   
+.text.SYS_DEVCON_System 0x9d0031a8           0x58          88   
+.text.main_entry        0x9d003200           0x54          84   
+.text.DRV_I2C_WaitForRe 0x9d003254           0x50          80   
+.text.SYS_DEVCON_System 0x9d0032a4           0x48          72   
+.text._bootstrap_except 0x9d0032ec           0x48          72   
+.vector_default         0x9d003334           0x48          72   
+.text.DRV_I2C_MasterSto 0x9d00337c           0x44          68   
+.text                   0x9d0033c0           0x44          68  App's exec code 
+.text._general_exceptio 0x9d003404           0x40          64   
+.text.DRV_I2C_SetUpByte 0x9d003444           0x40          64   
+.text.BCD2byte          0x9d003484           0x3c          60   
+.text.DRV_I2C_Errata32M 0x9d0034c0           0x3c          60   
+.text._DRV_I2C_Advance_ 0x9d0034fc           0x38          56   
+.text.mem_cpy           0x9d003534           0x38          56   
+.text.byte2BCD          0x9d00356c           0x38          56   
+.text.SYS_INT_ExternalI 0x9d0035a4           0x34          52   
+.text.APP_Initialize    0x9d0035d8           0x30          48   
+.text.initFlashInfo     0x9d003608           0x30          48   
+.text.DRV_I2C_MasterACK 0x9d003638           0x30          48   
+.text.DRV_I2C_MasterNAC 0x9d003668           0x30          48   
+.text.DRV_I2C_MasterBus 0x9d003698           0x2c          44   
+.text.SYS_Tasks         0x9d0036c4           0x28          40   
+.text.SetPortEDirection 0x9d0036ec           0x28          40   
+.text.SetPortEDirection 0x9d003714           0x28          40   
+.text.main              0x9d00373c           0x20          32   
+.text.drv_I2C_init      0x9d00375c           0x1c          28   
+.text.SYS_DEVCON_JTAGDi 0x9d003778           0x1c          28   
+.text.IsQueueEmpty_0    0x9d003794           0x18          24   
+.text.SYS_INT_Initializ 0x9d0037ac           0x18          24   
+.text                   0x9d0037c4           0x18          24  App's exec code 
+.text.DRV_I2C_WriteByte 0x9d0037dc           0x14          20   
+.text.SYS_DEVCON_Initia 0x9d0037f0           0x14          20   
+.text.DRV_I2C_ByteRead  0x9d003804           0x10          16   
+.text.SYS_CLK_SystemFre 0x9d003814            0xc          12   
+.text.SYS_CLK_Periphera 0x9d003820            0xc          12   
+.text.SYS_DEVCON_Tasks  0x9d00382c            0x8           8   
+.text._on_reset         0x9d003834            0x8           8   
+.text._on_bootstrap     0x9d00383c            0x8           8   
+.rodata                 0x9d003844            0x4           4  Read-only const 
+      Total kseg0_program_mem used  :      0x3848       14408  11.0% of 0x20000
 
 kseg0 Boot-Memory Usage
 section                    address  length [bytes]      (dec)  Description
@@ -310,28 +313,28 @@ section                    address  length [bytes]      (dec)  Description
 .bev_excpt              0xbfc00380           0x10          16  BEV-Exception 
          Total kseg1_boot_mem used  :       0x218         536  45.9% of 0x490
         --------------------------------------------------------------------------
-         Total Program Memory used  :      0x37e8       14312  10.3% of 0x21e00
+         Total Program Memory used  :      0x3c10       15376  11.1% of 0x21e00
         --------------------------------------------------------------------------
 
 
 kseg1 Data-Memory Usage
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
-.sdata                  0xa0000000            0x8           8  Small init data 
-.sbss                   0xa0000008           0x60          96  Small uninit data 
-.bss                    0xa0000068         0x1c48        7240  Uninitialized data 
-.bss                    0xa0001cb0          0x134         308  Uninitialized data 
-         Total kseg1_data_mem used  :      0x1de4        7652  23.4% of 0x8000
+.sdata                  0xa0000000           0x14          20  Small init data 
+.sbss                   0xa0000014           0x68         104  Small uninit data 
+.bss                    0xa000007c         0x1c48        7240  Uninitialized data 
+.bss                    0xa0001cc4          0x134         308  Uninitialized data 
+         Total kseg1_data_mem used  :      0x1df8        7672  23.4% of 0x8000
         --------------------------------------------------------------------------
-            Total Data Memory used  :      0x1de4        7652  23.4% of 0x8000
+            Total Data Memory used  :      0x1df8        7672  23.4% of 0x8000
         --------------------------------------------------------------------------
 
 
 Dynamic Data-Memory Reservation
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
-heap                    0xa0001de8              0           0  Reserved for heap 
-stack                   0xa0001e00         0x61f0       25072  Reserved for stack 
+heap                    0xa0001e00              0           0  Reserved for heap 
+stack                   0xa0001e18         0x61e0       25056  Reserved for stack 
 
         --------------------------------------------------------------------------
 
@@ -754,6 +757,12 @@ Discarded input sections
  .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/drvR8025I2C.o
  .text.drv_R8025T_init
                 0x00000000      0x1f8 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .text          0x00000000        0x0 build/default/production/_ext/1360937237/osTimer.o
+ .data          0x00000000        0x0 build/default/production/_ext/1360937237/osTimer.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1360937237/osTimer.o
+ .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/osTimer.o
+ .text.secInterrupt
+                0x00000000       0x80 build/default/production/_ext/1360937237/osTimer.o
  .text          0x00000000        0x0 build/default/production/_ext/912498863/sys_devcon.o
  .data          0x00000000        0x0 build/default/production/_ext/912498863/sys_devcon.o
  .bss           0x00000000        0x0 build/default/production/_ext/912498863/sys_devcon.o
@@ -788,12 +797,6 @@ Discarded input sections
                 0x00000000       0x20 build/default/production/_ext/711155467/sys_int_pic32.o
  .text.SYS_INT_SourceDisable
                 0x00000000       0x58 build/default/production/_ext/711155467/sys_int_pic32.o
- .text.SYS_INT_ExternalInterruptTriggerSet
-                0x00000000       0x34 build/default/production/_ext/711155467/sys_int_pic32.o
- .text          0x00000000        0x0 build/default/production/_ext/1360937237/osTimer.o
- .data          0x00000000        0x0 build/default/production/_ext/1360937237/osTimer.o
- .bss           0x00000000        0x0 build/default/production/_ext/1360937237/osTimer.o
- .reginfo       0x00000000       0x18 build/default/production/_ext/1360937237/osTimer.o
  .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o
  .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o
  .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L\default_isr_vectors.o
@@ -846,10 +849,6 @@ Discarded input sections
  .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector2.o)
  .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector2.o)
  .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector2.o)
- .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector3.o)
- .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector3.o)
- .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector3.o)
- .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector3.o)
  .text          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector4.o)
  .data          0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector4.o)
  .bss           0x00000000        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector4.o)
@@ -1078,10 +1077,10 @@ LOAD build/default/production/_ext/1360937237/nandFlashDrv.o
 LOAD build/default/production/_ext/1360937237/file.o
 LOAD build/default/production/_ext/1360937237/drv_i2c.o
 LOAD build/default/production/_ext/1360937237/drvR8025I2C.o
+LOAD build/default/production/_ext/1360937237/osTimer.o
 LOAD build/default/production/_ext/912498863/sys_devcon.o
 LOAD build/default/production/_ext/912498863/sys_devcon_pic32mx.o
 LOAD build/default/production/_ext/711155467/sys_int_pic32.o
-LOAD build/default/production/_ext/1360937237/osTimer.o
 LOAD ..\..\..\..\..\..\bin\framework\peripheral\PIC32MX664F128L_peripherals.a
                 0x00000001                __MPLAB_BUILD = 0x1
                 0x00000000                _min_heap_size = 0x0
@@ -1173,7 +1172,7 @@ END GROUP
 
 .vector_3       0x9fc01260        0x8
  *(.vector_3)
- .vector_3      0x9fc01260        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector3.o)
+ .vector_3      0x9fc01260        0x8 build/default/production/_ext/1688732426/system_interrupt.o
                 0x9fc01260                __vector_dispatch_3
                 0x00000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_3) <= (_vector_spacing << 0x5))), function at exception vector 3 too large)
 
@@ -1631,118 +1630,127 @@ END GROUP
  *(.got)
                 0xa0000000                . = ALIGN (0x4)
 
-.sdata          0xa0000000        0x8
+.sdata          0xa0000000       0x14
                 0xa0000000                _sdata_begin = .
  *(.sdata .sdata.* .gnu.linkonce.s.*)
  .sdata         0xa0000000        0x8 build/default/production/_ext/1360937237/protocolPLC.o
                 0xa0000000                moduleAddress
-                0xa0000008                . = ALIGN (0x4)
-                0xa0000008                _sdata_end = .
+ .sdata         0xa0000008        0xc build/default/production/_ext/1360937237/osTimer.o
+                0xa0000008                ctr
+                0xa0000009                extension
+                0xa000000a                timer0
+                0xa000000c                initialTime
+                0xa0000014                . = ALIGN (0x4)
+                0xa0000014                _sdata_end = .
 
 .lit8
  *(.lit8)
 
 .lit4
  *(.lit4)
-                0xa0000008                . = ALIGN (0x4)
-                0xa0000008                _data_end = .
-                0xa0000008                _bss_begin = .
+                0xa0000014                . = ALIGN (0x4)
+                0xa0000014                _data_end = .
+                0xa0000014                _bss_begin = .
 
-.sbss           0xa0000008       0x60
-                0xa0000008                _sbss_begin = .
+.sbss           0xa0000014       0x68
+                0xa0000014                _sbss_begin = .
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
- .sbss          0xa0000008        0x6 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
-                0xa0000008                QueueDelta_0
-                0xa000000a                QueueOut_0
-                0xa000000c                QueueIn_0
- .sbss          0xa000000e        0x1 build/default/production/_ext/1407244131/drv_tmr_static.o
- *fill*         0xa000000f        0x1 
- .sbss          0xa0000010        0xc build/default/production/_ext/1688732426/system_exceptions.o
- .sbss          0xa000001c        0x4 build/default/production/_ext/1360937237/tmr.o
-                0xa000001c                msCount
- .sbss          0xa0000020        0xa build/default/production/_ext/1360937237/uart.o
-                0xa0000020                uartReceiveState
-                0xa0000021                tranComplete
-                0xa0000022                recvComplete
-                0xa0000024                TranCnt
-                0xa0000026                RecvCnt
-                0xa0000028                shakeHandBufferCnt
-                0xa0000029                shakeHandSuccess
- *fill*         0xa000002a        0x2 
- .sbss          0xa000002c        0x8 build/default/production/_ext/1360937237/protocolPLC.o
-                0xa000002c                picApplyLastTime
-                0xa0000030                picApplyState
-                0xa0000031                plcState
-                0xa0000032                recvBufferLens2
-                0xa0000033                sendBufferLens
- .sbss          0xa0000034        0x1 build/default/production/_ext/1360937237/nandFlashDrv.o
-                0xa0000034                PageReadComplete
+ .sbss          0xa0000014        0x6 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                0xa0000014                QueueDelta_0
+                0xa0000016                QueueOut_0
+                0xa0000018                QueueIn_0
+ .sbss          0xa000001a        0x1 build/default/production/_ext/1407244131/drv_tmr_static.o
+ *fill*         0xa000001b        0x1 
+ .sbss          0xa000001c        0xc build/default/production/_ext/1688732426/system_exceptions.o
+ .sbss          0xa0000028        0x4 build/default/production/_ext/1360937237/tmr.o
+                0xa0000028                msCount
+ .sbss          0xa000002c        0xa build/default/production/_ext/1360937237/uart.o
+                0xa000002c                uartReceiveState
+                0xa000002d                tranComplete
+                0xa000002e                recvComplete
+                0xa0000030                TranCnt
+                0xa0000032                RecvCnt
+                0xa0000034                shakeHandBufferCnt
+                0xa0000035                shakeHandSuccess
+ *fill*         0xa0000036        0x2 
+ .sbss          0xa0000038        0x8 build/default/production/_ext/1360937237/protocolPLC.o
+                0xa0000038                picApplyLastTime
+                0xa000003c                picApplyState
+                0xa000003d                plcState
+                0xa000003e                recvBufferLens2
+                0xa000003f                sendBufferLens
+ .sbss          0xa0000040        0x1 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0xa0000040                PageReadComplete
+ .sbss          0xa0000041        0x1 build/default/production/_ext/1360937237/osTimer.o
+                0xa0000041                timer1
  *(.scommon)
- *fill*         0xa0000035        0x3 
- .scommon       0xa0000038       0x10 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
-                0xa0000038                i2c0ClientObj
-                0xa0000040                i2c0State
-                0xa0000044                lBufferObj0
- .scommon       0xa0000048        0x0 build/default/production/_ext/327000265/drv_usart_static.o
-                0xa0000048                gDrvUSART0Obj
- .scommon       0xa0000048        0xd build/default/production/_ext/1688732426/system_init.o
-                0xa0000048                i
-                0xa000004c                nandID
-                0xa0000050                uartCtl
- .scommon       0xa0000055        0x0 build/default/production/_ext/1688732426/system_interrupt.o
- *fill*         0xa0000055        0x3 
- .scommon       0xa0000058        0x4 build/default/production/_ext/1360937237/app.o
-                0xa0000058                appData
- .scommon       0xa000005c        0x0 build/default/production/_ext/1360937237/tmr.o
- .scommon       0xa000005c        0x0 build/default/production/_ext/1360937237/uart.o
- .scommon       0xa000005c        0x0 build/default/production/_ext/1360937237/protocolPLC.o
- .scommon       0xa000005c        0x0 build/default/production/_ext/1360937237/baseFun.o
- .scommon       0xa000005c        0x1 build/default/production/_ext/1360937237/nandFlashDrv.o
-                0xa000005c                DataIn
- .scommon       0xa000005d        0x0 build/default/production/_ext/1360937237/file.o
- .scommon       0xa000005d        0x0 build/default/production/_ext/1360937237/drvR8025I2C.o
- *fill*         0xa000005d        0x3 
- .scommon       0xa0000060        0x8 build/default/production/_ext/912498863/sys_devcon.o
-                0xa0000060                sysDevconObj
- .scommon       0xa0000068        0x0 build/default/production/_ext/1360937237/osTimer.o
-                0xa0000068                _sbss_end = .
-                0xa0000068                . = ALIGN (0x4)
+ *fill*         0xa0000042        0x2 
+ .scommon       0xa0000044       0x10 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                0xa0000044                i2c0ClientObj
+                0xa000004c                i2c0State
+                0xa0000050                lBufferObj0
+ .scommon       0xa0000054        0x0 build/default/production/_ext/327000265/drv_usart_static.o
+                0xa0000054                gDrvUSART0Obj
+ .scommon       0xa0000054        0xd build/default/production/_ext/1688732426/system_init.o
+                0xa0000054                i
+                0xa0000058                nandID
+                0xa000005c                uartCtl
+ .scommon       0xa0000061        0x0 build/default/production/_ext/1688732426/system_interrupt.o
+ *fill*         0xa0000061        0x3 
+ .scommon       0xa0000064        0x4 build/default/production/_ext/1360937237/app.o
+                0xa0000064                appData
+ .scommon       0xa0000068        0x0 build/default/production/_ext/1360937237/tmr.o
+ .scommon       0xa0000068        0x0 build/default/production/_ext/1360937237/uart.o
+ .scommon       0xa0000068        0x0 build/default/production/_ext/1360937237/protocolPLC.o
+ .scommon       0xa0000068        0x0 build/default/production/_ext/1360937237/baseFun.o
+ .scommon       0xa0000068        0x1 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0xa0000068                DataIn
+ .scommon       0xa0000069        0x0 build/default/production/_ext/1360937237/file.o
+ .scommon       0xa0000069        0x0 build/default/production/_ext/1360937237/drvR8025I2C.o
+ *fill*         0xa0000069        0x3 
+ .scommon       0xa000006c        0x6 build/default/production/_ext/1360937237/osTimer.o
+                0xa000006c                sysTime
+ *fill*         0xa0000072        0x2 
+ .scommon       0xa0000074        0x8 build/default/production/_ext/912498863/sys_devcon.o
+                0xa0000074                sysDevconObj
+                0xa000007c                _sbss_end = .
+                0xa000007c                . = ALIGN (0x4)
 
-.bss            0xa0000068     0x1c48
+.bss            0xa000007c     0x1c48
  *(.dynbss)
  *(COMMON)
- COMMON         0xa0000068       0x2c build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
-                0xa0000068                i2c0Obj
- COMMON         0xa0000094      0x1e5 build/default/production/_ext/1688732426/system_init.o
-                0xa0000094                plcRecvFrame
-                0xa0000170                Year2Month2Page
-                0xa0000194                sysObj
-                0xa00001a0                plcCtl
-                0xa00001b0                invertDateCtrl
- *fill*         0xa0000279        0x3 
- COMMON         0xa000027c       0x80 build/default/production/_ext/1360937237/protocolPLC.o
-                0xa000027c                uartBufferPLCTran
-                0xa0000288                RecvBuffer
-                0xa00002bc                TranBuffer
-                0xa00002f0                uartBufferPLCRecv
- COMMON         0xa00002fc     0x19a8 build/default/production/_ext/1360937237/file.o
-                0xa00002fc                flashRWTempbufferOOB
-                0xa000033c                flashReadBufferOOB
-                0xa000037c                flashRWTempdate
-                0xa00003ac                nandFlashInfo
-                0xa0000434                flashWriteBuffer
-                0xa0000c34                flashRWTempbuffer
-                0xa0001434                flashWriteBufferOOB
-                0xa0001474                flashRWdate
-                0xa00014a4                flashReadBuffer
- COMMON         0xa0001ca4        0xa build/default/production/_ext/1360937237/osTimer.o
-                0xa0001ca4                datetime
-                0xa0001cb0                . = ALIGN ((. != 0x0)?0x4:0x1)
- *fill*         0xa0001cae        0x2 
-                0xa0001cb0                . = ALIGN (0x4)
-                0xa0001cb0                _end = .
-                0xa0001cb0                _bss_end = .
+ COMMON         0xa000007c       0x2c build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                0xa000007c                i2c0Obj
+ COMMON         0xa00000a8      0x1e5 build/default/production/_ext/1688732426/system_init.o
+                0xa00000a8                plcRecvFrame
+                0xa0000184                Year2Month2Page
+                0xa00001a8                sysObj
+                0xa00001b4                plcCtl
+                0xa00001c4                invertDateCtrl
+ *fill*         0xa000028d        0x3 
+ COMMON         0xa0000290       0x80 build/default/production/_ext/1360937237/protocolPLC.o
+                0xa0000290                uartBufferPLCTran
+                0xa000029c                RecvBuffer
+                0xa00002d0                TranBuffer
+                0xa0000304                uartBufferPLCRecv
+ COMMON         0xa0000310     0x19a8 build/default/production/_ext/1360937237/file.o
+                0xa0000310                flashRWTempbufferOOB
+                0xa0000350                flashReadBufferOOB
+                0xa0000390                flashRWTempdate
+                0xa00003c0                nandFlashInfo
+                0xa0000448                flashWriteBuffer
+                0xa0000c48                flashRWTempbuffer
+                0xa0001448                flashWriteBufferOOB
+                0xa0001488                flashRWdate
+                0xa00014b8                flashReadBuffer
+ COMMON         0xa0001cb8        0xa build/default/production/_ext/1360937237/osTimer.o
+                0xa0001cb8                datetime
+                0xa0001cc4                . = ALIGN ((. != 0x0)?0x4:0x1)
+ *fill*         0xa0001cc2        0x2 
+                0xa0001cc4                . = ALIGN (0x4)
+                0xa0001cc4                _end = .
+                0xa0001cc4                _bss_end = .
                 0x00008000                _bmxdudba_address = 0x8000
                 0x00008000                _bmxdupba_address = 0x8000
 
@@ -1763,38 +1771,38 @@ END GROUP
  *(.gptab.bss)
  *(.gptab.sbss)
 
-.mdebug.abi32   0xa0001cb0        0x0
+.mdebug.abi32   0xa0001cc4        0x0
  *(.mdebug.abi32)
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/12144542/drv_i2c_mapping.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1407244131/drv_tmr_static.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1407244131/drv_tmr_mapping.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/327000265/drv_usart_mapping.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/327000265/drv_usart_static.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/639803181/sys_clk_static.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/822048611/sys_ports_static.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1688732426/system_init.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1688732426/system_interrupt.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1688732426/system_exceptions.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1688732426/system_tasks.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/app.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/main.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/tmr.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/uart.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/protocolPLC.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/baseFun.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/nandFlashDrv.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/file.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/drv_i2c.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/drvR8025I2C.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/912498863/sys_devcon.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/711155467/sys_int_pic32.o
- .mdebug.abi32  0xa0001cb0        0x0 build/default/production/_ext/1360937237/osTimer.o
- .mdebug.abi32  0xa0001cb0        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .mdebug.abi32  0xa0001cb0        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .mdebug.abi32  0xa0001cb0        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .mdebug.abi32  0xa0001cb0        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/12144542/drv_i2c_mapping.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1407244131/drv_tmr_static.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1407244131/drv_tmr_mapping.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/327000265/drv_usart_mapping.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/327000265/drv_usart_static.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/639803181/sys_clk_static.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/822048611/sys_ports_static.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1688732426/system_init.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1688732426/system_interrupt.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1688732426/system_exceptions.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1688732426/system_tasks.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1360937237/app.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1360937237/main.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1360937237/tmr.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1360937237/uart.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1360937237/protocolPLC.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1360937237/baseFun.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1360937237/file.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1360937237/drv_i2c.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/1360937237/osTimer.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/912498863/sys_devcon.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .mdebug.abi32  0xa0001cc4        0x0 build/default/production/_ext/711155467/sys_int_pic32.o
+ .mdebug.abi32  0xa0001cc4        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .mdebug.abi32  0xa0001cc4        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .mdebug.abi32  0xa0001cc4        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .mdebug.abi32  0xa0001cc4        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
 .mdebug.abiN32
  *(.mdebug.abiN32)
@@ -1860,10 +1868,10 @@ END GROUP
  .comment       0x00000000       0x3d build/default/production/_ext/1360937237/file.o
  .comment       0x00000000       0x3d build/default/production/_ext/1360937237/drv_i2c.o
  .comment       0x00000000       0x3d build/default/production/_ext/1360937237/drvR8025I2C.o
+ .comment       0x00000000       0x3d build/default/production/_ext/1360937237/osTimer.o
  .comment       0x00000000       0x3d build/default/production/_ext/912498863/sys_devcon.o
  .comment       0x00000000       0x3d build/default/production/_ext/912498863/sys_devcon_pic32mx.o
  .comment       0x00000000       0x3d build/default/production/_ext/711155467/sys_int_pic32.o
- .comment       0x00000000       0x3d build/default/production/_ext/1360937237/osTimer.o
  .comment       0x00000000       0x3d d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .comment       0x00000000       0x3d d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .comment       0x00000000       0x3d d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -1881,7 +1889,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0xa68
+.debug_aranges  0x00000000      0xa88
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x90 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
@@ -1902,52 +1910,52 @@ END GROUP
  .debug_aranges
                 0x00000488       0x20 build/default/production/_ext/1688732426/system_init.o
  .debug_aranges
-                0x000004a8       0x28 build/default/production/_ext/1688732426/system_interrupt.o
+                0x000004a8       0x30 build/default/production/_ext/1688732426/system_interrupt.o
  .debug_aranges
-                0x000004d0       0x20 build/default/production/_ext/1688732426/system_exceptions.o
+                0x000004d8       0x20 build/default/production/_ext/1688732426/system_exceptions.o
  .debug_aranges
-                0x000004f0       0x20 build/default/production/_ext/1688732426/system_tasks.o
+                0x000004f8       0x20 build/default/production/_ext/1688732426/system_tasks.o
  .debug_aranges
-                0x00000510       0x28 build/default/production/_ext/1360937237/app.o
+                0x00000518       0x28 build/default/production/_ext/1360937237/app.o
  .debug_aranges
-                0x00000538       0x20 build/default/production/_ext/1360937237/main.o
+                0x00000540       0x20 build/default/production/_ext/1360937237/main.o
  .debug_aranges
-                0x00000558       0x28 build/default/production/_ext/1360937237/tmr.o
+                0x00000560       0x28 build/default/production/_ext/1360937237/tmr.o
  .debug_aranges
-                0x00000580       0x30 build/default/production/_ext/1360937237/uart.o
+                0x00000588       0x30 build/default/production/_ext/1360937237/uart.o
  .debug_aranges
-                0x000005b0       0x70 build/default/production/_ext/1360937237/protocolPLC.o
+                0x000005b8       0x70 build/default/production/_ext/1360937237/protocolPLC.o
  .debug_aranges
-                0x00000620       0x68 build/default/production/_ext/1360937237/baseFun.o
+                0x00000628       0x68 build/default/production/_ext/1360937237/baseFun.o
  .debug_aranges
-                0x00000688       0xe0 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0x00000690       0xe0 build/default/production/_ext/1360937237/nandFlashDrv.o
  .debug_aranges
-                0x00000768       0x88 build/default/production/_ext/1360937237/file.o
+                0x00000770       0x88 build/default/production/_ext/1360937237/file.o
  .debug_aranges
-                0x000007f0       0xb0 build/default/production/_ext/1360937237/drv_i2c.o
+                0x000007f8       0xb0 build/default/production/_ext/1360937237/drv_i2c.o
  .debug_aranges
-                0x000008a0       0x40 build/default/production/_ext/1360937237/drvR8025I2C.o
+                0x000008a8       0x40 build/default/production/_ext/1360937237/drvR8025I2C.o
  .debug_aranges
-                0x000008e0       0x78 build/default/production/_ext/912498863/sys_devcon.o
+                0x000008e8       0x40 build/default/production/_ext/1360937237/osTimer.o
  .debug_aranges
-                0x00000958       0x20 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+                0x00000928       0x78 build/default/production/_ext/912498863/sys_devcon.o
  .debug_aranges
-                0x00000978       0x48 build/default/production/_ext/711155467/sys_int_pic32.o
+                0x000009a0       0x20 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
  .debug_aranges
-                0x000009c0       0x28 build/default/production/_ext/1360937237/osTimer.o
+                0x000009c0       0x48 build/default/production/_ext/711155467/sys_int_pic32.o
  .debug_aranges
-                0x000009e8       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+                0x00000a08       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_aranges
-                0x00000a08       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+                0x00000a28       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .debug_aranges
-                0x00000a28       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+                0x00000a48       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
  .debug_aranges
-                0x00000a48       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+                0x00000a68       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x30208
+.debug_info     0x00000000    0x31462
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000     0x5040 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
  .debug_info    0x00005040     0x10c5 build/default/production/_ext/12144542/drv_i2c_mapping.o
@@ -1957,30 +1965,30 @@ END GROUP
  .debug_info    0x0000b967     0x386f build/default/production/_ext/327000265/drv_usart_static.o
  .debug_info    0x0000f1d6     0x1587 build/default/production/_ext/639803181/sys_clk_static.o
  .debug_info    0x0001075d     0x3dcf build/default/production/_ext/822048611/sys_ports_static.o
- .debug_info    0x0001452c     0x2546 build/default/production/_ext/1688732426/system_init.o
- .debug_info    0x00016a72     0x17c5 build/default/production/_ext/1688732426/system_interrupt.o
- .debug_info    0x00018237      0xad8 build/default/production/_ext/1688732426/system_exceptions.o
- .debug_info    0x00018d0f      0x951 build/default/production/_ext/1688732426/system_tasks.o
- .debug_info    0x00019660     0x140a build/default/production/_ext/1360937237/app.o
- .debug_info    0x0001aa6a      0x1a3 build/default/production/_ext/1360937237/main.o
- .debug_info    0x0001ac0d     0x185f build/default/production/_ext/1360937237/tmr.o
- .debug_info    0x0001c46c     0x2209 build/default/production/_ext/1360937237/uart.o
- .debug_info    0x0001e675     0x2787 build/default/production/_ext/1360937237/protocolPLC.o
- .debug_info    0x00020dfc     0x14a5 build/default/production/_ext/1360937237/baseFun.o
- .debug_info    0x000222a1     0x3899 build/default/production/_ext/1360937237/nandFlashDrv.o
- .debug_info    0x00025b3a     0x18c8 build/default/production/_ext/1360937237/file.o
- .debug_info    0x00027402     0x2840 build/default/production/_ext/1360937237/drv_i2c.o
- .debug_info    0x00029c42     0x1a2d build/default/production/_ext/1360937237/drvR8025I2C.o
- .debug_info    0x0002b66f     0x114d build/default/production/_ext/912498863/sys_devcon.o
- .debug_info    0x0002c7bc      0xd3e build/default/production/_ext/912498863/sys_devcon_pic32mx.o
- .debug_info    0x0002d4fa     0x1531 build/default/production/_ext/711155467/sys_int_pic32.o
- .debug_info    0x0002ea2b     0x1459 build/default/production/_ext/1360937237/osTimer.o
- .debug_info    0x0002fe84       0xf5 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_info    0x0002ff79       0xcf d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_info    0x00030048       0xd7 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_info    0x0003011f       0xe9 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_info    0x0001452c     0x319f build/default/production/_ext/1688732426/system_init.o
+ .debug_info    0x000176cb     0x1a1b build/default/production/_ext/1688732426/system_interrupt.o
+ .debug_info    0x000190e6      0xad8 build/default/production/_ext/1688732426/system_exceptions.o
+ .debug_info    0x00019bbe      0x951 build/default/production/_ext/1688732426/system_tasks.o
+ .debug_info    0x0001a50f     0x144b build/default/production/_ext/1360937237/app.o
+ .debug_info    0x0001b95a      0x1a3 build/default/production/_ext/1360937237/main.o
+ .debug_info    0x0001bafd     0x185f build/default/production/_ext/1360937237/tmr.o
+ .debug_info    0x0001d35c     0x2209 build/default/production/_ext/1360937237/uart.o
+ .debug_info    0x0001f565     0x2787 build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_info    0x00021cec     0x14db build/default/production/_ext/1360937237/baseFun.o
+ .debug_info    0x000231c7     0x3899 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_info    0x00026a60     0x18c8 build/default/production/_ext/1360937237/file.o
+ .debug_info    0x00028328     0x2840 build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_info    0x0002ab68     0x1a2d build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_info    0x0002c595     0x178d build/default/production/_ext/1360937237/osTimer.o
+ .debug_info    0x0002dd22     0x114d build/default/production/_ext/912498863/sys_devcon.o
+ .debug_info    0x0002ee6f      0xd3e build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_info    0x0002fbad     0x1531 build/default/production/_ext/711155467/sys_int_pic32.o
+ .debug_info    0x000310de       0xf5 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_info    0x000311d3       0xcf d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_info    0x000312a2       0xd7 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_info    0x00031379       0xe9 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_abbrev   0x00000000     0x372e
+.debug_abbrev   0x00000000     0x37b4
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x357 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
  .debug_abbrev  0x00000357      0x159 build/default/production/_ext/12144542/drv_i2c_mapping.o
@@ -1990,30 +1998,30 @@ END GROUP
  .debug_abbrev  0x00000c02      0x377 build/default/production/_ext/327000265/drv_usart_static.o
  .debug_abbrev  0x00000f79      0x27b build/default/production/_ext/639803181/sys_clk_static.o
  .debug_abbrev  0x000011f4      0x282 build/default/production/_ext/822048611/sys_ports_static.o
- .debug_abbrev  0x00001476      0x2f5 build/default/production/_ext/1688732426/system_init.o
- .debug_abbrev  0x0000176b      0x16b build/default/production/_ext/1688732426/system_interrupt.o
- .debug_abbrev  0x000018d6       0xa9 build/default/production/_ext/1688732426/system_exceptions.o
- .debug_abbrev  0x0000197f       0xdb build/default/production/_ext/1688732426/system_tasks.o
- .debug_abbrev  0x00001a5a      0x17d build/default/production/_ext/1360937237/app.o
- .debug_abbrev  0x00001bd7       0x93 build/default/production/_ext/1360937237/main.o
- .debug_abbrev  0x00001c6a      0x160 build/default/production/_ext/1360937237/tmr.o
- .debug_abbrev  0x00001dca      0x15c build/default/production/_ext/1360937237/uart.o
- .debug_abbrev  0x00001f26      0x2d4 build/default/production/_ext/1360937237/protocolPLC.o
- .debug_abbrev  0x000021fa      0x179 build/default/production/_ext/1360937237/baseFun.o
- .debug_abbrev  0x00002373      0x3d6 build/default/production/_ext/1360937237/nandFlashDrv.o
- .debug_abbrev  0x00002749      0x2e9 build/default/production/_ext/1360937237/file.o
- .debug_abbrev  0x00002a32      0x282 build/default/production/_ext/1360937237/drv_i2c.o
- .debug_abbrev  0x00002cb4      0x26e build/default/production/_ext/1360937237/drvR8025I2C.o
- .debug_abbrev  0x00002f22      0x26d build/default/production/_ext/912498863/sys_devcon.o
- .debug_abbrev  0x0000318f      0x16d build/default/production/_ext/912498863/sys_devcon_pic32mx.o
- .debug_abbrev  0x000032fc      0x1d0 build/default/production/_ext/711155467/sys_int_pic32.o
- .debug_abbrev  0x000034cc      0x1c2 build/default/production/_ext/1360937237/osTimer.o
- .debug_abbrev  0x0000368e       0x28 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_abbrev  0x000036b6       0x28 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_abbrev  0x000036de       0x28 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_abbrev  0x00003706       0x28 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_abbrev  0x00001476      0x30b build/default/production/_ext/1688732426/system_init.o
+ .debug_abbrev  0x00001781      0x1d6 build/default/production/_ext/1688732426/system_interrupt.o
+ .debug_abbrev  0x00001957       0xa9 build/default/production/_ext/1688732426/system_exceptions.o
+ .debug_abbrev  0x00001a00       0xdb build/default/production/_ext/1688732426/system_tasks.o
+ .debug_abbrev  0x00001adb      0x182 build/default/production/_ext/1360937237/app.o
+ .debug_abbrev  0x00001c5d       0x93 build/default/production/_ext/1360937237/main.o
+ .debug_abbrev  0x00001cf0      0x160 build/default/production/_ext/1360937237/tmr.o
+ .debug_abbrev  0x00001e50      0x15c build/default/production/_ext/1360937237/uart.o
+ .debug_abbrev  0x00001fac      0x2d4 build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_abbrev  0x00002280      0x179 build/default/production/_ext/1360937237/baseFun.o
+ .debug_abbrev  0x000023f9      0x3d6 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_abbrev  0x000027cf      0x2e9 build/default/production/_ext/1360937237/file.o
+ .debug_abbrev  0x00002ab8      0x282 build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_abbrev  0x00002d3a      0x26e build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_abbrev  0x00002fa8      0x1c2 build/default/production/_ext/1360937237/osTimer.o
+ .debug_abbrev  0x0000316a      0x26d build/default/production/_ext/912498863/sys_devcon.o
+ .debug_abbrev  0x000033d7      0x16d build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_abbrev  0x00003544      0x1d0 build/default/production/_ext/711155467/sys_int_pic32.o
+ .debug_abbrev  0x00003714       0x28 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_abbrev  0x0000373c       0x28 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_abbrev  0x00003764       0x28 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_abbrev  0x0000378c       0x28 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_line     0x00000000     0x6f75
+.debug_line     0x00000000     0x7068
  *(.debug_line)
  .debug_line    0x00000000      0xc5b build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
  .debug_line    0x00000c5b      0x328 build/default/production/_ext/12144542/drv_i2c_mapping.o
@@ -2023,30 +2031,30 @@ END GROUP
  .debug_line    0x00001d8f      0x6f4 build/default/production/_ext/327000265/drv_usart_static.o
  .debug_line    0x00002483      0x3a9 build/default/production/_ext/639803181/sys_clk_static.o
  .debug_line    0x0000282c      0x750 build/default/production/_ext/822048611/sys_ports_static.o
- .debug_line    0x00002f7c      0x4d9 build/default/production/_ext/1688732426/system_init.o
- .debug_line    0x00003455      0x22b build/default/production/_ext/1688732426/system_interrupt.o
- .debug_line    0x00003680      0x15b build/default/production/_ext/1688732426/system_exceptions.o
- .debug_line    0x000037db      0x193 build/default/production/_ext/1688732426/system_tasks.o
- .debug_line    0x0000396e      0x207 build/default/production/_ext/1360937237/app.o
- .debug_line    0x00003b75       0xb1 build/default/production/_ext/1360937237/main.o
- .debug_line    0x00003c26      0x1c5 build/default/production/_ext/1360937237/tmr.o
- .debug_line    0x00003deb      0x215 build/default/production/_ext/1360937237/uart.o
- .debug_line    0x00004000      0x458 build/default/production/_ext/1360937237/protocolPLC.o
- .debug_line    0x00004458      0x27c build/default/production/_ext/1360937237/baseFun.o
- .debug_line    0x000046d4      0x90a build/default/production/_ext/1360937237/nandFlashDrv.o
- .debug_line    0x00004fde      0x3a2 build/default/production/_ext/1360937237/file.o
- .debug_line    0x00005380      0x83a build/default/production/_ext/1360937237/drv_i2c.o
- .debug_line    0x00005bba      0x2d2 build/default/production/_ext/1360937237/drvR8025I2C.o
- .debug_line    0x00005e8c      0x541 build/default/production/_ext/912498863/sys_devcon.o
- .debug_line    0x000063cd      0x3f3 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
- .debug_line    0x000067c0      0x32a build/default/production/_ext/711155467/sys_int_pic32.o
- .debug_line    0x00006aea      0x20a build/default/production/_ext/1360937237/osTimer.o
- .debug_line    0x00006cf4       0xa9 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_line    0x00006d9d       0x96 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_line    0x00006e33       0x9a d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_line    0x00006ecd       0xa8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_line    0x00002f7c      0x514 build/default/production/_ext/1688732426/system_init.o
+ .debug_line    0x00003490      0x27b build/default/production/_ext/1688732426/system_interrupt.o
+ .debug_line    0x0000370b      0x15b build/default/production/_ext/1688732426/system_exceptions.o
+ .debug_line    0x00003866      0x193 build/default/production/_ext/1688732426/system_tasks.o
+ .debug_line    0x000039f9      0x20b build/default/production/_ext/1360937237/app.o
+ .debug_line    0x00003c04       0xb1 build/default/production/_ext/1360937237/main.o
+ .debug_line    0x00003cb5      0x1c5 build/default/production/_ext/1360937237/tmr.o
+ .debug_line    0x00003e7a      0x215 build/default/production/_ext/1360937237/uart.o
+ .debug_line    0x0000408f      0x458 build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_line    0x000044e7      0x282 build/default/production/_ext/1360937237/baseFun.o
+ .debug_line    0x00004769      0x90a build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_line    0x00005073      0x3a2 build/default/production/_ext/1360937237/file.o
+ .debug_line    0x00005415      0x83a build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_line    0x00005c4f      0x2d2 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_line    0x00005f21      0x268 build/default/production/_ext/1360937237/osTimer.o
+ .debug_line    0x00006189      0x541 build/default/production/_ext/912498863/sys_devcon.o
+ .debug_line    0x000066ca      0x3f3 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_line    0x00006abd      0x32a build/default/production/_ext/711155467/sys_int_pic32.o
+ .debug_line    0x00006de7       0xa9 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_line    0x00006e90       0x96 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_line    0x00006f26       0x9a d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_line    0x00006fc0       0xa8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_frame    0x00000000     0x1778
+.debug_frame    0x00000000     0x181c
  *(.debug_frame)
  .debug_frame   0x00000000      0x150 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
  .debug_frame   0x00000150      0x118 build/default/production/_ext/12144542/drv_i2c_mapping.o
@@ -2057,27 +2065,27 @@ END GROUP
  .debug_frame   0x000007d4       0xa0 build/default/production/_ext/639803181/sys_clk_static.o
  .debug_frame   0x00000874      0x1f0 build/default/production/_ext/822048611/sys_ports_static.o
  .debug_frame   0x00000a64       0x28 build/default/production/_ext/1688732426/system_init.o
- .debug_frame   0x00000a8c       0x80 build/default/production/_ext/1688732426/system_interrupt.o
- .debug_frame   0x00000b0c       0x28 build/default/production/_ext/1688732426/system_exceptions.o
- .debug_frame   0x00000b34       0x28 build/default/production/_ext/1688732426/system_tasks.o
- .debug_frame   0x00000b5c       0x48 build/default/production/_ext/1360937237/app.o
- .debug_frame   0x00000ba4       0x28 build/default/production/_ext/1360937237/main.o
- .debug_frame   0x00000bcc       0x30 build/default/production/_ext/1360937237/tmr.o
- .debug_frame   0x00000bfc       0x54 build/default/production/_ext/1360937237/uart.o
- .debug_frame   0x00000c50      0x12c build/default/production/_ext/1360937237/protocolPLC.o
- .debug_frame   0x00000d7c       0xdc build/default/production/_ext/1360937237/baseFun.o
- .debug_frame   0x00000e58      0x304 build/default/production/_ext/1360937237/nandFlashDrv.o
- .debug_frame   0x0000115c      0x16c build/default/production/_ext/1360937237/file.o
- .debug_frame   0x000012c8      0x188 build/default/production/_ext/1360937237/drv_i2c.o
- .debug_frame   0x00001450       0xac build/default/production/_ext/1360937237/drvR8025I2C.o
- .debug_frame   0x000014fc       0xe8 build/default/production/_ext/912498863/sys_devcon.o
- .debug_frame   0x000015e4       0x28 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
- .debug_frame   0x0000160c       0x90 build/default/production/_ext/711155467/sys_int_pic32.o
- .debug_frame   0x0000169c       0x50 build/default/production/_ext/1360937237/osTimer.o
- .debug_frame   0x000016ec       0x2c d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_frame   0x00001718       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_frame   0x00001738       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_frame   0x00001758       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_frame   0x00000a8c       0xd4 build/default/production/_ext/1688732426/system_interrupt.o
+ .debug_frame   0x00000b60       0x28 build/default/production/_ext/1688732426/system_exceptions.o
+ .debug_frame   0x00000b88       0x28 build/default/production/_ext/1688732426/system_tasks.o
+ .debug_frame   0x00000bb0       0x48 build/default/production/_ext/1360937237/app.o
+ .debug_frame   0x00000bf8       0x28 build/default/production/_ext/1360937237/main.o
+ .debug_frame   0x00000c20       0x30 build/default/production/_ext/1360937237/tmr.o
+ .debug_frame   0x00000c50       0x54 build/default/production/_ext/1360937237/uart.o
+ .debug_frame   0x00000ca4      0x12c build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_frame   0x00000dd0       0xe4 build/default/production/_ext/1360937237/baseFun.o
+ .debug_frame   0x00000eb4      0x304 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_frame   0x000011b8      0x16c build/default/production/_ext/1360937237/file.o
+ .debug_frame   0x00001324      0x188 build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_frame   0x000014ac       0xac build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_frame   0x00001558       0x98 build/default/production/_ext/1360937237/osTimer.o
+ .debug_frame   0x000015f0       0xe8 build/default/production/_ext/912498863/sys_devcon.o
+ .debug_frame   0x000016d8       0x28 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_frame   0x00001700       0x90 build/default/production/_ext/711155467/sys_int_pic32.o
+ .debug_frame   0x00001790       0x2c d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_frame   0x000017bc       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_frame   0x000017dc       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_frame   0x000017fc       0x20 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
 .debug_str      0x00000000      0x4bf
  *(.debug_str)
@@ -2103,16 +2111,16 @@ END GROUP
  .debug_str     0x000003ae       0x3a build/default/production/_ext/1360937237/file.o
  .debug_str     0x000003e8       0x26 build/default/production/_ext/1360937237/drv_i2c.o
  .debug_str     0x0000040e       0x1f build/default/production/_ext/1360937237/drvR8025I2C.o
- .debug_str     0x0000042d       0x16 build/default/production/_ext/912498863/sys_devcon.o
- .debug_str     0x00000443        0x6 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
- .debug_str     0x00000449       0x2d build/default/production/_ext/711155467/sys_int_pic32.o
- .debug_str     0x00000476       0x49 build/default/production/_ext/1360937237/osTimer.o
+ .debug_str     0x0000042d       0x49 build/default/production/_ext/1360937237/osTimer.o
+ .debug_str     0x00000476       0x16 build/default/production/_ext/912498863/sys_devcon.o
+ .debug_str     0x0000048c        0x6 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_str     0x00000492       0x2d build/default/production/_ext/711155467/sys_int_pic32.o
  .debug_str     0x000004bf        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_str     0x000004bf        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .debug_str     0x000004bf        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
  .debug_str     0x000004bf        0x0 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_loc      0x00000000     0x8327
+.debug_loc      0x00000000     0x83f8
  *(.debug_loc)
  .debug_loc     0x00000000      0xb5d build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
  .debug_loc     0x00000b5d      0x617 build/default/production/_ext/12144542/drv_i2c_mapping.o
@@ -2123,18 +2131,18 @@ END GROUP
  .debug_loc     0x00001f47       0x49 build/default/production/_ext/639803181/sys_clk_static.o
  .debug_loc     0x00001f90      0xecf build/default/production/_ext/822048611/sys_ports_static.o
  .debug_loc     0x00002e5f       0x21 build/default/production/_ext/1688732426/system_init.o
- .debug_loc     0x00002e80       0x4b build/default/production/_ext/1360937237/app.o
- .debug_loc     0x00002ecb       0x13 build/default/production/_ext/1360937237/tmr.o
- .debug_loc     0x00002ede      0x3cb build/default/production/_ext/1360937237/protocolPLC.o
- .debug_loc     0x000032a9      0x386 build/default/production/_ext/1360937237/baseFun.o
- .debug_loc     0x0000362f     0x398a build/default/production/_ext/1360937237/nandFlashDrv.o
- .debug_loc     0x00006fb9      0xa9b build/default/production/_ext/1360937237/file.o
- .debug_loc     0x00007a54      0x258 build/default/production/_ext/1360937237/drv_i2c.o
- .debug_loc     0x00007cac      0x390 build/default/production/_ext/1360937237/drvR8025I2C.o
- .debug_loc     0x0000803c       0xf0 build/default/production/_ext/912498863/sys_devcon.o
- .debug_loc     0x0000812c       0xec build/default/production/_ext/912498863/sys_devcon_pic32mx.o
- .debug_loc     0x00008218       0x8d build/default/production/_ext/711155467/sys_int_pic32.o
- .debug_loc     0x000082a5       0x82 build/default/production/_ext/1360937237/osTimer.o
+ .debug_loc     0x00002e80       0xb9 build/default/production/_ext/1360937237/app.o
+ .debug_loc     0x00002f39       0x13 build/default/production/_ext/1360937237/tmr.o
+ .debug_loc     0x00002f4c      0x3cb build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_loc     0x00003317      0x365 build/default/production/_ext/1360937237/baseFun.o
+ .debug_loc     0x0000367c     0x398a build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_loc     0x00007006      0xa9b build/default/production/_ext/1360937237/file.o
+ .debug_loc     0x00007aa1      0x258 build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_loc     0x00007cf9      0x390 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_loc     0x00008089      0x106 build/default/production/_ext/1360937237/osTimer.o
+ .debug_loc     0x0000818f       0xf0 build/default/production/_ext/912498863/sys_devcon.o
+ .debug_loc     0x0000827f       0xec build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_loc     0x0000836b       0x8d build/default/production/_ext/711155467/sys_int_pic32.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -2154,7 +2162,7 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x948
+.debug_ranges   0x00000000      0x968
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x80 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
  .debug_ranges  0x00000080       0x50 build/default/production/_ext/12144542/drv_i2c_mapping.o
@@ -2165,27 +2173,27 @@ END GROUP
  .debug_ranges  0x00000318       0x40 build/default/production/_ext/639803181/sys_clk_static.o
  .debug_ranges  0x00000358       0xf8 build/default/production/_ext/822048611/sys_ports_static.o
  .debug_ranges  0x00000450       0x10 build/default/production/_ext/1688732426/system_init.o
- .debug_ranges  0x00000460       0x18 build/default/production/_ext/1688732426/system_interrupt.o
- .debug_ranges  0x00000478       0x10 build/default/production/_ext/1688732426/system_exceptions.o
- .debug_ranges  0x00000488       0x10 build/default/production/_ext/1688732426/system_tasks.o
- .debug_ranges  0x00000498       0x18 build/default/production/_ext/1360937237/app.o
- .debug_ranges  0x000004b0       0x10 build/default/production/_ext/1360937237/main.o
- .debug_ranges  0x000004c0       0x18 build/default/production/_ext/1360937237/tmr.o
- .debug_ranges  0x000004d8       0x20 build/default/production/_ext/1360937237/uart.o
- .debug_ranges  0x000004f8       0x60 build/default/production/_ext/1360937237/protocolPLC.o
- .debug_ranges  0x00000558       0x58 build/default/production/_ext/1360937237/baseFun.o
- .debug_ranges  0x000005b0      0x100 build/default/production/_ext/1360937237/nandFlashDrv.o
- .debug_ranges  0x000006b0       0x78 build/default/production/_ext/1360937237/file.o
- .debug_ranges  0x00000728       0xa0 build/default/production/_ext/1360937237/drv_i2c.o
- .debug_ranges  0x000007c8       0x60 build/default/production/_ext/1360937237/drvR8025I2C.o
- .debug_ranges  0x00000828       0x68 build/default/production/_ext/912498863/sys_devcon.o
- .debug_ranges  0x00000890       0x10 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
- .debug_ranges  0x000008a0       0x50 build/default/production/_ext/711155467/sys_int_pic32.o
- .debug_ranges  0x000008f0       0x18 build/default/production/_ext/1360937237/osTimer.o
- .debug_ranges  0x00000908       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_ranges  0x00000918       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_ranges  0x00000928       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_ranges  0x00000938       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_ranges  0x00000460       0x20 build/default/production/_ext/1688732426/system_interrupt.o
+ .debug_ranges  0x00000480       0x10 build/default/production/_ext/1688732426/system_exceptions.o
+ .debug_ranges  0x00000490       0x10 build/default/production/_ext/1688732426/system_tasks.o
+ .debug_ranges  0x000004a0       0x18 build/default/production/_ext/1360937237/app.o
+ .debug_ranges  0x000004b8       0x10 build/default/production/_ext/1360937237/main.o
+ .debug_ranges  0x000004c8       0x18 build/default/production/_ext/1360937237/tmr.o
+ .debug_ranges  0x000004e0       0x20 build/default/production/_ext/1360937237/uart.o
+ .debug_ranges  0x00000500       0x60 build/default/production/_ext/1360937237/protocolPLC.o
+ .debug_ranges  0x00000560       0x58 build/default/production/_ext/1360937237/baseFun.o
+ .debug_ranges  0x000005b8      0x100 build/default/production/_ext/1360937237/nandFlashDrv.o
+ .debug_ranges  0x000006b8       0x78 build/default/production/_ext/1360937237/file.o
+ .debug_ranges  0x00000730       0xa0 build/default/production/_ext/1360937237/drv_i2c.o
+ .debug_ranges  0x000007d0       0x60 build/default/production/_ext/1360937237/drvR8025I2C.o
+ .debug_ranges  0x00000830       0x30 build/default/production/_ext/1360937237/osTimer.o
+ .debug_ranges  0x00000860       0x68 build/default/production/_ext/912498863/sys_devcon.o
+ .debug_ranges  0x000008c8       0x10 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+ .debug_ranges  0x000008d8       0x50 build/default/production/_ext/711155467/sys_int_pic32.o
+ .debug_ranges  0x00000928       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_ranges  0x00000938       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_ranges  0x00000948       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_ranges  0x00000958       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
 .gnu.attributes
                 0x00000000       0x10
@@ -2235,13 +2243,13 @@ END GROUP
  .gnu.attributes
                 0x00000150       0x10 build/default/production/_ext/1360937237/drvR8025I2C.o
  .gnu.attributes
-                0x00000160       0x10 build/default/production/_ext/912498863/sys_devcon.o
+                0x00000160       0x10 build/default/production/_ext/1360937237/osTimer.o
  .gnu.attributes
-                0x00000170       0x10 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+                0x00000170       0x10 build/default/production/_ext/912498863/sys_devcon.o
  .gnu.attributes
-                0x00000180       0x10 build/default/production/_ext/711155467/sys_int_pic32.o
+                0x00000180       0x10 build/default/production/_ext/912498863/sys_devcon_pic32mx.o
  .gnu.attributes
-                0x00000190       0x10 build/default/production/_ext/1360937237/osTimer.o
+                0x00000190       0x10 build/default/production/_ext/711155467/sys_int_pic32.o
  .gnu.attributes
                 0x000001a0       0x10 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .gnu.attributes
@@ -2271,11 +2279,11 @@ LOAD data_init
 .reginfo        0x00000000       0x18
  .reginfo       0x00000000       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o
 
-.stack          0xa0001e00      0x400
- .stack         0xa0001e00      0x400 stack
+.stack          0xa0001e18      0x400
+ .stack         0xa0001e18      0x400 stack
 
-.bss            0xa0001cb0      0x134
- .bss           0xa0001cb0      0x134 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+.bss            0xa0001cc4      0x134
+ .bss           0xa0001cc4      0x134 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
 
 ._debug_exception
                 0xbfc00480       0x2c
@@ -2318,406 +2326,430 @@ LOAD data_init
                 0x9d0013ec      0x254 build/default/production/_ext/1360937237/uart.o
                 0x9d0013ec                _IntHandlerDrvUsartInstance0
 
+.text._IntHandlerExternalInterruptInstance0
+                0x9d001640      0x22c
+ .text._IntHandlerExternalInterruptInstance0
+                0x9d001640      0x22c build/default/production/_ext/1688732426/system_interrupt.o
+                0x9d001640                _IntHandlerExternalInterruptInstance0
+
 .text.system_get_rtc_time
-                0x9d001640      0x1b0
+                0x9d00186c      0x1b0
  .text.system_get_rtc_time
-                0x9d001640      0x1b0 build/default/production/_ext/1360937237/osTimer.o
-                0x9d001640                system_get_rtc_time
+                0x9d00186c      0x1b0 build/default/production/_ext/1360937237/osTimer.o
+                0x9d00186c                system_get_rtc_time
 
 .text.drv_R8025T_write
-                0x9d0017f0      0x1a0
+                0x9d001a1c      0x1a0
  .text.drv_R8025T_write
-                0x9d0017f0      0x1a0 build/default/production/_ext/1360937237/drvR8025I2C.o
-                0x9d0017f0                drv_R8025T_write
-
-.text._IntHandlerDrvI2CInstance0
-                0x9d001990      0x130
- .text._IntHandlerDrvI2CInstance0
-                0x9d001990      0x130 build/default/production/_ext/1688732426/system_interrupt.o
-                0x9d001990                _IntHandlerDrvI2CInstance0
-
-.rodata         0x9d001ac0      0x128
- .rodata        0x9d001ac0      0x128 build/default/production/_ext/1688732426/system_exceptions.o
+                0x9d001a1c      0x1a0 build/default/production/_ext/1360937237/drvR8025I2C.o
+                0x9d001a1c                drv_R8025T_write
 
 .text.SYS_Initialize
-                0x9d001be8       0xfc
+                0x9d001bbc      0x14c
  .text.SYS_Initialize
-                0x9d001be8       0xfc build/default/production/_ext/1688732426/system_init.o
-                0x9d001be8                SYS_Initialize
+                0x9d001bbc      0x14c build/default/production/_ext/1688732426/system_init.o
+                0x9d001bbc                SYS_Initialize
+
+.text._IntHandlerDrvI2CInstance0
+                0x9d001d08      0x130
+ .text._IntHandlerDrvI2CInstance0
+                0x9d001d08      0x130 build/default/production/_ext/1688732426/system_interrupt.o
+                0x9d001d08                _IntHandlerDrvI2CInstance0
+
+.rodata         0x9d001e38      0x128
+ .rodata        0x9d001e38      0x128 build/default/production/_ext/1688732426/system_exceptions.o
 
 .text.drv_R8025T_check_read
-                0x9d001ce4       0xe8
+                0x9d001f60       0xe8
  .text.drv_R8025T_check_read
-                0x9d001ce4       0xe8 build/default/production/_ext/1360937237/drvR8025I2C.o
-                0x9d001ce4                drv_R8025T_check_read
-
-.text.SYS_DEVCON_PerformanceConfig
-                0x9d001dcc       0xdc
- .text.SYS_DEVCON_PerformanceConfig
-                0x9d001dcc       0xdc build/default/production/_ext/912498863/sys_devcon_pic32mx.o
-                0x9d001dcc                SYS_DEVCON_PerformanceConfig
-
-.text.general_exception
-                0x9d001ea8       0xdc
- .text.general_exception
-                0x9d001ea8       0xdc d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
-                0x9d001ea8                _general_exception_context
-
-.text.IntHandlerDrvTmrInstance0
-                0x9d001f84       0xd4
- .text.IntHandlerDrvTmrInstance0
-                0x9d001f84       0xd4 build/default/production/_ext/1688732426/system_interrupt.o
-                0x9d001f84                IntHandlerDrvTmrInstance0
-
-.text.uart2Init
-                0x9d002058       0xd4
- .text.uart2Init
-                0x9d002058       0xd4 build/default/production/_ext/1360937237/uart.o
-                0x9d002058                uart2Init
-
-.dinit          0x9d00212c       0xc0
- .dinit         0x9d00212c       0xc0 data_init
+                0x9d001f60       0xe8 build/default/production/_ext/1360937237/drvR8025I2C.o
+                0x9d001f60                drv_R8025T_check_read
 
 .text.APP_Tasks
-                0x9d0021ec       0xb8
+                0x9d002048       0xe0
  .text.APP_Tasks
-                0x9d0021ec       0xb8 build/default/production/_ext/1360937237/app.o
-                0x9d0021ec                APP_Tasks
+                0x9d002048       0xe0 build/default/production/_ext/1360937237/app.o
+                0x9d002048                APP_Tasks
+
+.dinit          0x9d002128       0xe0
+ .dinit         0x9d002128       0xe0 data_init
+
+.text.SYS_DEVCON_PerformanceConfig
+                0x9d002208       0xdc
+ .text.SYS_DEVCON_PerformanceConfig
+                0x9d002208       0xdc build/default/production/_ext/912498863/sys_devcon_pic32mx.o
+                0x9d002208                SYS_DEVCON_PerformanceConfig
+
+.text.general_exception
+                0x9d0022e4       0xdc
+ .text.general_exception
+                0x9d0022e4       0xdc d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+                0x9d0022e4                _general_exception_context
+
+.text.IntHandlerDrvTmrInstance0
+                0x9d0023c0       0xd4
+ .text.IntHandlerDrvTmrInstance0
+                0x9d0023c0       0xd4 build/default/production/_ext/1688732426/system_interrupt.o
+                0x9d0023c0                IntHandlerDrvTmrInstance0
+
+.text.uart2Init
+                0x9d002494       0xd4
+ .text.uart2Init
+                0x9d002494       0xd4 build/default/production/_ext/1360937237/uart.o
+                0x9d002494                uart2Init
 
 .text.NandFlashRaw_ReadId
-                0x9d0022a4       0xb8
+                0x9d002568       0xb8
  .text.NandFlashRaw_ReadId
-                0x9d0022a4       0xb8 build/default/production/_ext/1360937237/nandFlashDrv.o
-                0x9d0022a4                NandFlashRaw_ReadId
+                0x9d002568       0xb8 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0x9d002568                NandFlashRaw_ReadId
 
 .text.system_set_rtc_time
-                0x9d00235c       0xb0
+                0x9d002620       0xb0
  .text.system_set_rtc_time
-                0x9d00235c       0xb0 build/default/production/_ext/1360937237/osTimer.o
-                0x9d00235c                system_set_rtc_time
+                0x9d002620       0xb0 build/default/production/_ext/1360937237/osTimer.o
+                0x9d002620                system_set_rtc_time
 
 .text.initFlashBuffer
-                0x9d00240c       0xac
+                0x9d0026d0       0xac
  .text.initFlashBuffer
-                0x9d00240c       0xac build/default/production/_ext/1360937237/file.o
-                0x9d00240c                initFlashBuffer
+                0x9d0026d0       0xac build/default/production/_ext/1360937237/file.o
+                0x9d0026d0                initFlashBuffer
 
 .text.ControlPortInit
-                0x9d0024b8       0xa8
+                0x9d00277c       0xa8
  .text.ControlPortInit
-                0x9d0024b8       0xa8 build/default/production/_ext/1360937237/nandFlashDrv.o
-                0x9d0024b8                ControlPortInit
-
-.text.DRV_I2C_Initialize
-                0x9d002560       0xa0
- .text.DRV_I2C_Initialize
-                0x9d002560       0xa0 build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d002560                DRV_I2C_Initialize
-
-.text.is_valid_bcd
-                0x9d002600       0x9c
- .text.is_valid_bcd
-                0x9d002600       0x9c build/default/production/_ext/1360937237/baseFun.o
-                0x9d002600                is_valid_bcd
-
-.text.Delay_ns  0x9d00269c       0x98
- .text.Delay_ns
-                0x9d00269c       0x98 build/default/production/_ext/1360937237/nandFlashDrv.o
-
-.text.SYS_PORTS_Initialize
-                0x9d002734       0x90
- .text.SYS_PORTS_Initialize
-                0x9d002734       0x90 build/default/production/_ext/822048611/sys_ports_static.o
-                0x9d002734                SYS_PORTS_Initialize
-
-.text.WDTtimer2Init
-                0x9d0027c4       0x90
- .text.WDTtimer2Init
-                0x9d0027c4       0x90 build/default/production/_ext/1360937237/tmr.o
-                0x9d0027c4                WDTtimer2Init
-
-.text.compare_string
-                0x9d002854       0x8c
- .text.compare_string
-                0x9d002854       0x8c build/default/production/_ext/1360937237/baseFun.o
-                0x9d002854                compare_string
-
-.text.DRV_I2C_WaitForStartComplete
-                0x9d0028e0       0x88
- .text.DRV_I2C_WaitForStartComplete
-                0x9d0028e0       0x88 build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d0028e0                DRV_I2C_WaitForStartComplete
-
-.text.DRV_I2C_WaitForStopComplete
-                0x9d002968       0x88
- .text.DRV_I2C_WaitForStopComplete
-                0x9d002968       0x88 build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d002968                DRV_I2C_WaitForStopComplete
+                0x9d00277c       0xa8 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0x9d00277c                ControlPortInit
 
 .text.RTCBCD2DateTime
-                0x9d0029f0       0x80
+                0x9d002824       0xa4
  .text.RTCBCD2DateTime
-                0x9d0029f0       0x80 build/default/production/_ext/1360937237/baseFun.o
-                0x9d0029f0                RTCBCD2DateTime
+                0x9d002824       0xa4 build/default/production/_ext/1360937237/baseFun.o
+                0x9d002824                RTCBCD2DateTime
+
+.text.DRV_I2C_Initialize
+                0x9d0028c8       0xa0
+ .text.DRV_I2C_Initialize
+                0x9d0028c8       0xa0 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d0028c8                DRV_I2C_Initialize
+
+.text.is_valid_bcd
+                0x9d002968       0x9c
+ .text.is_valid_bcd
+                0x9d002968       0x9c build/default/production/_ext/1360937237/baseFun.o
+                0x9d002968                is_valid_bcd
+
+.text.Delay_ns  0x9d002a04       0x98
+ .text.Delay_ns
+                0x9d002a04       0x98 build/default/production/_ext/1360937237/nandFlashDrv.o
+
+.text.SYS_PORTS_Initialize
+                0x9d002a9c       0x90
+ .text.SYS_PORTS_Initialize
+                0x9d002a9c       0x90 build/default/production/_ext/822048611/sys_ports_static.o
+                0x9d002a9c                SYS_PORTS_Initialize
+
+.text.WDTtimer2Init
+                0x9d002b2c       0x90
+ .text.WDTtimer2Init
+                0x9d002b2c       0x90 build/default/production/_ext/1360937237/tmr.o
+                0x9d002b2c                WDTtimer2Init
+
+.text.compare_string
+                0x9d002bbc       0x8c
+ .text.compare_string
+                0x9d002bbc       0x8c build/default/production/_ext/1360937237/baseFun.o
+                0x9d002bbc                compare_string
+
+.text.DRV_I2C_WaitForStartComplete
+                0x9d002c48       0x88
+ .text.DRV_I2C_WaitForStartComplete
+                0x9d002c48       0x88 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d002c48                DRV_I2C_WaitForStartComplete
+
+.text.DRV_I2C_WaitForStopComplete
+                0x9d002cd0       0x88
+ .text.DRV_I2C_WaitForStopComplete
+                0x9d002cd0       0x88 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d002cd0                DRV_I2C_WaitForStopComplete
 
 .text.DateTime2RTCBCD
-                0x9d002a70       0x80
+                0x9d002d58       0x80
  .text.DateTime2RTCBCD
-                0x9d002a70       0x80 build/default/production/_ext/1360937237/baseFun.o
-                0x9d002a70                DateTime2RTCBCD
+                0x9d002d58       0x80 build/default/production/_ext/1360937237/baseFun.o
+                0x9d002d58                DateTime2RTCBCD
+
+.text.minInterrupt
+                0x9d002dd8       0x80
+ .text.minInterrupt
+                0x9d002dd8       0x80 build/default/production/_ext/1360937237/osTimer.o
+                0x9d002dd8                minInterrupt
 
 .text.DRV_I2C_WaitForByteWriteToComplete
-                0x9d002af0       0x7c
+                0x9d002e58       0x7c
  .text.DRV_I2C_WaitForByteWriteToComplete
-                0x9d002af0       0x7c build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d002af0                DRV_I2C_WaitForByteWriteToComplete
+                0x9d002e58       0x7c build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d002e58                DRV_I2C_WaitForByteWriteToComplete
 
 .text.DRV_I2C_MasterStart
-                0x9d002b6c       0x78
+                0x9d002ed4       0x78
  .text.DRV_I2C_MasterStart
-                0x9d002b6c       0x78 build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d002b6c                DRV_I2C_MasterStart
+                0x9d002ed4       0x78 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d002ed4                DRV_I2C_MasterStart
 
-.text.initPLC   0x9d002be4       0x6c
- .text.initPLC  0x9d002be4       0x6c build/default/production/_ext/1360937237/protocolPLC.o
-                0x9d002be4                initPLC
+.text.setAlarmClockStart
+                0x9d002f4c       0x74
+ .text.setAlarmClockStart
+                0x9d002f4c       0x74 build/default/production/_ext/1360937237/osTimer.o
+                0x9d002f4c                setAlarmClockStart
+
+.text.initPLC   0x9d002fc0       0x6c
+ .text.initPLC  0x9d002fc0       0x6c build/default/production/_ext/1360937237/protocolPLC.o
+                0x9d002fc0                initPLC
 
 .text.DRV_I2C_ByteWrite
-                0x9d002c50       0x6c
+                0x9d00302c       0x6c
  .text.DRV_I2C_ByteWrite
-                0x9d002c50       0x6c build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d002c50                DRV_I2C_ByteWrite
+                0x9d00302c       0x6c build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d00302c                DRV_I2C_ByteWrite
 
 .text.DRV_I2C_WaitForACKOrNACKComplete
-                0x9d002cbc       0x60
+                0x9d003098       0x60
  .text.DRV_I2C_WaitForACKOrNACKComplete
-                0x9d002cbc       0x60 build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d002cbc                DRV_I2C_WaitForACKOrNACKComplete
+                0x9d003098       0x60 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d003098                DRV_I2C_WaitForACKOrNACKComplete
 
 .text._DRV_I2C_QueuePop_0
-                0x9d002d1c       0x58
+                0x9d0030f8       0x58
  .text._DRV_I2C_QueuePop_0
-                0x9d002d1c       0x58 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
-                0x9d002d1c                _DRV_I2C_QueuePop_0
+                0x9d0030f8       0x58 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                0x9d0030f8                _DRV_I2C_QueuePop_0
 
 .text.SYS_CLK_Initialize
-                0x9d002d74       0x58
+                0x9d003150       0x58
  .text.SYS_CLK_Initialize
-                0x9d002d74       0x58 build/default/production/_ext/639803181/sys_clk_static.o
-                0x9d002d74                SYS_CLK_Initialize
+                0x9d003150       0x58 build/default/production/_ext/639803181/sys_clk_static.o
+                0x9d003150                SYS_CLK_Initialize
 
 .text.SYS_DEVCON_SystemUnlock
-                0x9d002dcc       0x58
+                0x9d0031a8       0x58
  .text.SYS_DEVCON_SystemUnlock
-                0x9d002dcc       0x58 build/default/production/_ext/912498863/sys_devcon.o
-                0x9d002dcc                SYS_DEVCON_SystemUnlock
+                0x9d0031a8       0x58 build/default/production/_ext/912498863/sys_devcon.o
+                0x9d0031a8                SYS_DEVCON_SystemUnlock
 
 .text.main_entry
-                0x9d002e24       0x54
+                0x9d003200       0x54
  .text.main_entry
-                0x9d002e24       0x54 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o
-                0x9d002e58                __crt0_exit
+                0x9d003200       0x54 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX664F128L/crt0_mips32r2.o
+                0x9d003234                __crt0_exit
 
 .text.DRV_I2C_WaitForReadByteAvailable
-                0x9d002e78       0x50
+                0x9d003254       0x50
  .text.DRV_I2C_WaitForReadByteAvailable
-                0x9d002e78       0x50 build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d002e78                DRV_I2C_WaitForReadByteAvailable
+                0x9d003254       0x50 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d003254                DRV_I2C_WaitForReadByteAvailable
 
 .text.SYS_DEVCON_SystemLock
-                0x9d002ec8       0x48
+                0x9d0032a4       0x48
  .text.SYS_DEVCON_SystemLock
-                0x9d002ec8       0x48 build/default/production/_ext/912498863/sys_devcon.o
-                0x9d002ec8                SYS_DEVCON_SystemLock
+                0x9d0032a4       0x48 build/default/production/_ext/912498863/sys_devcon.o
+                0x9d0032a4                SYS_DEVCON_SystemLock
 
 .text._bootstrap_exception_handler
-                0x9d002f10       0x48
+                0x9d0032ec       0x48
  .text._bootstrap_exception_handler
-                0x9d002f10       0x48 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
-                0x9d002f10                _bootstrap_exception_handler
+                0x9d0032ec       0x48 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+                0x9d0032ec                _bootstrap_exception_handler
 
 .vector_default
-                0x9d002f58       0x48
+                0x9d003334       0x48
  .vector_default
-                0x9d002f58       0x48 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
-                0x9d002f58                _DefaultInterrupt
+                0x9d003334       0x48 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+                0x9d003334                _DefaultInterrupt
 
 .text.DRV_I2C_MasterStop
-                0x9d002fa0       0x44
+                0x9d00337c       0x44
  .text.DRV_I2C_MasterStop
-                0x9d002fa0       0x44 build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d002fa0                DRV_I2C_MasterStop
+                0x9d00337c       0x44 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d00337c                DRV_I2C_MasterStop
 
-.text           0x9d002fe4       0x44
- .text          0x9d002fe4       0x44 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
-                0x9d002fe4                __pic32_software_reset
+.text           0x9d0033c0       0x44
+ .text          0x9d0033c0       0x44 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
+                0x9d0033c0                __pic32_software_reset
 
 .text._general_exception_handler
-                0x9d003028       0x40
+                0x9d003404       0x40
  .text._general_exception_handler
-                0x9d003028       0x40 build/default/production/_ext/1688732426/system_exceptions.o
-                0x9d003028                _general_exception_handler
+                0x9d003404       0x40 build/default/production/_ext/1688732426/system_exceptions.o
+                0x9d003404                _general_exception_handler
 
 .text.DRV_I2C_SetUpByteRead
-                0x9d003068       0x40
+                0x9d003444       0x40
  .text.DRV_I2C_SetUpByteRead
-                0x9d003068       0x40 build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d003068                DRV_I2C_SetUpByteRead
+                0x9d003444       0x40 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d003444                DRV_I2C_SetUpByteRead
+
+.text.BCD2byte  0x9d003484       0x3c
+ .text.BCD2byte
+                0x9d003484       0x3c build/default/production/_ext/1360937237/baseFun.o
+                0x9d003484                BCD2byte
 
 .text.DRV_I2C_Errata32MZ_I2CModuleToggle
-                0x9d0030a8       0x3c
+                0x9d0034c0       0x3c
  .text.DRV_I2C_Errata32MZ_I2CModuleToggle
-                0x9d0030a8       0x3c build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d0030a8                DRV_I2C_Errata32MZ_I2CModuleToggle
+                0x9d0034c0       0x3c build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d0034c0                DRV_I2C_Errata32MZ_I2CModuleToggle
 
 .text._DRV_I2C_Advance_Queue_0
-                0x9d0030e4       0x38
+                0x9d0034fc       0x38
  .text._DRV_I2C_Advance_Queue_0
-                0x9d0030e4       0x38 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
-                0x9d0030e4                _DRV_I2C_Advance_Queue_0
+                0x9d0034fc       0x38 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                0x9d0034fc                _DRV_I2C_Advance_Queue_0
 
-.text.mem_cpy   0x9d00311c       0x38
- .text.mem_cpy  0x9d00311c       0x38 build/default/production/_ext/1360937237/baseFun.o
-                0x9d00311c                mem_cpy
+.text.mem_cpy   0x9d003534       0x38
+ .text.mem_cpy  0x9d003534       0x38 build/default/production/_ext/1360937237/baseFun.o
+                0x9d003534                mem_cpy
 
-.text.byte2BCD  0x9d003154       0x38
+.text.byte2BCD  0x9d00356c       0x38
  .text.byte2BCD
-                0x9d003154       0x38 build/default/production/_ext/1360937237/baseFun.o
-                0x9d003154                byte2BCD
+                0x9d00356c       0x38 build/default/production/_ext/1360937237/baseFun.o
+                0x9d00356c                byte2BCD
+
+.text.SYS_INT_ExternalInterruptTriggerSet
+                0x9d0035a4       0x34
+ .text.SYS_INT_ExternalInterruptTriggerSet
+                0x9d0035a4       0x34 build/default/production/_ext/711155467/sys_int_pic32.o
+                0x9d0035a4                SYS_INT_ExternalInterruptTriggerSet
 
 .text.APP_Initialize
-                0x9d00318c       0x30
+                0x9d0035d8       0x30
  .text.APP_Initialize
-                0x9d00318c       0x30 build/default/production/_ext/1360937237/app.o
-                0x9d00318c                APP_Initialize
+                0x9d0035d8       0x30 build/default/production/_ext/1360937237/app.o
+                0x9d0035d8                APP_Initialize
 
 .text.initFlashInfo
-                0x9d0031bc       0x30
+                0x9d003608       0x30
  .text.initFlashInfo
-                0x9d0031bc       0x30 build/default/production/_ext/1360937237/file.o
-                0x9d0031bc                initFlashInfo
+                0x9d003608       0x30 build/default/production/_ext/1360937237/file.o
+                0x9d003608                initFlashInfo
 
 .text.DRV_I2C_MasterACKSend
-                0x9d0031ec       0x30
+                0x9d003638       0x30
  .text.DRV_I2C_MasterACKSend
-                0x9d0031ec       0x30 build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d0031ec                DRV_I2C_MasterACKSend
+                0x9d003638       0x30 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d003638                DRV_I2C_MasterACKSend
 
 .text.DRV_I2C_MasterNACKSend
-                0x9d00321c       0x30
+                0x9d003668       0x30
  .text.DRV_I2C_MasterNACKSend
-                0x9d00321c       0x30 build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d00321c                DRV_I2C_MasterNACKSend
+                0x9d003668       0x30 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d003668                DRV_I2C_MasterNACKSend
 
 .text.DRV_I2C_MasterBusIdle
-                0x9d00324c       0x2c
+                0x9d003698       0x2c
  .text.DRV_I2C_MasterBusIdle
-                0x9d00324c       0x2c build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d00324c                DRV_I2C_MasterBusIdle
+                0x9d003698       0x2c build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d003698                DRV_I2C_MasterBusIdle
 
 .text.SYS_Tasks
-                0x9d003278       0x28
+                0x9d0036c4       0x28
  .text.SYS_Tasks
-                0x9d003278       0x28 build/default/production/_ext/1688732426/system_tasks.o
-                0x9d003278                SYS_Tasks
+                0x9d0036c4       0x28 build/default/production/_ext/1688732426/system_tasks.o
+                0x9d0036c4                SYS_Tasks
 
 .text.SetPortEDirectionOut
-                0x9d0032a0       0x28
+                0x9d0036ec       0x28
  .text.SetPortEDirectionOut
-                0x9d0032a0       0x28 build/default/production/_ext/1360937237/nandFlashDrv.o
-                0x9d0032a0                SetPortEDirectionOut
+                0x9d0036ec       0x28 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0x9d0036ec                SetPortEDirectionOut
 
 .text.SetPortEDirectionIn
-                0x9d0032c8       0x28
+                0x9d003714       0x28
  .text.SetPortEDirectionIn
-                0x9d0032c8       0x28 build/default/production/_ext/1360937237/nandFlashDrv.o
-                0x9d0032c8                SetPortEDirectionIn
+                0x9d003714       0x28 build/default/production/_ext/1360937237/nandFlashDrv.o
+                0x9d003714                SetPortEDirectionIn
 
-.text.BCD2byte  0x9d0032f0       0x24
- .text.BCD2byte
-                0x9d0032f0       0x24 build/default/production/_ext/1360937237/baseFun.o
-                0x9d0032f0                BCD2byte
-
-.text.main      0x9d003314       0x20
- .text.main     0x9d003314       0x20 build/default/production/_ext/1360937237/main.o
-                0x9d003314                main
+.text.main      0x9d00373c       0x20
+ .text.main     0x9d00373c       0x20 build/default/production/_ext/1360937237/main.o
+                0x9d00373c                main
 
 .text.drv_I2C_init
-                0x9d003334       0x1c
+                0x9d00375c       0x1c
  .text.drv_I2C_init
-                0x9d003334       0x1c build/default/production/_ext/1360937237/drvR8025I2C.o
-                0x9d003334                drv_I2C_init
+                0x9d00375c       0x1c build/default/production/_ext/1360937237/drvR8025I2C.o
+                0x9d00375c                drv_I2C_init
 
 .text.SYS_DEVCON_JTAGDisable
-                0x9d003350       0x1c
+                0x9d003778       0x1c
  .text.SYS_DEVCON_JTAGDisable
-                0x9d003350       0x1c build/default/production/_ext/912498863/sys_devcon.o
-                0x9d003350                SYS_DEVCON_JTAGDisable
+                0x9d003778       0x1c build/default/production/_ext/912498863/sys_devcon.o
+                0x9d003778                SYS_DEVCON_JTAGDisable
 
 .text.IsQueueEmpty_0
-                0x9d00336c       0x18
+                0x9d003794       0x18
  .text.IsQueueEmpty_0
-                0x9d00336c       0x18 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
-                0x9d00336c                IsQueueEmpty_0
+                0x9d003794       0x18 build/default/production/_ext/12144542/drv_i2c_static_buffer_model.o
+                0x9d003794                IsQueueEmpty_0
 
 .text.SYS_INT_Initialize
-                0x9d003384       0x18
+                0x9d0037ac       0x18
  .text.SYS_INT_Initialize
-                0x9d003384       0x18 build/default/production/_ext/711155467/sys_int_pic32.o
-                0x9d003384                SYS_INT_Initialize
+                0x9d0037ac       0x18 build/default/production/_ext/711155467/sys_int_pic32.o
+                0x9d0037ac                SYS_INT_Initialize
 
-.text           0x9d00339c       0x18
- .text          0x9d00339c       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
-                0x9d00339c                _nmi_handler
+.text           0x9d0037c4       0x18
+ .text          0x9d0037c4       0x18 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+                0x9d0037c4                _nmi_handler
 
 .text.DRV_I2C_WriteByteAcknowledged
-                0x9d0033b4       0x14
+                0x9d0037dc       0x14
  .text.DRV_I2C_WriteByteAcknowledged
-                0x9d0033b4       0x14 build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d0033b4                DRV_I2C_WriteByteAcknowledged
+                0x9d0037dc       0x14 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d0037dc                DRV_I2C_WriteByteAcknowledged
 
 .text.SYS_DEVCON_Initialize
-                0x9d0033c8       0x14
+                0x9d0037f0       0x14
  .text.SYS_DEVCON_Initialize
-                0x9d0033c8       0x14 build/default/production/_ext/912498863/sys_devcon.o
-                0x9d0033c8                SYS_DEVCON_Initialize
+                0x9d0037f0       0x14 build/default/production/_ext/912498863/sys_devcon.o
+                0x9d0037f0                SYS_DEVCON_Initialize
 
 .text.DRV_I2C_ByteRead
-                0x9d0033dc       0x10
+                0x9d003804       0x10
  .text.DRV_I2C_ByteRead
-                0x9d0033dc       0x10 build/default/production/_ext/1360937237/drv_i2c.o
-                0x9d0033dc                DRV_I2C_ByteRead
+                0x9d003804       0x10 build/default/production/_ext/1360937237/drv_i2c.o
+                0x9d003804                DRV_I2C_ByteRead
 
 .text.SYS_CLK_SystemFrequencyGet
-                0x9d0033ec        0xc
+                0x9d003814        0xc
  .text.SYS_CLK_SystemFrequencyGet
-                0x9d0033ec        0xc build/default/production/_ext/639803181/sys_clk_static.o
-                0x9d0033ec                SYS_CLK_SystemFrequencyGet
+                0x9d003814        0xc build/default/production/_ext/639803181/sys_clk_static.o
+                0x9d003814                SYS_CLK_SystemFrequencyGet
 
 .text.SYS_CLK_PeripheralFrequencyGet
-                0x9d0033f8        0xc
+                0x9d003820        0xc
  .text.SYS_CLK_PeripheralFrequencyGet
-                0x9d0033f8        0xc build/default/production/_ext/639803181/sys_clk_static.o
-                0x9d0033f8                SYS_CLK_PeripheralFrequencyGet
+                0x9d003820        0xc build/default/production/_ext/639803181/sys_clk_static.o
+                0x9d003820                SYS_CLK_PeripheralFrequencyGet
 
 .text.SYS_DEVCON_Tasks
-                0x9d003404        0x8
+                0x9d00382c        0x8
  .text.SYS_DEVCON_Tasks
-                0x9d003404        0x8 build/default/production/_ext/912498863/sys_devcon.o
-                0x9d003404                SYS_DEVCON_Tasks
+                0x9d00382c        0x8 build/default/production/_ext/912498863/sys_devcon.o
+                0x9d00382c                SYS_DEVCON_Tasks
 
 .text._on_reset
-                0x9d00340c        0x8
+                0x9d003834        0x8
  .text._on_reset
-                0x9d00340c        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
-                0x9d00340c                _on_reset
+                0x9d003834        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+                0x9d003834                _on_reset
 
 .text._on_bootstrap
-                0x9d003414        0x8
+                0x9d00383c        0x8
  .text._on_bootstrap
-                0x9d003414        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
-                0x9d003414                _on_bootstrap
+                0x9d00383c        0x8 d:/software/mpl/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+                0x9d00383c                _on_bootstrap
 
-.rodata         0x9d00341c        0x4
- .rodata        0x9d00341c        0x4 build/default/production/_ext/1688732426/system_init.o
-                0x9d00341c                sysDevconInit
+.rodata         0x9d003844        0x4
+ .rodata        0x9d003844        0x4 build/default/production/_ext/1688732426/system_init.o
+                0x9d003844                sysDevconInit

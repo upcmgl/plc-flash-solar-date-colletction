@@ -3,15 +3,28 @@
 
 #include "app.h"
 
-// datetime 
+ 
+//
+//#define WEEKDAY     9       //星期
+//#define CENTURY     8       //年低字节
+//#define MSECOND_H   7       //毫秒高字节，目前仅提供10毫秒精度
+//#define MSECOND_L   6       //毫秒低字节，目前仅提供10毫秒精度
+//#define YEAR		5       //年，不带世纪
+//#define MONTH		4       //月
+//#define DAY  		3       //日
+//#define HOUR		2       //时
+//#define MINUTE		1       //分
+//#define SECOND		0       //秒
 
-#define WEEKDAY     9       //星期
-#define CENTURY     8       //年低字节
-#define MSECOND_H   7       //毫秒高字节，目前仅提供10毫秒精度
-#define MSECOND_L   6       //毫秒低字节，目前仅提供10毫秒精度
-#define YEAR		5       //年，不带世纪
-#define MONTH		4       //月
-#define DAY  		3       //日
+
+// datetime
+#define WEEKALARM   10
+#define HOURALARM   9
+#define MINALARM    8
+#define YEAR		6       //年，不带世纪
+#define MONTH		5       //月
+#define DAY  		4
+#define WEEKDAY 	3       //日
 #define HOUR		2       //时
 #define MINUTE		1       //分
 #define SECOND		0       //秒

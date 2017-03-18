@@ -185,7 +185,7 @@
       <Template>
         <Name>system_init.c</Name>
         <Path>Source Files/app/system_config/default</Path>
-        <Checksum>D0520056EB41659C8E7FBD84A010723B</Checksum>
+        <Checksum>1E91DE6AEBBEBC38C1CDE1314BC944FA</Checksum>
         <ProjectFileChecksum>23F5C323ACA48E2ECF663406DDC7D100</ProjectFileChecksum>
       </Template>
       <Template>
@@ -246,7 +246,6 @@
         <Name>system_config.h</Name>
         <Path>Header Files/app/system_config/default</Path>
         <Checksum>67EC21ADEE2ACD77B87F8419EFBBCBD3</Checksum>
-        <ProjectFileChecksum>B75C1CADE91C8E33F96536641268BAC1</ProjectFileChecksum>
       </Template>
       <Template>
         <Name>app.h</Name>
@@ -270,7 +269,7 @@
       <Template>
         <Name>system_interrupt.c</Name>
         <Path>Source Files/app/system_config/default</Path>
-        <Checksum>E255828329AFD8EFE0A1A33E96778678</Checksum>
+        <Checksum>FE87E31B1C31E87C958EC9D993443D6A</Checksum>
         <ProjectFileChecksum>416D25037D717BAA99A83B5F3604E5C5</ProjectFileChecksum>
       </Template>
       <Template>

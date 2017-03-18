@@ -55,8 +55,12 @@ uint8_t  compare_string(uint8_t *str1,uint8_t *str2,uint16_t len)
 }
 uint8_t BCD2byte(uint8_t bcd)
 {
-   return ((bcd>>4) & 0x000F) * 10 + ( bcd & 0x000F );
+    volatile uint8_t a=( bcd & 0x000F);
+    volatile uint8_t b=((bcd>>4) & 0x000F) * 10;
+    return a+b;
+ //  return ((bcd>>4) & 0x000F) * 10 + ( bcd & 0x000F );
 }
+
 //
 //  trans bytes to BCD
 //
@@ -84,6 +88,9 @@ void RTCBCD2DateTime(uint8_t *dt,uint8_t *nValue)
      dt[DAY] =    BCD2byte(nValue[4]);
      dt[MONTH] =  BCD2byte(nValue[5]);
      dt[YEAR] =   BCD2byte(nValue[6]);
+     dt[MINALARM] =   BCD2byte(nValue[8]);
+     dt[HOURALARM] =   BCD2byte(nValue[9]);
+     dt[WEEKALARM] =   BCD2byte(nValue[10]);
 }
 void  DateTime2RTCBCD(uint8_t *dt,uint8_t *nValue)
 {

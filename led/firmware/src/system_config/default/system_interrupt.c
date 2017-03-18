@@ -69,6 +69,45 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // Section: System Interrupt Vector Functions
 // *****************************************************************************
 // *****************************************************************************
+void __ISR(_EXTERNAL_0_VECTOR, IPL1AUTO) _IntHandlerExternalInterruptInstance0(void)
+{
+    uint8_t RtcState =0;
+     uint8_t rtc[16];
+    volatile uint8_t flag=0;
+    IFS0bits.INT0IF = 0;
+    drv_R8025T_read(0xE,&RtcState,1);
+    flag = RtcState&0x18 ;
+    if (flag== 0x10)                 //TF  fixed interrupt;
+    {
+        RtcState = 0;
+        drv_R8025T_write(0xE,&RtcState,1);
+        drv_R8025T_read(0,rtc,16);
+        sysTime.timeDate.min   = rtc[1];
+        sysTime.timeDate.hour  = rtc[2];
+        sysTime.timeDate.day   = rtc[4];
+        sysTime.timeDate.month = rtc[5];
+        sysTime.timeDate.year  = rtc[6];
+        if(sysTime.timeDate.hour == 0x21)
+        {
+            sysTime.sysTimeRunState = (uint8_t)DayEnd;     //the day's record is end;
+        }
+        
+    }
+    else if(flag == 0x08)                   //alarm interrupt;
+    {
+        RtcState = 0;
+        drv_R8025T_write(0xE,&RtcState,1);
+        minInterrupt(1);
+        sysTime.sysTimeRunState =(uint8_t) DayStart;      //the 
+    }
+    else if (flag== 0x01)                 //TF  fixed interrupt;
+    {
+        RtcState = 0;
+        drv_R8025T_write(0xE,&RtcState,1);
+    }
+    
+ //   PLIB_INT_SourceFlagClear(INT_ID_0, INT_SOURCE_EXTERNAL_0);
+}
 
     
 void __ISR(_TIMER_2_VECTOR, ipl1AUTO) IntHandlerDrvTmrInstance0(void)
