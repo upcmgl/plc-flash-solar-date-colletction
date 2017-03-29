@@ -118,6 +118,7 @@ void picApplyFrame(uint8_t picApplyState,uint8_t *destinationAddressTest);
 void initPLC();
 
 uint8_t plcService();
+
 #endif /* _EXAMPLE_FILE_NAME_H */
 
 /* *****************************************************************************

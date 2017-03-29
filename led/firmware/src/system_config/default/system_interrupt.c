@@ -91,13 +91,14 @@ void __ISR(_EXTERNAL_0_VECTOR, IPL1AUTO) _IntHandlerExternalInterruptInstance0(v
         {
             sysTime.sysTimeRunState = (uint8_t)DayEnd;     //the day's record is end;
         }
+        sysTime.fixedMinInterrupt  = 1;       // every 6 mins fixed-cycle coming,informing plc protocol.
         
     }
     else if(flag == 0x08)                   //alarm interrupt;
     {
         RtcState = 0;
         drv_R8025T_write(0xE,&RtcState,1);
-        minInterrupt(1);
+        minInterrupt(1);                   //fixed-cycle configuration.   
         sysTime.sysTimeRunState =(uint8_t) DayStart;      //the 
     }
     else if (flag== 0x01)                 //TF  fixed interrupt;
@@ -105,8 +106,7 @@ void __ISR(_EXTERNAL_0_VECTOR, IPL1AUTO) _IntHandlerExternalInterruptInstance0(v
         RtcState = 0;
         drv_R8025T_write(0xE,&RtcState,1);
     }
-    
- //   PLIB_INT_SourceFlagClear(INT_ID_0, INT_SOURCE_EXTERNAL_0);
+
 }
 
     

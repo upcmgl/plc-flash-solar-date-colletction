@@ -1,3 +1,19 @@
+/*******************************************************************************
+********************************************************************************
+**
+**  Filename:       OStime.c
+**  Copyright(c):   2017 Topscomm. All right reserved.
+**  Author:         mgl
+**  Date:           2017.3.25
+**  Device:         MicroInverter Collector, MCU: PIC32MX664F128L
+**  Modify by:
+**  Modify date:
+**  Version:        1.0.0
+**  Describe:
+**
+**
+********************************************************************************
+*******************************************************************************/
 #include "osTimer.h"
 
 //system clock
@@ -71,8 +87,6 @@ bool __attribute__((optimize ("O0"))) system_get_rtc_time(void)
     uint8_t write_rtc[16];
     uint8_t data_len;
     uint8_t idx;
-
-    #ifndef __SOFT_SIMULATOR__
     data_len=drv_R8025T_check_read(rtc);
     if(data_len == 16)
     {
@@ -111,20 +125,17 @@ bool __attribute__((optimize ("O0"))) system_get_rtc_time(void)
         RTCBCD2DateTime(datetime,rtc);
         return true;
     }
-    #endif
-
     return false;
 }
 //INT8U *new_time 格式与datetime相同
-void __attribute__((optimize ("O0"))) system_set_rtc_time(uint8_t *new_time)
+
+void __attribute__((optimize ("O0"))) system_set_rtc_time(uint8_t *new_time,struct nandFlashInfoStr *nandFlashInfo,struct MonthInfoStr *monthInfo)
 {
     uint8_t rtc[8];
     uint8_t write_rtc[8];
 
     DateTime2RTCBCD(new_time,rtc);
 
-    #ifndef __SOFT_SIMULATOR__  
-    //写入8025T的星期是按位标识
     mem_cpy(write_rtc,rtc,8);
     write_rtc[3] = BCD2byte(write_rtc[3]);
     if(write_rtc[3]==7)
@@ -133,5 +144,19 @@ void __attribute__((optimize ("O0"))) system_set_rtc_time(uint8_t *new_time)
     }
     write_rtc[3] = 1<<write_rtc[3];
     drv_R8025T_write(0,write_rtc,7);
-    #endif
+    
+    //when set the system time,we should make the system information block get the system time;
+    nandFlashInfo ->yearMonthCtl[0].year = num2BCD(new_time[6]);
+    nandFlashInfo ->yearMonthCtl[0].monthWithIndex[0].month = num2BCD(new_time[5]);
+    
+    monthInfo ->structLens = sizeof(struct MonthInfoStr);
+    monthInfo ->month =num2BCD(new_time[5]);
+    monthInfo ->dayWithIndex[0].day =num2BCD(new_time[4]);
+    
+    sysTime.timeDate.min   = num2BCD(new_time[1]);
+    sysTime.timeDate.hour  = num2BCD(new_time[2]);
+    sysTime.timeDate.day   = num2BCD(new_time[4]);
+    sysTime.timeDate.month = num2BCD(new_time[5]);
+    sysTime.timeDate.year  = num2BCD(new_time[6]);
+    
 }

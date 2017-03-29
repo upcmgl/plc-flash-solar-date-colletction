@@ -246,4 +246,13 @@ build/default/production/_ext/1360937237/file.o:  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeControl_Unsupported.h  \
  ../../../../../../framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeStatus_Unsupported.h  \
  ../src/nandFlashDrv.h  \
-../src/inverterDate.h 
+../src/inverterDate.h  \
+../src/baseFun.h  \
+ ../src/app.h  \
+../src/system_config/default/system_definitions.h  \
+ ../src/protocolPLC.h  \
+../src/uart.h  \
+../src/tmr.h  \
+../src/drvR8025I2C.h  \
+ ../src/drv_i2c.h  \
+../src/osTimer.h 

@@ -137,10 +137,6 @@ void APP_Initialize ( void )
 
 void __attribute__((optimize("O0"))) APP_Tasks ( void )
 {
-   uint8_t date[3]={0x01,0x80,0x80};
-   uint8_t alarmCtr=0x48;
-   uint8_t extension =0x40;
-   uint8_t flag = 0x00;
      /* Check the application's current state. */
     switch ( appData.state )
     {
@@ -150,8 +146,9 @@ void __attribute__((optimize("O0"))) APP_Tasks ( void )
         case APP_STATE_INIT:
         {
             bool appInitialized = true;
-          system_set_rtc_time(initialTime);
-      
+            
+          system_set_rtc_time(initialTime,&nandFlashInfo,&monthInfo);
+          nandFlashInfo.sysRestarted = 1;
           setAlarmClockStart(4);
 //          drv_R8025T_write(8,date,3);
 //          drv_R8025T_write(13,&extension,1);
@@ -165,16 +162,32 @@ void __attribute__((optimize("O0"))) APP_Tasks ( void )
 
         case APP_STATE_SERVICE_TASKS:
         {
-            //  U2TXREG='A';
-//            if(!plcCtl.picApplyCompleteLoop)
-//                plcService();
-            
+
            while( (nandID=NandFlashRaw_ReadId())!=NAND_FLASH_ID);
-//
-//           nanddrv_erase(3);
-//          fileTest();
-  //         drv_R8025T_write(14,&flag,1);
-          system_get_rtc_time();
+        //   calcAllPageNeededANewDay(nandFlashInfo,monthInfo);
+           //if fixed min interrupted is coming,this part code will perform.
+           if(sysTime.fixedMinInterrupt == 1)
+          { 
+              sysTime.fixedMinInterrupt =0;
+              bufferClear((uint8_t *)&invertDateCtrl,sizeof(struct microInverterDateCtrl));  //clear the microinveterdate's buffer.
+                
+              timeMapping(&nandFlashInfo,&monthInfo,&sysTime);
+              
+              invertDateCtrl.index =0;   //initial the inverter date will collection from #0 panel.
+              while(invertDateCtrl.index <nandFlashInfo .solarPanelCnt)
+              {
+                 plcService(&nandFlashInfo); 
+              }
+              //store the 100 panels date into flash.
+              for(invertDateCtrl.index = 19;invertDateCtrl.index <100;invertDateCtrl.index =invertDateCtrl.index+20)
+              {
+                storeMicroInverterDatePage(&nandFlashInfo ,&invertDateCtrl,&sysTime,&microInverterDatePage,&monthInfo);
+              }
+
+          
+           }
+           
+
            Nop();
             
         }

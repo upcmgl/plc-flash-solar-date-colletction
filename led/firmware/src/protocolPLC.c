@@ -1,33 +1,19 @@
-/* ************************************************************************** */
-/** Descriptive File Name
-
-  @Company
-    Company Name
-
-  @File Name
-    protocolPLC.c
-
-  @Summary
-    parse the message from the plc.
-
-  @Description
-    Describe the purpose of this file.
- */
-
-/* ************************************************************************** */
-
-/* ************************************************************************** */
-/* ************************************************************************** */
-/* Section: Included Files                                                    */
-/* ************************************************************************** */
-/* ************************************************************************** */
-
-/* This section lists the other files that are included in this file.
- */
-
-/* TODO:  Include other files here if needed. */
-
-
+/*******************************************************************************
+********************************************************************************
+**
+**  Filename:       plc_protocol.c
+**  Copyright(c):   2017 Topscomm. All right reserved.
+**  Author:         mgl
+**  Date:           2017.3.25
+**  Device:         MicroInverter Collector, MCU: PIC32MX664F128L
+**  Modify by:
+**  Modify date:
+**  Version:        1.0.0
+**  Describe:
+**
+**
+********************************************************************************
+*******************************************************************************/
 
 #include "protocolPLC.h"
 #include "uart.h"
@@ -55,7 +41,7 @@ uint8_t destinationAddr[microInverterNum][6]={{0x02,0x00,0x00,0x00,0x00,0x00},
 {0x15,0x00,0x00,0x00,0x00,0x00},{0x16,0x00,0x00,0x00,0x00,0x00},
 {0x17,0x00,0x00,0x00,0x00,0x00},{0x18,0x00,0x00,0x00,0x00,0x00},
 {0x19,0x00,0x00,0x00,0x00,0x00},{0x20,0x00,0x00,0x00,0x00,0x00},
-{0x21,0x00,0x00,0x00,0x00,0x00},};
+{0x21,0x00,0x00,0x00,0x00,0x00},{0x22,0x00,0x00,0x00,0x00,0x00}};
 void initPLC()
 {
     //initial  the plc channel
@@ -372,7 +358,7 @@ void picApplyFrame(uint8_t picApplyState,uint8_t *destinationAddressTest)
     
     }
 }
-uint8_t __attribute__((optimize ("O0")))  plcService()
+uint8_t __attribute__((optimize ("O0")))  plcService(struct nandFlashInfoStr *nandFlashInfo)
 { 
  switch (plcCtl.picApplyPlcState)
     {
@@ -541,10 +527,7 @@ uint8_t __attribute__((optimize ("O0")))  plcService()
             }
             break;
     case ApplyForFault:
-        
-           /**TO DO*/
-
-        if(!plcCtl.plcApplyPlcSuccess)
+      if(!plcCtl.plcApplyPlcSuccess)
             {
                  delayN10ms(1);
                  bufferClear(RecvBuffer,recvBufferLens);
@@ -570,11 +553,12 @@ uint8_t __attribute__((optimize ("O0")))  plcService()
                    
                    //index++ means this solar panel apply is done,the next solar panel is will begin.
                    invertDateCtrl.index++;
-                   if(invertDateCtrl.index>microInverterNum+1)
+                   if(invertDateCtrl.index>nandFlashInfo->solarPanelCnt-1)
                     {
                         plcCtl.picApplyCompleteLoop=1;
                         plcCtl.plcApplyPlcSuccess=1;
                     }
+                 
                } 
                
                 else
@@ -592,7 +576,7 @@ uint8_t __attribute__((optimize ("O0")))  plcService()
                     plcCtl.picApplyPlcState=ApplyForVoltage; //if send apply number >2,then give up this apply,start next apply;
                     plcCtl.picApplyIndex=0;
                     invertDateCtrl.index++;
-                    if(invertDateCtrl.index>microInverterNum-1)
+                    if(invertDateCtrl.index > nandFlashInfo->solarPanelCnt-1)
                     {
                         plcCtl.picApplyCompleteLoop=1;
                         plcCtl.plcApplyPlcSuccess=1;
@@ -613,6 +597,7 @@ uint8_t __attribute__((optimize ("O0")))  plcService()
             uartBufferPLCRecv.cnt=0;
         }
 }
+
 /* *****************************************************************************
  End of File
  */

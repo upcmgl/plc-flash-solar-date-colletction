@@ -1,3 +1,19 @@
+/*******************************************************************************
+********************************************************************************
+**
+**  Filename:       drvR8025T.c
+**  Copyright(c):   2017 Topscomm. All right reserved.
+**  Author:         mgl
+**  Date:           2017.3.25
+**  Device:         MicroInverter Collector, MCU: PIC32MX664F128L
+**  Modify by:
+**  Modify date:
+**  Version:        1.0.0
+**  Describe:
+**
+**
+********************************************************************************
+*******************************************************************************/
 #include "drvR8025I2C.h"
 #include "drv_i2c.h"
 #include "../include/stdint.h"
@@ -19,12 +35,8 @@ void drv_I2C_init(void)
 //
 uint8_t drv_R8025T_check_read(uint8_t* buffer)
 {
-      
-    
     uint8_t data[32];
     volatile uint8_t try_count=0;
- 
-
      while(1)
     {
         try_count++;
@@ -150,6 +162,13 @@ bool drv_R8025T_init(void)
     }
 }
 //note  操作必须在0.95s之内完成
+/**
+ * 
+ * @param addr rtc's register initial address.
+ * @param data the date array we will read.
+ * @param len  the array's length.
+ * @return 
+ */
 uint8_t drv_R8025T_read(uint8_t addr,uint8_t* data,uint8_t len)
 {
     uint8_t resault=0;
@@ -349,6 +368,13 @@ R8025T_READ_END:
     return resault;
 }
 //note  操作必须在0.95s之内完成
+/**
+ * 
+ * @param addr the rtc's register address
+ * @param data the date array's address we will write from.
+ * @param len  the length we date we will write in.
+ * @return 
+ */
 bool drv_R8025T_write(uint8_t addr,uint8_t* data,uint8_t len)
 {
     bool resault=false;

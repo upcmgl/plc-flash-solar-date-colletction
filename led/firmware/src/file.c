@@ -1,10 +1,37 @@
-#include "file.h"
-///*******************NOTE:**********************/////
+/*******************************************************************************
+********************************************************************************
+**
+**  Filename:       file.c
+**  Copyright(c):   2017 Topscomm. All right reserved.
+**  Author:         mgl
+**  Date:           2017.3.25
+**  Device:         MicroInverter Collector, MCU: PIC32MX664F128L
+**  Modify by:
+**  Modify date:
+**  Version:        1.0.0
+**  Describe:
+**
+**
+
+////*******************NOTE:**********************/////
 //this nandflash's character is :64K pages of (2048+64) bytes each
 //this flash consists of 1K blocks of 64pages each;
 //                       OOB
 //[0..23]-->ECC   [24..25]-->this page has used.
+//
+//
+//which is the present page,and which is the next page;
+//we defined :the present page is a page is writing or is going to be written.
+//the next page is the next page of the present page.
+//
+//
+//
+
+//********************************************************************************
+//*******************************************************************************
 ///*******************NOTE:**********************/////
+#include "file.h"
+
 uint8_t flashWriteBuffer[2048];
 uint8_t flashWriteBufferOOB[64];
 
@@ -15,10 +42,9 @@ uint8_t flashReadBufferOOB[64];
 uint8_t flashRWTempbuffer[2048];
 uint8_t flashRWTempbufferOOB[64];
 
-
 struct flashDateStr flashRWdate, flashRWTempdate;
 struct nandFlashInfoStr nandFlashInfo;
-
+struct MonthInfoStr  monthInfo,monthInfoTemp;
 /**
  * @describtion  initial the flash bufffer.include read &write,lengths /offset
  */
@@ -67,15 +93,31 @@ void initFlashBuffer()
 void initFlashInfo(struct nandFlashInfoStr *nandFlashInfo)
 {
     uint16_t pageNum;
+    nandFlashInfo ->structLens =sizeof(struct nandFlashInfoStr);
     nandFlashInfo ->badBlockNum=0;
+    nandFlashInfo ->BlockNum  =1024;
+    nandFlashInfo ->solarPanelCnt =20;
     for(pageNum = 0;pageNum <128; pageNum ++)
     {
         nandFlashInfo ->badBlockPos[pageNum] = 0;
     }
-    nandFlashInfo ->blockUsedPresent = 0;
-    nandFlashInfo ->blockUsedPresent = 0;
+    nandFlashInfo ->blockUsedPresent = 3;
+    nandFlashInfo ->blockUsedNext    = 4;
+    nandFlashInfo ->pageUsedPresent  = 3*64;
+    nandFlashInfo ->pageUsedNext     = 3*64+1;
+    nandFlashInfo ->allBlockUsed     = 0;
+    nandFlashInfo ->monthMappingPage =1;
 }
-
+/**
+ * //initial  the monthinfo structure;
+ * @param monthInfo
+ */
+void initMonthInfo(struct MonthInfoStr   *monthInfo)
+{
+    monthInfo ->structLens =sizeof(struct MonthInfoStr);
+    monthInfo ->month      =0;
+    memset(monthInfo,0,monthInfo ->structLens);     //all var in monthinfo is set as 0;
+}
 /**
  * 
  * @param flashReadDate
@@ -122,6 +164,9 @@ uint8_t perBadBlockCheck(uint32_t blockNum ,struct nandFlashInfoStr  *nandFlashI
             return 0;
         }
     }
+    nandFlashInfo ->badBlockChecked = 1;    //if this var =1,we have checked the bad block;
+    nandFlashInfo ->pageUsedPresent = 64*blockNum;  
+    nandFlashInfo ->pageUsedNext    = 64*blockNum+1;
     return 1;
     
 }
@@ -390,7 +435,6 @@ uint8_t nand2KEccCorrect(uint8_t *date, uint8_t *readEcc, uint8_t *calcEcc )
 uint8_t fileWriteAllPageEcc(uint32_t page ,struct flashDateStr *flashRWdate)
 {
     nand2KEccCalculate(flashRWdate ->flashWriteDate[0].buffer,flashRWdate ->flashWriteDate[1].buffer);
-    flashWriteBuffer[0] = 0x03;
     nanddrv_write_tr(page,flashRWdate ->flashWriteDate ,2);
     return 0;
 }
@@ -463,11 +507,376 @@ uint8_t fileWritePartPageEcc(uint32_t page ,struct flashDateStr *flashRWdate ,st
     return 0;
 }
 /**
+ *  change main message to 2K date buffer ,for storing the main system date.
+ * @param nandFlashInfo
+ * @param buffer   we can use the flashWriteDate as date buffer.
+ */
+uint8_t storeMainSysMessage(uint32_t page,struct nandFlashInfoStr *nandFlashInfo)
+{
+    bufferClear(flashRWdate.flashWriteDate[0].buffer,2048);
+    bufferClear(flashRWdate.flashWriteDate[1].buffer,64);  
+    memcpy(flashRWdate.flashWriteDate[0].buffer,(uint8_t *)nandFlashInfo,sizeof(struct nandFlashInfoStr));
+    fileWriteAllPageEcc(page,&flashRWdate);
+    return 0;
+} 
+/**
+ * ///load the main systme message to the ram
+ * @param nandFlashInfo
+ * @return 
+ */
+uint8_t loadMainSysMessage(uint32_t page ,struct nandFlashInfoStr *nandFlashInfo)
+{
+ 
+    fileReadAllPageEcc(page,&flashRWdate,nandFlashInfo);
+    memcpy(nandFlashInfo,flashRWdate.flashReadDate[0].buffer,sizeof(struct nandFlashInfoStr));
+     return 0;
+}
+/**
+ * 
+ * @param page
+ * @param monthInfo
+ * @return 
+ */
+uint8_t storeMonthInfo(uint32_t page,struct MonthInfoStr *monthInfo)
+{
+    bufferClear(flashRWdate.flashWriteDate[0].buffer,2048);
+    bufferClear(flashRWdate.flashWriteDate[1].buffer,64); 
+    memcpy(flashRWdate.flashWriteDate[0].buffer,(uint8_t *)monthInfo,sizeof(struct MonthInfoStr));
+    fileWriteAllPageEcc(page,&flashRWdate);
+    return 0;
+}
+/**
+ * 
+ * @param page
+ * @param monthInfo
+ * @return 
+ */
+uint8_t loadMonthInfo(uint32_t page,struct MonthInfoStr *monthInfo)
+{
+    
+    fileReadAllPageEcc(page,&flashRWdate,&nandFlashInfo);
+    memcpy(monthInfo,flashRWdate.flashReadDate[0].buffer,sizeof(struct MonthInfoStr));
+    return 0;
+}
+/**
+ * judge whether all block has been used.
+ * @param nandFlashInfo
+ * @return 
+ */
+uint8_t judgeAllBlockUsed(struct nandFlashInfoStr *nandFlashInfo)
+{
+    if(nandFlashInfo ->blockUsedPresent ==1024)
+    {
+        nandFlashInfo ->allBlockUsed =1;
+        return 1;
+    }
+    return 0;
+}
+/**
+ * every meet the end of every block,first you should check whether the next block  is good or not;
+ * @param nandFlashInfo
+ * @return 
+ */
+uint8_t judgeNextBlock(struct nandFlashInfoStr *nandFlashInfo)
+{
+    while((!perBadBlockCheck(nandFlashInfo ->blockUsedNext ,nandFlashInfo,&flashRWdate ))&&(nandFlashInfo ->badBlockChecked ==0))
+    {
+         nandFlashInfo ->blockUsedNext = nandFlashInfo ->blockUsedNext + 1;    //judge the next block go on.
+    }
+    return 0;
+}
+
+/**
+ * When a new day coming ,we should calculate the needed all pages (85 pages) in time.
+ * @param nandFlashInfo
+ * @param monthInfo
+ * @return 
+ */
+uint8_t calcAllPageNeededANewDay(struct nandFlashInfoStr *nandFlashInfo,struct MonthInfoStr *monthInfo)
+{
+    volatile uint8_t pageCnt =PageOneDay;   //pageCnt count the 85 pages one day;
+    //firstly,we should make sure how many blocks needed for a new day;63-43=21;21+64=85;
+    if(nandFlashInfo ->pageUsedPresent >(43+nandFlashInfo ->blockUsedPresent*64))
+    {
+        monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].BlockNum =3;
+    }
+    else
+    {
+        monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].BlockNum =2;
+    }
+    
+    //if we need to distribute 3 blocks in time;
+    if(monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].BlockNum == 3)
+    {
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].whichBlockLeft     =nandFlashInfo ->blockUsedPresent;
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].leftBlockStartPage =nandFlashInfo ->pageUsedPresent;
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].leftBlockStartPage =nandFlashInfo ->blockUsedPresent*64+63;
+       
+       pageCnt =pageCnt -(64-nandFlashInfo ->blockUsedPresent);
+       judgeNextBlock(nandFlashInfo);
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].whichBlockMiddle     =nandFlashInfo ->blockUsedNext;
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].middleBlockStartPage =(nandFlashInfo ->blockUsedNext)*64;
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].middleBlockEndPage =nandFlashInfo ->blockUsedNext*64+63;
+       
+       pageCnt =pageCnt -64;
+       judgeNextBlock(nandFlashInfo);
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].whichBlockRight     =nandFlashInfo ->blockUsedNext;
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].rightBlockStartPage =(nandFlashInfo ->blockUsedNext)*64;
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].rightBlockEndPage =nandFlashInfo ->blockUsedNext*64+pageCnt-1; //don't include the right page.
+       
+    }
+    //if we need to distribute 2 blocks in time;
+    else if(monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].BlockNum ==2)
+    {
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].whichBlockLeft     =nandFlashInfo ->blockUsedPresent;
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].leftBlockStartPage =nandFlashInfo ->pageUsedPresent;
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].leftBlockStartPage =nandFlashInfo ->blockUsedPresent*64+63;
+       
+       pageCnt =pageCnt -(64-nandFlashInfo ->blockUsedPresent);
+       judgeNextBlock(nandFlashInfo);
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].whichBlockMiddle     =nandFlashInfo ->blockUsedNext;
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].middleBlockStartPage =(nandFlashInfo ->blockUsedNext)*64;
+       monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].middleBlockEndPage =nandFlashInfo ->blockUsedNext*64+pageCnt-1;
+    }
+    return 0;
+}
+/**
+ * //the core algorithm of flash main block store mapping to another  month page;
+ * @param nandFlashInfo
+ * @param monthInfo
+ * @return 
+ */
+uint8_t timeMapping(struct nandFlashInfoStr *nandFlashInfo,struct MonthInfoStr *monthInfo,struct sysTimeStr *sysTime)
+{
+    
+    if(nandFlashInfo ->blockUsedPresent !=(nandFlashInfo->pageUsedPresent+1) /64)
+    {
+        nandFlashInfo ->blockUsedPresent = nandFlashInfo ->blockUsedNext;
+        nandFlashInfo ->badBlockChecked  = 0;
+    }
+    
+    if(nandFlashInfo ->badBlockChecked ==0)     //judge the next block whether checked or not
+    {
+        nandFlashInfo ->blockUsedNext = nandFlashInfo ->blockUsedPresent + 1;
+    }
+//    //judge the bad block. If the present page is the end page of every block,then need to judge the next block.
+//    if(nandFlashInfo ->pageUsedPresent %64 ==63)  
+//    {
+//        judgeNextBlock(nandFlashInfo);
+//    }
+
+    //the following code is recording the date mapping to data;
+    //change another year;
+    if(nandFlashInfo ->yearMonthCtl[nandFlashInfo ->yearCnt].year != sysTime ->timeDate.year)
+    {
+        nandFlashInfo ->yearCnt =nandFlashInfo ->yearCnt+1;
+        nandFlashInfo ->monthCnt = 0;    //if a new year change,the nandFlashInfo ->monthCnt =0;
+    }
+    //change another month;
+    if(nandFlashInfo ->yearMonthCtl[nandFlashInfo ->yearCnt].monthWithIndex[nandFlashInfo->monthCnt].month != sysTime ->timeDate.month)
+    {
+        nandFlashInfo ->monthCnt =nandFlashInfo ->monthCnt +1;
+        nandFlashInfo ->monthMappingPage = nandFlashInfo ->monthMappingPage+1;
+        nandFlashInfo ->dayCnt = 0;     //the index of day will be reset;
+        monthInfo ->structLens =sizeof(struct MonthInfoStr);
+        monthInfo ->month = sysTime ->timeDate.month;
+        
+        if(nandFlashInfo ->monthCnt == 12)
+        {
+            nandFlashInfo ->monthCnt = 0;     //if the month is great than 12,the monthCnt = 0;
+        }
+        
+    }
+    //change another day; when  a new day coming ,we need to calculate the day's date record consists of which 3 or 2 blocks;
+    if(monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].day !=sysTime ->timeDate.day)
+    {
+        nandFlashInfo ->dayCnt = nandFlashInfo ->dayCnt +1;
+        monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].day =sysTime ->timeDate.day;
+        //if a new day is coming ,the next page will be used.
+//      monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].index = nandFlashInfo ->pageUsedNext;
+        //calculate the blocks we need when a new day coming.
+        calcAllPageNeededANewDay(nandFlashInfo,monthInfo);
+    }
+    
+    switch (nandFlashInfo ->yearCnt)
+    {   
+        case 0:
+            nandFlashInfo ->yearMonthCtl[0].year =sysTime ->timeDate.year;
+            nandFlashInfo ->yearMonthCtl[0].monthWithIndex[nandFlashInfo ->monthCnt].month = sysTime ->timeDate.month;
+            nandFlashInfo ->yearMonthCtl[0].monthWithIndex[nandFlashInfo ->monthCnt].index = nandFlashInfo ->monthMappingPage;
+            break;
+        case 1:
+            nandFlashInfo ->yearMonthCtl[1].year =sysTime ->timeDate.year;
+            nandFlashInfo ->yearMonthCtl[1].monthWithIndex[nandFlashInfo ->monthCnt].month = sysTime ->timeDate.month;
+            nandFlashInfo ->yearMonthCtl[1].monthWithIndex[nandFlashInfo ->monthCnt].index = nandFlashInfo ->monthMappingPage;
+            break;
+        case 2:
+            nandFlashInfo ->yearMonthCtl[2].year =sysTime ->timeDate.year;
+            nandFlashInfo ->yearMonthCtl[2].monthWithIndex[nandFlashInfo ->monthCnt].month = sysTime ->timeDate.month;
+            nandFlashInfo ->yearMonthCtl[2].monthWithIndex[nandFlashInfo ->monthCnt].index = nandFlashInfo ->monthMappingPage;
+            break;
+        case 3:
+            nandFlashInfo ->yearMonthCtl[3].year =sysTime ->timeDate.year;
+            nandFlashInfo ->yearMonthCtl[3].monthWithIndex[nandFlashInfo ->monthCnt].month = sysTime ->timeDate.month;
+            nandFlashInfo ->yearMonthCtl[3].monthWithIndex[nandFlashInfo ->monthCnt].index = nandFlashInfo ->monthMappingPage;
+            break;
+        default:
+            break;
+    }
+    return 0;
+    
+}
+/**
+ * 
+ * @param nandFlashInfo
+ * @param monthInfo
+ * @return 
+ */
+uint8_t SeekNextPage(struct nandFlashInfoStr *nandFlashInfo ,struct MonthInfoStr   *monthInfo)
+{
+    //if the new day needs 3 blocks.
+    if(monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].BlockNum ==3)
+    {
+        if((nandFlashInfo ->blockUsedPresent>=monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].leftBlockStartPage)&&(nandFlashInfo ->blockUsedPresent<=monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].leftBlockEndPage))
+        {
+            nandFlashInfo ->blockUsedPresent = nandFlashInfo ->pageUsedNext ;
+            nandFlashInfo ->pageUsedNext++;
+            if(nandFlashInfo ->pageUsedNext > monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].leftBlockEndPage)
+            {
+                nandFlashInfo ->pageUsedNext =monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].middleBlockStartPage;
+            }
+        }
+        else if((nandFlashInfo ->blockUsedPresent>=monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].middleBlockStartPage)&&(nandFlashInfo ->blockUsedPresent<=monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].middleBlockEndPage))
+        {
+            nandFlashInfo ->blockUsedPresent = nandFlashInfo ->pageUsedNext ;
+            nandFlashInfo ->pageUsedNext++;
+            if(nandFlashInfo ->pageUsedNext > monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].middleBlockEndPage)
+            {
+                nandFlashInfo ->pageUsedNext =monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].rightBlockStartPage;
+            }
+        }
+        else if((nandFlashInfo ->blockUsedPresent >= monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].rightBlockStartPage)&&(nandFlashInfo ->blockUsedPresent <= monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].rightBlockEndPage))
+        {
+            nandFlashInfo ->blockUsedPresent = nandFlashInfo ->pageUsedNext ;
+            nandFlashInfo ->pageUsedNext++;
+        }
+    }
+    //if the new day needs 2 blocks
+    else if(monthInfo ->dayWithIndex[nandFlashInfo ->dayCnt].BlockNum ==2)
+    {
+         if((nandFlashInfo ->blockUsedPresent>=monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].leftBlockStartPage)&&(nandFlashInfo ->blockUsedPresent<=monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].leftBlockEndPage))
+        {
+            nandFlashInfo ->blockUsedPresent = nandFlashInfo ->pageUsedNext ;
+            nandFlashInfo ->pageUsedNext++;
+            if(nandFlashInfo ->pageUsedNext > monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].leftBlockEndPage)
+            {
+                nandFlashInfo ->pageUsedNext =monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].middleBlockStartPage;
+            }
+        }
+        else if((nandFlashInfo ->blockUsedPresent>=monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].middleBlockStartPage)&&(nandFlashInfo ->blockUsedPresent<=monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].middleBlockEndPage))
+        {
+            nandFlashInfo ->blockUsedPresent = nandFlashInfo ->pageUsedNext ;
+            nandFlashInfo ->pageUsedNext++;
+            if(nandFlashInfo ->pageUsedNext > monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].middleBlockEndPage)
+            {
+                nandFlashInfo ->pageUsedNext =monthInfo->dayWithIndex[nandFlashInfo ->dayCnt].rightBlockStartPage;
+            }
+        }
+    }
+}
+/**
+ * //store the microinverter date according to pages. one page can store 20 panels
+ * @param nandFlashInfo
+ * @param invertDateCtrl
+ * @return 
+ */
+uint8_t storeMicroInverterDatePage(struct nandFlashInfoStr *nandFlashInfo ,struct microInverterDateCtrl *invertDateCtrl,struct sysTimeStr *sysTime,struct microInverterDatePageStr *microInverterDatePage,struct MonthInfoStr   *monthInfo)
+{
+    
+    if((invertDateCtrl ->index ==(20-1))&&(invertDateCtrl ->index <nandFlashInfo ->solarPanelCnt))
+    {
+        microInverterDatePage ->structLens =sizeof(struct microInverterDatePageStr);
+        microInverterDatePage ->day        =sysTime ->timeDate.day;
+        microInverterDatePage ->hour       =sysTime ->timeDate.hour;
+        microInverterDatePage ->inverterDate[0] = (struct microInverterDateU )invertDateCtrl ->inverterDate[(invertDateCtrl ->index)-19];
+        memcpy(flashRWdate.flashWriteDate[0].buffer,(uint8_t *)microInverterDatePage,sizeof(struct microInverterDatePageStr));
+        fileWriteAllPageEcc(nandFlashInfo->pageUsedPresent,&flashRWdate);      // the typical problem is get the exact page mapping.
+
+        SeekNextPage(nandFlashInfo,monthInfo);
+    }
+    if((invertDateCtrl ->index ==(20*2-1))&&(invertDateCtrl ->index <nandFlashInfo ->solarPanelCnt))
+    {
+        microInverterDatePage ->structLens =sizeof(struct microInverterDatePageStr);
+        microInverterDatePage ->day        =sysTime ->timeDate.day;
+        microInverterDatePage ->hour       =sysTime ->timeDate.hour;
+        microInverterDatePage ->inverterDate[0] = (struct microInverterDateU )invertDateCtrl ->inverterDate[(invertDateCtrl ->index)-19];
+        memcpy(flashRWdate.flashWriteDate[0].buffer,(uint8_t *)microInverterDatePage,sizeof(struct microInverterDatePageStr));
+        fileWriteAllPageEcc(nandFlashInfo->pageUsedPresent,&flashRWdate); 
+        
+        SeekNextPage(nandFlashInfo,monthInfo);
+    }
+    
+    if((invertDateCtrl ->index ==(20*3-1))&&(invertDateCtrl ->index <nandFlashInfo ->solarPanelCnt))
+    {
+        microInverterDatePage ->structLens =sizeof(struct microInverterDatePageStr);
+        microInverterDatePage ->day        =sysTime ->timeDate.day;
+        microInverterDatePage ->hour       =sysTime ->timeDate.hour;
+        microInverterDatePage ->inverterDate[0] = (struct microInverterDateU )invertDateCtrl ->inverterDate[(invertDateCtrl ->index)-19];
+        memcpy(flashRWdate.flashWriteDate[0].buffer,(uint8_t *)microInverterDatePage,sizeof(struct microInverterDatePageStr));
+        fileWriteAllPageEcc(nandFlashInfo->pageUsedPresent,&flashRWdate);    
+        
+        SeekNextPage(nandFlashInfo,monthInfo);
+    }
+    if((invertDateCtrl ->index ==(20*4-1))&&(invertDateCtrl ->index <nandFlashInfo ->solarPanelCnt))
+    {
+        microInverterDatePage ->structLens =sizeof(struct microInverterDatePageStr);
+        microInverterDatePage ->day        =sysTime ->timeDate.day;
+        microInverterDatePage ->hour       =sysTime ->timeDate.hour;
+        microInverterDatePage ->inverterDate[0] = (struct microInverterDateU )invertDateCtrl ->inverterDate[(invertDateCtrl ->index)-19];
+        memcpy(flashRWdate.flashWriteDate[0].buffer,(uint8_t *)microInverterDatePage,sizeof(struct microInverterDatePageStr));
+        fileWriteAllPageEcc(nandFlashInfo->pageUsedPresent,&flashRWdate);   
+        
+        SeekNextPage(nandFlashInfo,monthInfo);
+    }
+    if((invertDateCtrl ->index ==(20*5-1))&&(invertDateCtrl ->index <nandFlashInfo ->solarPanelCnt))
+    {
+        microInverterDatePage ->structLens =sizeof(struct microInverterDatePageStr);
+        microInverterDatePage ->day        =sysTime ->timeDate.day;
+        microInverterDatePage ->hour       =sysTime ->timeDate.hour;
+        microInverterDatePage ->inverterDate[0] = (struct microInverterDateU )invertDateCtrl ->inverterDate[(invertDateCtrl ->index)-19];
+        memcpy(flashRWdate.flashWriteDate[0].buffer,(uint8_t *)microInverterDatePage,sizeof(struct microInverterDatePageStr));
+        fileWriteAllPageEcc(nandFlashInfo->pageUsedPresent,&flashRWdate);   
+        
+        SeekNextPage(nandFlashInfo,monthInfo);
+    }
+    return 0;
+}
+/**
+ * //load microinverter date, load one page ,you can get 20 panel's date;
+ * @param nandFlashInfo
+ * @param invertDateCtrl
+ * @return 
+ */
+uint8_t loadMicroInverterDatePage(struct nandFlashInfoStr *nandFlashInfo ,struct microInverterDateCtrl *invertDateCtrl)
+{
+
+}
+/**
  * fileTest function is test every function.
  */
 
 void fileTest()
 {
+//      nanddrv_erase(0);
+//      initFlashInfo(&nandFlashInfo);
+//      storeMainSysMessage(0,&nandFlashInfo);
+////      monthInfo.structLens = sizeof(struct MonthInfoStr);
+////      monthInfo.month =3;
+////      monthInfo.dayWithIndex[0].day = 12;
+////      storeMonthInfor(1,&monthInfo);
+////      loadMonthInfor(1,&monthInfoTemp);
+//      loadMainSysMessage(0 ,&nandFlashInfo);
+      
 //    invertDateCtrl.inverterDate[0].voltage[0] = 0x11;
 //    invertDateCtrl.inverterDate[0].voltage[1] = 0x00;
 //    invertDateCtrl.inverterDate[0].current[0] = 0x02;
@@ -489,16 +898,28 @@ void fileTest()
 //    invertDateCtrl.inverterDate[1].energy[2]  = 0x03;
 //    invertDateCtrl.inverterDate[1].energy[3]  = 0x34;
 //    invertDateCtrl.inverterDate[1].fault      =0x11;
-
-      nanddrv_erase(0);
-      memset(flashWriteBuffer,0x36,2048);
-      fileWriteAllPageEcc(0,&flashRWdate);
-      copyBlock(0,1,0, 1);
-      fileReadAllPageEcc(64,&flashRWdate,&nandFlashInfo);
-      fileReadAllPageEcc(0,&flashRWdate,&nandFlashInfo);
-      copyBlock(1,0, 0, 1);
-      fileReadAllPageEcc(64,&flashRWdate,&nandFlashInfo);
-      fileReadAllPageEcc(0,&flashRWdate,&nandFlashInfo);
+//
+    
+//      nanddrv_erase(0);
+//      initFlashBuffer();
+//      initFlashInfo(&nandFlashInfo);
+//      initFlashInfo(&nandFlashInfo2);
+//      nandFlashInfo2.blockUsedNext =0;
+//      nandFlashInfo2.blockUsedPresent=0;
+//      nandFlashInfo2.pageUsedNext=0;
+//      nandFlashInfo2.pageUsedPresent=0;
+  //    changeMainMessageTo2K(&nandFlashInfo,&nandFlashInfo2);
+      
+      
+//      nanddrv_erase(0);
+//      memset(flashWriteBuffer,0x36,2048);
+//      fileWriteAllPageEcc(0,&flashRWdate);
+//      copyBlock(0,1,0, 1);
+//      fileReadAllPageEcc(64,&flashRWdate,&nandFlashInfo);
+//      fileReadAllPageEcc(0,&flashRWdate,&nandFlashInfo);
+//      copyBlock(1,0, 0, 1);
+//      fileReadAllPageEcc(64,&flashRWdate,&nandFlashInfo);
+//      fileReadAllPageEcc(0,&flashRWdate,&nandFlashInfo);
       
     
 //    fileWritePartPageEcc(0,&flashRWdate,&nandFlashInfo,invertDateCtrl);

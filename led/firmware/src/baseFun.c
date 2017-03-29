@@ -1,14 +1,37 @@
+/*******************************************************************************
+********************************************************************************
+**
+**  Filename:       baseFunction.c
+**  Copyright(c):   2017 Topscomm. All right reserved.
+**  Author:         mgl
+**  Date:           2017.3.25
+**  Device:         MicroInverter Collector, MCU: PIC32MX664F128L
+**  Modify by:
+**  Modify date:
+**  Version:        1.0.0
+**  Describe:
+**
+**
+********************************************************************************
+*******************************************************************************/
 #include "baseFun.h"
 
+
+/**
+ * //////set all bits in buffer as 0x00;
+ * @param buffer
+ * @param lens
+ */
 void bufferClear(uint8_t *buffer,uint16_t lens)
 {
     memset(buffer,0,lens);
 }
-uint8_t num2BCD(uint8_t num)
+
+uint8_t __attribute__((optimize("O0"))) num2BCD(uint8_t num)
 {
     uint8_t temp=0xFF;
-    temp=(num/10)&temp<<4;
-    temp=(temp|0xFF)&(num%10);
+    temp=((num/10)&temp)<<4;
+    temp=temp|(0xFF&(num%10));
     return temp;
 }
 
@@ -92,6 +115,11 @@ void RTCBCD2DateTime(uint8_t *dt,uint8_t *nValue)
      dt[HOURALARM] =   BCD2byte(nValue[9]);
      dt[WEEKALARM] =   BCD2byte(nValue[10]);
 }
+/**
+ * 
+ * @param dt
+ * @param nValue
+ */
 void  DateTime2RTCBCD(uint8_t *dt,uint8_t *nValue)
 {
      nValue[0]=byte2BCD(dt[SECOND]);
@@ -102,6 +130,11 @@ void  DateTime2RTCBCD(uint8_t *dt,uint8_t *nValue)
      nValue[5]=byte2BCD(dt[MONTH]);
      nValue[6]=byte2BCD(dt[YEAR]);
 }
+/**
+ * 
+ * @param dt
+ * @param nValue
+ */
 void  DateTime2645BCD(uint8_t *dt,uint8_t *nValue)
 {
      nValue[0]=byte2BCD(dt[SECOND]);

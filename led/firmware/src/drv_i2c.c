@@ -1,3 +1,19 @@
+/*******************************************************************************
+********************************************************************************
+**
+**  Filename:       drv_i2c.c
+**  Copyright(c):   2017 Topscomm. All right reserved.
+**  Author:         mgl
+**  Date:           2017.3.25
+**  Device:         MicroInverter Collector, MCU: PIC32MX664F128L
+**  Modify by:
+**  Modify date:
+**  Version:        1.0.0
+**  Describe:
+**
+**
+********************************************************************************
+*******************************************************************************/
 #include "drv_i2c.h"
 #include "system/clk/sys_clk.h"
 #include "../include/stdint.h"

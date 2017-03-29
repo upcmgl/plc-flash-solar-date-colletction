@@ -1,3 +1,19 @@
+/*******************************************************************************
+********************************************************************************
+**
+**  Filename:       timer watchdog.c
+**  Copyright(c):   2017 Topscomm. All right reserved.
+**  Author:         mgl
+**  Date:           2017.3.25
+**  Device:         MicroInverter Collector, MCU: PIC32MX664F128L
+**  Modify by:
+**  Modify date:
+**  Version:        1.0.0
+**  Describe:
+**
+**
+********************************************************************************
+*******************************************************************************/
 #include "tmr.h"
 #include "app.h"
 volatile uint32_t msCount=0;
@@ -17,6 +33,5 @@ void delayN10ms(uint8_t msTime)
 {
     uint32_t msCountPresent=msCount;
     while(msCount<msCountPresent+msTime);
-    
-
+ 
 }
